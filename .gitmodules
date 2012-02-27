@@ -1,0 +1,12 @@
+[submodule "Components/MBProgressHUD"]
+	path = Components/MBProgressHUD
+	url = https://github.com/matej/MBProgressHUD.git
+[submodule "Components/EGOTableViewPullRefresh"]
+	path = Components/EGOTableViewPullRefresh
+	url = https://github.com/enormego/EGOTableViewPullRefresh.git
+[submodule "Components/EGOImageLoading"]
+	path = Components/EGOImageLoading
+	url = https://github.com/enormego/EGOImageLoading.git
+[submodule "Components/ASIHTTPRequest"]
+	path = Components/ASIHTTPRequest
+	url = https://github.com/mschulkind/asi-http-request.git
