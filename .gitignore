@@ -1,0 +1,11 @@
+build/**
+*.js
+
+# XCode
+*.xcodeproj/xcuserdata/**
+*.xcworkspace/
+
+# OS X files
+.AppleDouble
+.DS_Store
+._*
