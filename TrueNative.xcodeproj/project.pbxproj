@@ -1,0 +1,209 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C989B1A714FB64B2004E9DE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C989B1A614FB64B2004E9DE4 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C989B1A314FB64B2004E9DE4 /* libTrueNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTrueNative.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C989B1A614FB64B2004E9DE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C989B1AA14FB64B2004E9DE4 /* TrueNative-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrueNative-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C989B1A014FB64B2004E9DE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C989B1A714FB64B2004E9DE4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C989B19314FB646D004E9DE4 = {
+			isa = PBXGroup;
+			children = (
+				C989B1AA14FB64B2004E9DE4 /* TrueNative-Prefix.pch */,
+				C989B1A514FB64B2004E9DE4 /* Frameworks */,
+				C989B1A414FB64B2004E9DE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C989B1A414FB64B2004E9DE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C989B1A314FB64B2004E9DE4 /* libTrueNative.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C989B1A514FB64B2004E9DE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C989B1A614FB64B2004E9DE4 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C989B1A114FB64B2004E9DE4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C989B1A214FB64B2004E9DE4 /* TrueNative */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C989B1B014FB64B2004E9DE4 /* Build configuration list for PBXNativeTarget "TrueNative" */;
+			buildPhases = (
+				C989B19F14FB64B2004E9DE4 /* Sources */,
+				C989B1A014FB64B2004E9DE4 /* Frameworks */,
+				C989B1A114FB64B2004E9DE4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrueNative;
+			productName = TrueNative;
+			productReference = C989B1A314FB64B2004E9DE4 /* libTrueNative.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C989B19514FB646D004E9DE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C989B19814FB646D004E9DE4 /* Build configuration list for PBXProject "TrueNative" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C989B19314FB646D004E9DE4;
+			productRefGroup = C989B1A414FB64B2004E9DE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C989B1A214FB64B2004E9DE4 /* TrueNative */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C989B19F14FB64B2004E9DE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C989B19A14FB646D004E9DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		C989B19B14FB646D004E9DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		C989B1AE14FB64B2004E9DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/TrueNative.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrueNative/TrueNative-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C989B1AF14FB64B2004E9DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/TrueNative.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrueNative/TrueNative-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C989B19814FB646D004E9DE4 /* Build configuration list for PBXProject "TrueNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C989B19A14FB646D004E9DE4 /* Debug */,
+				C989B19B14FB646D004E9DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C989B1B014FB64B2004E9DE4 /* Build configuration list for PBXNativeTarget "TrueNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C989B1AE14FB64B2004E9DE4 /* Debug */,
+				C989B1AF14FB64B2004E9DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C989B19514FB646D004E9DE4 /* Project object */;
+}
