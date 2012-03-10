@@ -533,11 +533,12 @@
 /* Begin PBXLegacyTarget section */
 		C9F88C81150C13AE00F84E6A /* CoffeeScripts */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "$(ACTION)";
+			buildArgumentsString = "-c \"scons\"";
 			buildConfigurationList = C9F88C82150C13AE00F84E6A /* Build configuration list for PBXLegacyTarget "CoffeeScripts" */;
 			buildPhases = (
 			);
-			buildToolPath = /usr/local/bin/scons;
+			buildToolPath = /bin/bash;
+			buildWorkingDirectory = "";
 			dependencies = (
 			);
 			name = CoffeeScripts;
@@ -806,6 +807,7 @@
 				C9F88C84150C13AE00F84E6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
