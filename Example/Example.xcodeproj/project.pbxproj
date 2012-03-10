@@ -565,6 +565,7 @@
 				C9F88C6E150C075700F84E6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

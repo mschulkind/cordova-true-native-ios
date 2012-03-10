@@ -2,6 +2,7 @@ build/**
 .sconsign.dblite
 
 Example/www/*.js
+Classes/EncodedJavascript.h
 
 # XCode
 **/*.xcodeproj/xcuserdata/
