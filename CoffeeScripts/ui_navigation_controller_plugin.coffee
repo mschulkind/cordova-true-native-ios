@@ -5,7 +5,7 @@ TN.UI.NavigationController = class NavigationController extends TN.UI.Window
     super
     @pluginID = PLUGIN_ID
 
-    @titleView = options?.titleView || new TN.TitleBarView
+    @titleView = options?.titleView
     @title = options?.title || ""
 
     @windowStack = []
