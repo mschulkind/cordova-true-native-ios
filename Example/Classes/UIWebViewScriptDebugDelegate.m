@@ -169,7 +169,7 @@ static NSString* const kSourceIDMapBaseLineNumberKey = @"baselinenumber";
   [message appendString:@"Offending line:\n"];
   NSArray* sourceLines = [source componentsSeparatedByString:@"\n"];
   NSString* sourceLine = 
-      [sourceLines objectAtIndex:(lineNumber - baseLineNumber)];
+      [sourceLines objectAtIndex:(lineNumber - baseLineNumber + 2)];
   if ([sourceLine length] > 200) {
     sourceLine = [sourceLine substringToIndex:200];
     sourceLine = [NSString stringWithFormat:@"%@...", sourceLine];
