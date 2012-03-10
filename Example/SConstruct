@@ -1,0 +1,1 @@
+SConscript('CoffeeScripts/SConscript', variant_dir='www', duplicate=0)

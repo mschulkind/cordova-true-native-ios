@@ -1,6 +1,8 @@
 build/**
 .sconsign.dblite
 
+Example/www/*.js
+
 # XCode
 **/*.xcodeproj/xcuserdata/
 *.xcworkspace/

@@ -56,6 +56,13 @@
 			remoteGlobalIDString = C989B1A214FB64B2004E9DE4;
 			remoteInfo = TrueNative;
 		};
+		C9F88C6F150C079900F84E6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C989B0FF14FB393F004E9DE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9F88C6B150C075700F84E6A;
+			remoteInfo = CoffeeScripts;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -256,6 +263,23 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXLegacyTarget section */
+		C9F88C6B150C075700F84E6A /* CoffeeScripts */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = C9F88C6C150C075700F84E6A /* Build configuration list for PBXLegacyTarget "CoffeeScripts" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/scons;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = CoffeeScripts;
+			passBuildSettingsInEnvironment = 1;
+			productName = CoffeeScripts;
+		};
+/* End PBXLegacyTarget section */
+
 /* Begin PBXNativeTarget section */
 		C989B10A14FB393F004E9DE4 /* Example */ = {
 			isa = PBXNativeTarget;
@@ -270,6 +294,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C9F88C70150C079900F84E6A /* PBXTargetDependency */,
 				C9F88C58150BE1A000F84E6A /* PBXTargetDependency */,
 			);
 			name = Example;
@@ -305,6 +330,7 @@
 			projectRoot = "";
 			targets = (
 				C989B10A14FB393F004E9DE4 /* Example */,
+				C9F88C6B150C075700F84E6A /* CoffeeScripts */,
 			);
 		};
 /* End PBXProject section */
@@ -364,6 +390,11 @@
 			isa = PBXTargetDependency;
 			name = TrueNative;
 			targetProxy = C9F88C57150BE1A000F84E6A /* PBXContainerItemProxy */;
+		};
+		C9F88C70150C079900F84E6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9F88C6B150C075700F84E6A /* CoffeeScripts */;
+			targetProxy = C9F88C6F150C079900F84E6A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -469,6 +500,41 @@
 			};
 			name = Release;
 		};
+		C9F88C6D150C075700F84E6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEBUGGING_SYMBOLS = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C9F88C6E150C075700F84E6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -489,6 +555,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		C9F88C6C150C075700F84E6A /* Build configuration list for PBXLegacyTarget "CoffeeScripts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9F88C6D150C075700F84E6A /* Debug */,
+				C9F88C6E150C075700F84E6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

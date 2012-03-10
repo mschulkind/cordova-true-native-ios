@@ -1,0 +1,10 @@
+env = Environment()
+
+coffee_bld = Builder(
+    action = 'coffee -c -p $SOURCE > $TARGET',
+    single_source = True,
+    suffix = '.js',
+    src_suffix = '.coffee')
+env.Append(BUILDERS = {'Coffee' : coffee_bld})
+
+env.Coffee(Glob('*.coffee'))
