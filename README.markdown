@@ -2,6 +2,7 @@
 
 1. scons
 2. coffee (coffee-script compiler)
+3. Cordova 1.5.0
 
 The easiest way to get the prerequesites is to install
 [Homebrew](http://mxcl.github.com/homebrew/) and then run the command `brew
