@@ -1,9 +1,8 @@
 TN.UI.Window = class Window extends TN.UI.Component
-  PLUGIN_NAME = 'window'
+  PLUGIN_NAME: 'window'
 
   constructor: (options) ->
     super options
-    @pluginID = PLUGIN_ID
 
     @title = options?.title || ""
 
@@ -22,7 +21,7 @@ TN.UI.Window = class Window extends TN.UI.Component
     modal = options?.modal ? false
 
     @registerSelfAndDescendants()
-    PhoneGap.exec(
+    Cordova.exec(
       null, null, @pluginID, 'open',
       [
         window: this
@@ -31,7 +30,7 @@ TN.UI.Window = class Window extends TN.UI.Component
     )
 
   close: ->
-    PhoneGap.exec(null, null, @pluginID, 'close', [windowID: @tnUIID])
+    Cordova.exec(null, null, @pluginID, 'close', [windowID: @tnUIID])
 
   createView: ->
     @private.view = new TN.UI.View(backgroundColor: 'white')

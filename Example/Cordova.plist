@@ -48,6 +48,48 @@
 		<string>CDVSplashScreen</string>
 		<key>org.apache.cordova.battery</key>
 		<string>CDVBattery</string>
+		<key>cordovatruenative.http</key>
+		<string>HTTPPlugin</string>
+		<key>cordovatruenative.mbprogresshud</key>
+		<string>MBProgressHUDPlugin</string>
+		<key>cordovatruenative.actionsheet</key>
+		<string>UIActionSheetPlugin</string>
+		<key>cordovatruenative.button</key>
+		<string>UIButtonPlugin</string>
+		<key>cordovatruenative.component</key>
+		<string>UIComponentPlugin</string>
+		<key>cordovatruenative.datepickerview</key>
+		<string>UIDatePickerViewPlugin</string>
+		<key>cordovatruenative.imageview</key>
+		<string>UIImageViewPlugin</string>
+		<key>cordovatruenative.label</key>
+		<string>UILabelPlugin</string>
+		<key>cordovatruenative.mailcomposewindow</key>
+		<string>UIMailComposeWindowPlugin</string>
+		<key>cordovatruenative.mapview</key>
+		<string>UIMapViewPlugin</string>
+		<key>cordovatruenative.navigationcontroller</key>
+		<string>UINavigationControllerPlugin</string>
+		<key>cordovatruenative.pickerview</key>
+		<string>UIPickerViewPlugin</string>
+		<key>cordovatruenative.scrollview</key>
+		<string>UIScrollViewPlugin</string>
+		<key>cordovatruenative.spinner</key>
+		<string>UISpinnerPlugin</string>
+		<key>cordovatruenative.tab</key>
+		<string>UITabPlugin</string>
+		<key>cordovatruenative.tabcontroller</key>
+		<string>UITabControllerPlugin</string>
+		<key>cordovatruenative.tableview</key>
+		<string>UITableViewPlugin</string>
+		<key>cordovatruenative.tableviewrow</key>
+		<string>UITableViewRowPlugin</string>
+		<key>cordovatruenative.textfield</key>
+		<string>UITextFieldPlugin</string>
+		<key>cordovatruenative.view</key>
+		<string>UIViewPlugin</string>
+		<key>cordovatruenative.window</key>
+		<string>UIWindowPlugin</string>
 	</dict>
 </dict>
 </plist>

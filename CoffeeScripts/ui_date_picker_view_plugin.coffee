@@ -1,9 +1,8 @@
 TN.UI.DatePickerView = class DatePickerView extends TN.UI.View
-  PLUGIN_NAME = 'datepickerview'
+  PLUGIN_NAME: 'datepickerview'
 
   constructor: (options) ->
     super
-    @pluginID = PLUGIN_ID
 
     @date = options?.date?.getTime()
     @minimumDate = options?.minimumDate?.getTime()

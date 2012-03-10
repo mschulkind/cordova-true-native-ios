@@ -144,7 +144,7 @@ static NSMutableArray* viewControllerStack = NULL;
     // viewWillAppear expects the view's size to be set to the eventually
     // displayed size, but when presenting a window this way, it does not get
     // automatically set, so we set it ourselves.
-    window.view.frame = appView.frame;
+    window.view.frame = [[UIScreen mainScreen] applicationFrame];
 
     [appView addSubview:window.view];
     [appView bringSubviewToFront:window.view];
@@ -188,7 +188,8 @@ static NSMutableArray* viewControllerStack = NULL;
   assert([viewControllerStack lastObject] == window);
   [viewControllerStack removeLastObject];
 
-  CDVPluginResult* result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+  CDVPluginResult* result =
+      [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
   NSString* callbackID = [arguments objectAtIndex:0];
   [self writeJavascript:[result toSuccessCallbackString:callbackID]];
 }

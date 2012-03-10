@@ -1,9 +1,8 @@
 TN.UI.ImageView = class ImageView extends TN.UI.View
-  PLUGIN_NAME = 'imageview'
+  PLUGIN_NAME: 'imageview'
 
   constructor: (options) ->
     super options
-    @pluginID = PLUGIN_ID
 
     @imagePath = options?.imagePath
     @imageURL = options?.imageURL
@@ -13,7 +12,7 @@ TN.UI.ImageView = class ImageView extends TN.UI.View
     throw "unsupported for remote images" if @imageURL
     throw "imagePath required" unless @imagePath
 
-    PhoneGap.exec(
+    Cordova.exec(
       callback, null, @pluginID, 'getImageSize', [imagePath: @imagePath])
 
   setProperties: (properties, onDone) ->

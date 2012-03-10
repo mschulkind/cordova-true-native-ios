@@ -1,9 +1,8 @@
 TN.UI.ActionSheet = class ActionSheet extends TN.UI.View
-  PLUGIN_NAME = 'actionsheet'
+  PLUGIN_NAME: 'actionsheet'
 
   constructor: (options) ->
     super
-    @pluginID = PLUGIN_ID
 
     @title = options?.title ? ''
 
@@ -29,4 +28,4 @@ TN.UI.ActionSheet = class ActionSheet extends TN.UI.View
   show: ->
     @shown = true
     @registerSelfAndDescendants()
-    PhoneGap.exec(null, null, @pluginID, 'show', [actionSheet: this])
+    Cordova.exec(null, null, @pluginID, 'show', [actionSheet: this])

@@ -62,6 +62,7 @@ under the License.
   self.window = [[[UIWindow alloc] initWithFrame:screenBounds] autorelease];
   self.window.autoresizesSubviews = YES;
 
+
   CGRect viewBounds = [[UIScreen mainScreen] applicationFrame];
 
   self.viewController = [[[MainViewController alloc] init] autorelease];
@@ -69,7 +70,6 @@ under the License.
   self.viewController.wwwFolderName = @"www";
   self.viewController.startPage = @"index.html";
   self.viewController.view.frame = viewBounds;
-
   // over-ride delegates
   self.viewController.webView.delegate = self;
   self.viewController.commandDelegate = self;

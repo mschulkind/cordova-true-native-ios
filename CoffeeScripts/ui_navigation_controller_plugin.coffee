@@ -1,5 +1,5 @@
 TN.UI.NavigationController = class NavigationController extends TN.UI.Window
-  PLUGIN_NAME = 'navigationcontroller'
+  PLUGIN_NAME: 'navigationcontroller'
 
   constructor: (options) ->
     super
@@ -15,7 +15,7 @@ TN.UI.NavigationController = class NavigationController extends TN.UI.Window
 
     if TN.UI.componentMap[@tnUIID]?
       window.registerSelfAndDescendants()
-      PhoneGap.exec(
+      Cordova.exec(
         null, null, @pluginID, 'push',
         [
           parentID: @tnUIID
@@ -27,7 +27,7 @@ TN.UI.NavigationController = class NavigationController extends TN.UI.Window
     @windowStack.pop()
 
     if TN.UI.componentMap[@tnUIID]?
-      PhoneGap.exec(null, null, @pluginID, 'pop', [parentID: @tnUIID])
+      Cordova.exec(null, null, @pluginID, 'pop', [parentID: @tnUIID])
 
   willPopToRootWindow: ->
     @windowStack.splice(1)

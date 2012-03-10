@@ -1,10 +1,8 @@
 TN.UI.TableView = class TableView extends TN.UI.View
-  PLUGIN_NAME = 'tableview'
+  PLUGIN_NAME: 'tableview'
 
   constructor: (options) ->
     super
-    @pluginID = PLUGIN_ID
-
 
     @entries =
       if options?.entries?
@@ -102,7 +100,7 @@ TN.UI.TableView = class TableView extends TN.UI.View
       refreshCallback((success) =>
         notifyNative = =>
           success ?= true
-          PhoneGap.exec(
+          Cordova.exec(
             null, null, @pluginID, 'refreshDone',
             [
               tableViewID: @tnUIID
@@ -162,7 +160,7 @@ TN.UI.TableView = class TableView extends TN.UI.View
     super
 
   refreshRow: (sectionIndex, rowIndex) ->
-    PhoneGap.exec(
+    Cordova.exec(
       null, null, @pluginID, 'refreshRow',
       [
         tableViewID: @tnUIID

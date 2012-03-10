@@ -1,9 +1,8 @@
 TN.UI.ScrollView = class ScrollView extends TN.UI.View
-  PLUGIN_NAME = 'scrollview'
+  PLUGIN_NAME: 'scrollview'
 
   constructor: (options) ->
     super
-    @pluginID = PLUGIN_ID
 
     @contentView = options?.contentView || new TN.UI.View
     @add(@contentView)

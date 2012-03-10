@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C958F223150963EC00D36EF5 /* Cordova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C958F222150963EC00D36EF5 /* Cordova.framework */; };
 		C958F22515096CDB00D36EF5 /* Cordova.plist in Resources */ = {isa = PBXBuildFile; fileRef = C958F22415096CDB00D36EF5 /* Cordova.plist */; };
-		C97017C414FC826900533764 /* libTrueNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C97017C314FC826900533764 /* libTrueNative.a */; };
 		C989B11014FB393F004E9DE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C989B10F14FB393F004E9DE4 /* Foundation.framework */; };
 		C989B11214FB393F004E9DE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C989B11114FB393F004E9DE4 /* UIKit.framework */; };
 		C989B11414FB393F004E9DE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C989B11314FB393F004E9DE4 /* CoreGraphics.framework */; };
@@ -34,6 +33,12 @@
 		C989B17414FB42A2004E9DE4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C989B14514FB3940004E9DE4 /* Default.png */; };
 		C989B17514FB42A2004E9DE4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C989B14714FB3940004E9DE4 /* Default@2x.png */; };
 		C989B17714FB437C004E9DE4 /* www in Resources */ = {isa = PBXBuildFile; fileRef = C989B17614FB437C004E9DE4 /* www */; };
+		C9F88C59150BE30100F84E6A /* libTrueNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C958F21D1509633000D36EF5 /* libTrueNative.a */; };
+		C9F88C5F150BF05800F84E6A /* UIWebViewScriptDebugDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F88C5E150BF05800F84E6A /* UIWebViewScriptDebugDelegate.m */; };
+		C9F88C61150BF4E500F84E6A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F88C60150BF4E500F84E6A /* MapKit.framework */; };
+		C9F88C65150BF57300F84E6A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F88C64150BF57300F84E6A /* MessageUI.framework */; };
+		C9F88C67150BF5A000F84E6A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F88C66150BF5A000F84E6A /* CFNetwork.framework */; };
+		C9F88C69150BF5B600F84E6A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F88C68150BF5B600F84E6A /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,13 +49,19 @@
 			remoteGlobalIDString = C989B1A314FB64B2004E9DE4;
 			remoteInfo = TrueNative;
 		};
+		C9F88C57150BE1A000F84E6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C970154814FB670A00533764 /* TrueNative.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C989B1A214FB64B2004E9DE4;
+			remoteInfo = TrueNative;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C958F222150963EC00D36EF5 /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = ../../../../Users/Shared/Cordova/Frameworks/Cordova.framework; sourceTree = "<group>"; };
 		C958F22415096CDB00D36EF5 /* Cordova.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Cordova.plist; sourceTree = "<group>"; };
 		C970154814FB670A00533764 /* TrueNative.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TrueNative.xcodeproj; path = ../TrueNative.xcodeproj; sourceTree = SOURCE_ROOT; };
-		C97017C314FC826900533764 /* libTrueNative.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTrueNative.a; path = "../build/Release-iphoneos/libTrueNative.a"; sourceTree = "<group>"; };
 		C989B10B14FB393F004E9DE4 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C989B10F14FB393F004E9DE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C989B11114FB393F004E9DE4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -80,6 +91,13 @@
 		C989B15214FB3940004E9DE4 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		C989B15414FB3940004E9DE4 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
 		C989B17614FB437C004E9DE4 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		C9F88C5D150BF05800F84E6A /* UIWebViewScriptDebugDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWebViewScriptDebugDelegate.h; sourceTree = "<group>"; };
+		C9F88C5E150BF05800F84E6A /* UIWebViewScriptDebugDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIWebViewScriptDebugDelegate.m; sourceTree = "<group>"; };
+		C9F88C60150BF4E500F84E6A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C9F88C62150BF52000F84E6A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		C9F88C64150BF57300F84E6A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		C9F88C66150BF5A000F84E6A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C9F88C68150BF5B600F84E6A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +105,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C97017C414FC826900533764 /* libTrueNative.a in Frameworks */,
+				C9F88C69150BF5B600F84E6A /* libz.dylib in Frameworks */,
+				C9F88C67150BF5A000F84E6A /* CFNetwork.framework in Frameworks */,
+				C9F88C65150BF57300F84E6A /* MessageUI.framework in Frameworks */,
+				C9F88C61150BF4E500F84E6A /* MapKit.framework in Frameworks */,
+				C9F88C59150BE30100F84E6A /* libTrueNative.a in Frameworks */,
 				C989B11014FB393F004E9DE4 /* Foundation.framework in Frameworks */,
 				C989B11214FB393F004E9DE4 /* UIKit.framework in Frameworks */,
 				C989B11414FB393F004E9DE4 /* CoreGraphics.framework in Frameworks */,
@@ -126,7 +148,11 @@
 		C989B0FD14FB393F004E9DE4 = {
 			isa = PBXGroup;
 			children = (
-				C97017C314FC826900533764 /* libTrueNative.a */,
+				C9F88C68150BF5B600F84E6A /* libz.dylib */,
+				C9F88C66150BF5A000F84E6A /* CFNetwork.framework */,
+				C9F88C64150BF57300F84E6A /* MessageUI.framework */,
+				C9F88C62150BF52000F84E6A /* CoreFoundation.framework */,
+				C9F88C60150BF4E500F84E6A /* MapKit.framework */,
 				C970154814FB670A00533764 /* TrueNative.xcodeproj */,
 				C989B17614FB437C004E9DE4 /* www */,
 				C989B12A14FB393F004E9DE4 /* Supporting Files */,
@@ -211,6 +237,8 @@
 		C989B14D14FB3940004E9DE4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C9F88C5D150BF05800F84E6A /* UIWebViewScriptDebugDelegate.h */,
+				C9F88C5E150BF05800F84E6A /* UIWebViewScriptDebugDelegate.m */,
 				C989B14E14FB3940004E9DE4 /* AppDelegate.h */,
 				C989B14F14FB3940004E9DE4 /* AppDelegate.m */,
 				C989B15114FB3940004E9DE4 /* MainViewController.h */,
@@ -242,6 +270,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C9F88C58150BE1A000F84E6A /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -317,6 +346,7 @@
 				C989B13014FB3940004E9DE4 /* main.m in Sources */,
 				C989B15014FB3940004E9DE4 /* AppDelegate.m in Sources */,
 				C989B15314FB3940004E9DE4 /* MainViewController.m in Sources */,
+				C9F88C5F150BF05800F84E6A /* UIWebViewScriptDebugDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +358,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9F88C58150BE1A000F84E6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TrueNative;
+			targetProxy = C9F88C57150BE1A000F84E6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C989B15814FB3940004E9DE4 /* Debug */ = {
@@ -385,6 +423,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Example-Info.plist";
 				OTHER_LDFLAGS = (
+					"-ObjC",
 					"-weak_framework",
 					UIKit,
 					"-weak_framework",
@@ -413,6 +452,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Example-Info.plist";
 				OTHER_LDFLAGS = (
+					"-ObjC",
 					"-weak_framework",
 					UIKit,
 					"-weak_framework",

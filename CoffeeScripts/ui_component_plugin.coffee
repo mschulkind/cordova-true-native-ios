@@ -13,11 +13,13 @@ TN.UI.unregisterComponent = (component) ->
   delete componentMap[component.tnUIID]
 
 TN.UI.Component = class Component extends TN.Listenable
-  PLUGIN_NAME = 'component'
+  PLUGIN_NAME: 'component'
   @nextUIID = 0
 
   constructor: (options) ->
     super
+
+    @pluginID = "cordovatruenative.#{@PLUGIN_NAME}"
 
     @tnUIID = @allocateUIID()
 
@@ -41,7 +43,7 @@ TN.UI.Component = class Component extends TN.Listenable
         TN.merge(properties, this)
         onDone?()
 
-      PhoneGap.exec(
+      Cordova.exec(
         localOnDone, null, @pluginID, 'getProperties',
         [propertyNames: names, componentID: @tnUIID])
     else
@@ -66,7 +68,7 @@ TN.UI.Component = class Component extends TN.Listenable
     # No need to tell the native side unless at least one property has been
     # updated and the component has already been registered/created.
     if changedCount != 0 && componentMap[@tnUIID]?
-      PhoneGap.exec(
+      Cordova.exec(
         onDone, null, @pluginID, 'setProperties',
         [properties: changedProperties, componentID: @tnUIID])
     else
@@ -88,4 +90,4 @@ TN.UI.Component = class Component extends TN.Listenable
     puts this
 
   noop: (onDone) ->
-    PhoneGap.exec(onDone, null, @pluginID, 'noop', [])
+    Cordova.exec(onDone, null, @pluginID, 'noop', [])

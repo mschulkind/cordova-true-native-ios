@@ -1,9 +1,8 @@
 TN.UI.MapView = class MapView extends TN.UI.View
-  PLUGIN_NAME = 'mapview'
+  PLUGIN_NAME: 'mapview'
 
   constructor: (options) ->
     super
-    @pluginID = PLUGIN_ID
 
     @center = options?.center
     @span = options?.span
@@ -23,7 +22,7 @@ TN.UI.MapView = class MapView extends TN.UI.View
     @pins.push(options)
 
     if TN.UI.componentMap[@tnUIID]
-      PhoneGap.exec(null, null, @pluginID, 'addPin',
+      Cordova.exec(null, null, @pluginID, 'addPin',
         [
           mapViewID: @tnUIID
           pin: pin

@@ -1,9 +1,8 @@
 TN.UI.PickerView = class PickerView extends TN.UI.View
-  PLUGIN_NAME = 'pickerview'
+  PLUGIN_NAME: 'pickerview'
 
   constructor: (options) ->
     super
-    @pluginID = PLUGIN_ID
 
     delete @height
 

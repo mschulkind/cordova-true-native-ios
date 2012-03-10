@@ -10,3 +10,6 @@
 [submodule "Components/ASIHTTPRequest"]
 	path = Components/ASIHTTPRequest
 	url = https://github.com/mschulkind/asi-http-request.git
+[submodule "Components/underscore.js"]
+	path = Components/underscore.js
+	url = https://github.com/documentcloud/underscore.git

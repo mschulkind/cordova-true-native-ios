@@ -35,7 +35,7 @@ TN.HTTP =
     params = convertValues(options.params) if options?.params
     data = convertValues(options.data) if options?.data
 
-    PhoneGap.exec(
+    Cordova.exec(
       options?.successHandler, options?.errorHandler, pluginID, "fetch",
       [
         requestID: requestID
@@ -50,7 +50,7 @@ TN.HTTP =
     requestID
 
   abort: (requestID) ->
-    PhoneGap.exec(null, null, pluginID, 'abort', [requestID: requestID])
+    Cordova.exec(null, null, pluginID, 'abort', [requestID: requestID])
 
   openExternalURL: (url) ->
-    PhoneGap.exec(null, null, pluginID, 'openExternalURL', [url: url])
+    Cordova.exec(null, null, pluginID, 'openExternalURL', [url: url])

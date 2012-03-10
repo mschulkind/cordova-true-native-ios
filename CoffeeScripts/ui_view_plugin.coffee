@@ -1,10 +1,8 @@
 TN.UI.View = class View extends TN.UI.Component
-  PLUGIN_NAME = 'view'
+  PLUGIN_NAME: 'view'
 
   constructor: (options) ->
     super options
-    @pluginID = "TrueNative.#{PLUGIN_NAME}"
-
 
     throw "centerX && left" if options?.centerX? and options?.left?
     if options?.centerX?
@@ -68,7 +66,7 @@ TN.UI.View = class View extends TN.UI.Component
       onDone = =>
         child.fireEvent('show') if @visible && !child.hidden
 
-      PhoneGap.exec(
+      Cordova.exec(
         onDone, null, @pluginID, 'add',
         [
           parentID: @tnUIID
@@ -82,7 +80,7 @@ TN.UI.View = class View extends TN.UI.Component
     @children.splice(childIndex, 1)
 
     if TN.UI.componentMap[@tnUIID]?
-      PhoneGap.exec(
+      Cordova.exec(
         null, null, @pluginID, 'remove', [childID: child.tnUIID])
 
   bringChildToFront: (child) ->
@@ -92,7 +90,7 @@ TN.UI.View = class View extends TN.UI.Component
     @children.push(@children.splice(childIndex, 1)[0])
 
     if TN.UI.componentMap[@tnUIID]?
-      PhoneGap.exec(
+      Cordova.exec(
         null, null, @pluginID, 'bringChildToFront',
         [
           parentID: @tnUIID
@@ -144,7 +142,7 @@ TN.UI.View = class View extends TN.UI.Component
 
   sizeToFit: (onDone) ->
     if TN.UI.componentMap[@tnUIID]?
-      PhoneGap.exec(
+      Cordova.exec(
         onDone, null, @pluginID, 'sizeToFit', [viewID: @tnUIID])
     else
       @getSizeThatFits((size) =>

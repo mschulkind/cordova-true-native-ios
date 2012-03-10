@@ -37,8 +37,7 @@ static UIComponentPlugin* uiComponentPluginInstance = NULL;
 
 - (CDVPlugin*)initWithWebView:(UIWebView*)theWebView
 {
-  self = [super init];
-  if (self) {
+  if ((self = [super initWithWebView:theWebView])) {
     if ([self class] == [UIComponentPlugin class]) {
       // We should only ever have one instance.
       assert(uiComponentPluginInstance == NULL);
@@ -46,6 +45,11 @@ static UIComponentPlugin* uiComponentPluginInstance = NULL;
     }
   }
   return self;
+}
+
+- (void)loadJavascript:(NSMutableArray*)arguments
+              withDict:(NSMutableDictionary*)options
+{
 }
 
 + (void)subclassMethod:(SEL)selector

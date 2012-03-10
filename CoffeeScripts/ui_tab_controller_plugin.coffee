@@ -1,9 +1,8 @@
 TN.UI.TabController = class TabController extends TN.UI.Window
-  PLUGIN_NAME = 'tabcontroller'
+  PLUGIN_NAME: 'tabcontroller'
 
   constructor: (options) ->
     super options
-    @pluginID = PLUGIN_ID
 
     @tabs = []
 

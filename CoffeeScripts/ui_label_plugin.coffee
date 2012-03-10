@@ -1,5 +1,5 @@
 TN.UI.Label = class Label extends TN.UI.View
-  PLUGIN_NAME = 'label'
+  PLUGIN_NAME: 'label'
 
   defaultOptions =
     fontFamily: 'Helvetica Neue'
@@ -9,7 +9,6 @@ TN.UI.Label = class Label extends TN.UI.View
     options ||= {}
     TN.reverseMerge(defaultOptions, options)
     super options
-    @pluginID = PLUGIN_ID
 
     @align = options?.align || 'left'
     @color = options?.color
@@ -20,7 +19,7 @@ TN.UI.Label = class Label extends TN.UI.View
     @maxNumberOfLines = options?.maxNumberOfLines ? 1
 
   getSizeThatFits: (callback) ->
-    PhoneGap.exec(
+    Cordova.exec(
       callback, null, @pluginID, 'getTextSize',
       [
         text: @text

@@ -1,5 +1,5 @@
 build/**
-*.js
+.sconsign.dblite
 
 # XCode
 **/*.xcodeproj/xcuserdata/

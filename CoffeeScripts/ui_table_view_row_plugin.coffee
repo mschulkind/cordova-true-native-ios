@@ -1,9 +1,8 @@
 TN.UI.TableViewRow = class TableViewRow extends TN.UI.View
-  PLUGIN_NAME = 'tableviewrow'
+  PLUGIN_NAME: 'tableviewrow'
 
   constructor: (options) ->
     super _(options || {}).defaults(backgroundColor: 'white')
-    @pluginID = PLUGIN_ID
 
     @selectable = options?.selectable ? true
 
