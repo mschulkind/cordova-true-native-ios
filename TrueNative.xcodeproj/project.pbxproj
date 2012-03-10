@@ -533,7 +533,7 @@
 /* Begin PBXLegacyTarget section */
 		C9F88C81150C13AE00F84E6A /* CoffeeScripts */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "-c \"scons\"";
+			buildArgumentsString = "-c \"/usr/local/bin/scons || /opt/local/bin/scons\"";
 			buildConfigurationList = C9F88C82150C13AE00F84E6A /* Build configuration list for PBXLegacyTarget "CoffeeScripts" */;
 			buildPhases = (
 			);
