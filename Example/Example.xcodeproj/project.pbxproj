@@ -155,11 +155,6 @@
 		C989B0FD14FB393F004E9DE4 = {
 			isa = PBXGroup;
 			children = (
-				C9F88C68150BF5B600F84E6A /* libz.dylib */,
-				C9F88C66150BF5A000F84E6A /* CFNetwork.framework */,
-				C9F88C64150BF57300F84E6A /* MessageUI.framework */,
-				C9F88C62150BF52000F84E6A /* CoreFoundation.framework */,
-				C9F88C60150BF4E500F84E6A /* MapKit.framework */,
 				C970154814FB670A00533764 /* TrueNative.xcodeproj */,
 				C989B17614FB437C004E9DE4 /* www */,
 				C989B12A14FB393F004E9DE4 /* Supporting Files */,
@@ -182,6 +177,11 @@
 		C989B10E14FB393F004E9DE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C9F88C68150BF5B600F84E6A /* libz.dylib */,
+				C9F88C66150BF5A000F84E6A /* CFNetwork.framework */,
+				C9F88C64150BF57300F84E6A /* MessageUI.framework */,
+				C9F88C62150BF52000F84E6A /* CoreFoundation.framework */,
+				C9F88C60150BF4E500F84E6A /* MapKit.framework */,
 				C958F222150963EC00D36EF5 /* Cordova.framework */,
 				C989B10F14FB393F004E9DE4 /* Foundation.framework */,
 				C989B11114FB393F004E9DE4 /* UIKit.framework */,
@@ -451,6 +451,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "CORDOVA_FRAMEWORK=YES";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Example-Info.plist";
 				OTHER_LDFLAGS = (
@@ -480,6 +481,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "CORDOVA_FRAMEWORK=YES";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Example-Info.plist";
 				OTHER_LDFLAGS = (

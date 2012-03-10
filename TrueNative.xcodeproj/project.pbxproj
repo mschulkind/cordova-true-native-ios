@@ -90,7 +90,24 @@
 		C97017B614FB6D7100533764 /* EGOCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C97017B414FB6D7100533764 /* EGOCache.h */; };
 		C97017B714FB6D7100533764 /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C97017B514FB6D7100533764 /* EGOCache.m */; };
 		C989B1A714FB64B2004E9DE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C989B1A614FB64B2004E9DE4 /* Foundation.framework */; };
+		C9F88C72150C0BAC00F84E6A /* EncodedJavascript.h in Headers */ = {isa = PBXBuildFile; fileRef = C9F88C71150C0BAC00F84E6A /* EncodedJavascript.h */; };
+		C9F88C76150C0E9900F84E6A /* QSStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F88C75150C0E9900F84E6A /* QSStrings.m */; };
+		C9F88C78150C0EA200F84E6A /* QSStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = C9F88C77150C0EA200F84E6A /* QSStrings.h */; };
+		C9F88C7A150C0F6B00F84E6A /* QSUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C9F88C79150C0F6B00F84E6A /* QSUtilities.h */; };
+		C9F88C7C150C0F7300F84E6A /* GTMNSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = C9F88C7B150C0F7300F84E6A /* GTMNSString+HTML.h */; };
+		C9F88C7E150C0F7B00F84E6A /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F88C7D150C0F7B00F84E6A /* GTMNSString+HTML.m */; };
+		C9F88C80150C0F8100F84E6A /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = C9F88C7F150C0F8100F84E6A /* GTMDefines.h */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9F88C85150C13BA00F84E6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C989B19514FB646D004E9DE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9F88C81150C13AE00F84E6A;
+			remoteInfo = CoffeeScripts;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C9442D3615096F5C0046E512 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIAuthenticationDialog.h; path = Components/ASIHTTPRequest/Classes/ASIAuthenticationDialog.h; sourceTree = "<group>"; };
@@ -186,6 +203,13 @@
 		C989B1A314FB64B2004E9DE4 /* libTrueNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTrueNative.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C989B1A614FB64B2004E9DE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C989B1AA14FB64B2004E9DE4 /* TrueNative-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrueNative-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		C9F88C71150C0BAC00F84E6A /* EncodedJavascript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EncodedJavascript.h; path = Classes/EncodedJavascript.h; sourceTree = "<group>"; };
+		C9F88C75150C0E9900F84E6A /* QSStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QSStrings.m; path = Components/QSUtilities/QSStrings.m; sourceTree = "<group>"; };
+		C9F88C77150C0EA200F84E6A /* QSStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QSStrings.h; path = Components/QSUtilities/QSStrings.h; sourceTree = "<group>"; };
+		C9F88C79150C0F6B00F84E6A /* QSUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QSUtilities.h; path = Components/QSUtilities/QSUtilities.h; sourceTree = "<group>"; };
+		C9F88C7B150C0F7300F84E6A /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GTMNSString+HTML.h"; path = "Components/QSUtilities/GTM/GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		C9F88C7D150C0F7B00F84E6A /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GTMNSString+HTML.m"; path = "Components/QSUtilities/GTM/GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		C9F88C7F150C0F8100F84E6A /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMDefines.h; path = Components/QSUtilities/GTM/GTMDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +258,7 @@
 		C970155314FB688700533764 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C9F88C71150C0BAC00F84E6A /* EncodedJavascript.h */,
 				C970155914FB68B500533764 /* HTTPPlugin.h */,
 				C970155A14FB68B500533764 /* HTTPPlugin.m */,
 				C970155B14FB68B500533764 /* MBProgressHUDPlugin.h */,
@@ -285,6 +310,7 @@
 		C97015B714FB6CAB00533764 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				C9F88C74150C0E7F00F84E6A /* QSUtilities */,
 				C9442D5E15096F620046E512 /* ASIHTTPReqeuest */,
 				C970165614FB6CCA00533764 /* EGOImageLoading */,
 				C970167714FB6CCA00533764 /* EGOTableViewPullRefresh */,
@@ -432,6 +458,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C9F88C74150C0E7F00F84E6A /* QSUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				C9F88C7F150C0F8100F84E6A /* GTMDefines.h */,
+				C9F88C7B150C0F7300F84E6A /* GTMNSString+HTML.h */,
+				C9F88C79150C0F6B00F84E6A /* QSUtilities.h */,
+				C9F88C77150C0EA200F84E6A /* QSStrings.h */,
+				C9F88C75150C0E9900F84E6A /* QSStrings.m */,
+				C9F88C7D150C0F7B00F84E6A /* GTMNSString+HTML.m */,
+			);
+			name = QSUtilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -481,10 +520,31 @@
 				C9442D5B15096F5C0046E512 /* ASINetworkQueue.h in Headers */,
 				C9442D5D15096F5C0046E512 /* ASIProgressDelegate.h in Headers */,
 				C9442D65150AF6E40046E512 /* Reachability.h in Headers */,
+				C9F88C72150C0BAC00F84E6A /* EncodedJavascript.h in Headers */,
+				C9F88C78150C0EA200F84E6A /* QSStrings.h in Headers */,
+				C9F88C7A150C0F6B00F84E6A /* QSUtilities.h in Headers */,
+				C9F88C7C150C0F7300F84E6A /* GTMNSString+HTML.h in Headers */,
+				C9F88C80150C0F8100F84E6A /* GTMDefines.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
+
+/* Begin PBXLegacyTarget section */
+		C9F88C81150C13AE00F84E6A /* CoffeeScripts */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = C9F88C82150C13AE00F84E6A /* Build configuration list for PBXLegacyTarget "CoffeeScripts" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/scons;
+			dependencies = (
+			);
+			name = CoffeeScripts;
+			passBuildSettingsInEnvironment = 1;
+			productName = CoffeeScripts;
+		};
+/* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
 		C989B1A214FB64B2004E9DE4 /* TrueNative */ = {
@@ -498,6 +558,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C9F88C86150C13BA00F84E6A /* PBXTargetDependency */,
 			);
 			name = TrueNative;
 			productName = TrueNative;
@@ -526,6 +587,7 @@
 			projectRoot = "";
 			targets = (
 				C989B1A214FB64B2004E9DE4 /* TrueNative */,
+				C9F88C81150C13AE00F84E6A /* CoffeeScripts */,
 			);
 		};
 /* End PBXProject section */
@@ -573,10 +635,20 @@
 				C9442D5A15096F5C0046E512 /* ASIInputStream.m in Sources */,
 				C9442D5C15096F5C0046E512 /* ASINetworkQueue.m in Sources */,
 				C9442D66150AF6E40046E512 /* Reachability.m in Sources */,
+				C9F88C76150C0E9900F84E6A /* QSStrings.m in Sources */,
+				C9F88C7E150C0F7B00F84E6A /* GTMNSString+HTML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9F88C86150C13BA00F84E6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9F88C81150C13AE00F84E6A /* CoffeeScripts */;
+			targetProxy = C9F88C85150C13BA00F84E6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C989B19A14FB646D004E9DE4 /* Debug */ = {
@@ -612,6 +684,7 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -638,6 +711,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrueNative-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -648,6 +722,59 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9F88C83150C13AE00F84E6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C9F88C84150C13AE00F84E6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -671,6 +798,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		C9F88C82150C13AE00F84E6A /* Build configuration list for PBXLegacyTarget "CoffeeScripts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9F88C83150C13AE00F84E6A /* Debug */,
+				C9F88C84150C13AE00F84E6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

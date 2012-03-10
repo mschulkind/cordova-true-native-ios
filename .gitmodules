@@ -13,3 +13,6 @@
 [submodule "Components/underscore.js"]
 	path = Components/underscore.js
 	url = https://github.com/documentcloud/underscore.git
+[submodule "Components/QSUtilities"]
+	path = Components/QSUtilities
+	url = https://github.com/mikeho/QSUtilities.git

@@ -42,3 +42,6 @@ javascripts = ['Components/underscore.js/underscore.js']
 javascripts.append(map((lambda x: "build/%s.js" % x), coffeescripts))
 Command('build/all.js', javascripts, "cat $SOURCES > $TARGET")
 
+Command(
+  'Classes/EncodedJavascript.h', 'build/all.js', 
+  'echo "static NSString* encodedJavascript = @\\""`base64 $SOURCE`"\\";" > $TARGET')

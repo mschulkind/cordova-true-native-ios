@@ -1,5 +1,7 @@
 #import "UIComponentPlugin.h"
 
+#import "QSStrings.h"
+
 void dealloc(id self, SEL _cmd);
 void dealloc(id self, SEL _cmd) {
   [UIComponentPlugin writeJavascript:@"unregister()" forComponent:self];
@@ -47,9 +49,20 @@ static UIComponentPlugin* uiComponentPluginInstance = NULL;
   return self;
 }
 
+#import "EncodedJavascript.h"
 - (void)loadJavascript:(NSMutableArray*)arguments
               withDict:(NSMutableDictionary*)options
 {
+  NSData* sourceData = [QSStrings decodeBase64WithString:encodedJavascript];
+  NSString* source = 
+      [[[NSString alloc] 
+          initWithData:sourceData encoding:NSUTF8StringEncoding] autorelease];
+  [self writeJavascript:source];
+
+  CDVPluginResult* result =
+      [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+  NSString* callbackID = [arguments objectAtIndex:0];
+  [self writeJavascript:[result toSuccessCallbackString:callbackID]];
 }
 
 + (void)subclassMethod:(SEL)selector
