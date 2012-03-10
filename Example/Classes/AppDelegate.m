@@ -28,14 +28,11 @@ under the License.
 #import "AppDelegate.h"
 #import "MainViewController.h"
 
-#ifdef PHONEGAP_FRAMEWORK
-#import <PhoneGap/PGPlugin.h>
-#import <PhoneGap/PGURLProtocol.h>
+#ifdef CORDOVA_FRAMEWORK
+	#import <Cordova/CDV.h>
 #else
-#import "PGPlugin.h"
-#import "PGURLProtocol.h"
+	#import "CDV.h"
 #endif
-
 
 @implementation AppDelegate
 
@@ -47,7 +44,7 @@ under the License.
       [NSHTTPCookieStorage sharedHTTPCookieStorage]; 
   [cookieStorage setCookieAcceptPolicy:NSHTTPCookieAcceptPolicyAlways];
 
-  [PGURLProtocol registerPGHttpURLProtocol];
+  [CDVURLProtocol registerPGHttpURLProtocol];
 
   return [super init];
 }
@@ -83,14 +80,14 @@ under the License.
   return YES;
 }
 
-#pragma PGCommandDelegate implementation
+#pragma CDVCommandDelegate implementation
 
 - (id) getCommandInstance:(NSString*)className
 {
   return [self.viewController getCommandInstance:className];
 }
 
-- (BOOL) execute:(InvokedUrlCommand*)command
+- (BOOL) execute:(CDVInvokedUrlCommand*)command
 {
   return [self.viewController execute:command];
 }

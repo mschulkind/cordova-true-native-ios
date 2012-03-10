@@ -27,18 +27,17 @@
 
 #import <UIKit/UIKit.h>
 
-#ifdef PHONEGAP_FRAMEWORK
-    #import <PhoneGap/PGViewController.h>
+#ifdef CORDOVA_FRAMEWORK
+	#import <Cordova/CDV.h>
 #else
-    #import "PGViewController.h"
+	#import "CDV.h"
 #endif
 
-
-@interface AppDelegate : NSObject < UIApplicationDelegate, UIWebViewDelegate, PGCommandDelegate > {
+@interface AppDelegate : NSObject < UIApplicationDelegate, UIWebViewDelegate, CDVCommandDelegate > {
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow* window;
-@property (nonatomic, retain) IBOutlet PGViewController* viewController;
+@property (nonatomic, retain) IBOutlet CDVViewController* viewController;
 
 @end
 

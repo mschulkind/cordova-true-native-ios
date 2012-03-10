@@ -3,5 +3,13 @@
 //
 
 #ifdef __OBJC__
+    #import <objc/runtime.h>
+
+    #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import <MapKit/MapKit.h>
+    #import <QuartzCore/CALayer.h>
+    
+    #import <Cordova/CDVPlugin.h>
+    #import <Cordova/JSONKit.h>
 #endif

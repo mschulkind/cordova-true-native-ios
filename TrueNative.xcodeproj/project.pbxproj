@@ -7,10 +7,182 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9442D4A15096F5C0046E512 /* ASIAuthenticationDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D3615096F5C0046E512 /* ASIAuthenticationDialog.h */; };
+		C9442D4B15096F5C0046E512 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = C9442D3715096F5C0046E512 /* ASIAuthenticationDialog.m */; };
+		C9442D4C15096F5C0046E512 /* ASICacheDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D3815096F5C0046E512 /* ASICacheDelegate.h */; };
+		C9442D4D15096F5C0046E512 /* ASIDataCompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D3915096F5C0046E512 /* ASIDataCompressor.h */; };
+		C9442D4E15096F5C0046E512 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = C9442D3A15096F5C0046E512 /* ASIDataCompressor.m */; };
+		C9442D4F15096F5C0046E512 /* ASIDataDecompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D3B15096F5C0046E512 /* ASIDataDecompressor.h */; };
+		C9442D5015096F5C0046E512 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = C9442D3C15096F5C0046E512 /* ASIDataDecompressor.m */; };
+		C9442D5115096F5C0046E512 /* ASIDownloadCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D3D15096F5C0046E512 /* ASIDownloadCache.h */; };
+		C9442D5215096F5C0046E512 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C9442D3E15096F5C0046E512 /* ASIDownloadCache.m */; };
+		C9442D5315096F5C0046E512 /* ASIFormDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D3F15096F5C0046E512 /* ASIFormDataRequest.h */; };
+		C9442D5415096F5C0046E512 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9442D4015096F5C0046E512 /* ASIFormDataRequest.m */; };
+		C9442D5515096F5C0046E512 /* ASIHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D4115096F5C0046E512 /* ASIHTTPRequest.h */; };
+		C9442D5615096F5C0046E512 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9442D4215096F5C0046E512 /* ASIHTTPRequest.m */; };
+		C9442D5715096F5C0046E512 /* ASIHTTPRequestConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D4315096F5C0046E512 /* ASIHTTPRequestConfig.h */; };
+		C9442D5815096F5C0046E512 /* ASIHTTPRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D4415096F5C0046E512 /* ASIHTTPRequestDelegate.h */; };
+		C9442D5915096F5C0046E512 /* ASIInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D4515096F5C0046E512 /* ASIInputStream.h */; };
+		C9442D5A15096F5C0046E512 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = C9442D4615096F5C0046E512 /* ASIInputStream.m */; };
+		C9442D5B15096F5C0046E512 /* ASINetworkQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D4715096F5C0046E512 /* ASINetworkQueue.h */; };
+		C9442D5C15096F5C0046E512 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C9442D4815096F5C0046E512 /* ASINetworkQueue.m */; };
+		C9442D5D15096F5C0046E512 /* ASIProgressDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D4915096F5C0046E512 /* ASIProgressDelegate.h */; };
+		C9442D65150AF6E40046E512 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D63150AF6E40046E512 /* Reachability.h */; };
+		C9442D66150AF6E40046E512 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C9442D64150AF6E40046E512 /* Reachability.m */; };
+		C958F2211509637200D36EF5 /* Cordova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C958F2201509637200D36EF5 /* Cordova.framework */; };
+		C970158914FB68B500533764 /* HTTPPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970155914FB68B500533764 /* HTTPPlugin.h */; };
+		C970158A14FB68B500533764 /* HTTPPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970155A14FB68B500533764 /* HTTPPlugin.m */; };
+		C970158B14FB68B500533764 /* MBProgressHUDPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970155B14FB68B500533764 /* MBProgressHUDPlugin.h */; };
+		C970158C14FB68B500533764 /* MBProgressHUDPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970155C14FB68B500533764 /* MBProgressHUDPlugin.m */; };
+		C970158D14FB68B500533764 /* UIActionSheetPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970155D14FB68B500533764 /* UIActionSheetPlugin.h */; };
+		C970158E14FB68B500533764 /* UIActionSheetPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970155E14FB68B500533764 /* UIActionSheetPlugin.m */; };
+		C970158F14FB68B500533764 /* UIButtonPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970155F14FB68B500533764 /* UIButtonPlugin.h */; };
+		C970159014FB68B500533764 /* UIButtonPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970156014FB68B500533764 /* UIButtonPlugin.m */; };
+		C970159114FB68B500533764 /* UIComponentPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970156114FB68B500533764 /* UIComponentPlugin.h */; };
+		C970159214FB68B500533764 /* UIComponentPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970156214FB68B500533764 /* UIComponentPlugin.m */; };
+		C970159314FB68B500533764 /* UIDatePickerViewPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970156314FB68B500533764 /* UIDatePickerViewPlugin.h */; };
+		C970159414FB68B500533764 /* UIDatePickerViewPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970156414FB68B500533764 /* UIDatePickerViewPlugin.m */; };
+		C970159514FB68B500533764 /* UIImageViewPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970156514FB68B500533764 /* UIImageViewPlugin.h */; };
+		C970159614FB68B500533764 /* UIImageViewPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970156614FB68B500533764 /* UIImageViewPlugin.m */; };
+		C970159714FB68B500533764 /* UILabelPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970156714FB68B500533764 /* UILabelPlugin.h */; };
+		C970159814FB68B500533764 /* UILabelPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970156814FB68B500533764 /* UILabelPlugin.m */; };
+		C970159914FB68B500533764 /* UIMailComposeWindowPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970156914FB68B500533764 /* UIMailComposeWindowPlugin.h */; };
+		C970159A14FB68B500533764 /* UIMailComposeWindowPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970156A14FB68B500533764 /* UIMailComposeWindowPlugin.m */; };
+		C970159B14FB68B500533764 /* UIMapViewPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970156B14FB68B500533764 /* UIMapViewPlugin.h */; };
+		C970159C14FB68B500533764 /* UIMapViewPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970156C14FB68B500533764 /* UIMapViewPlugin.m */; };
+		C970159D14FB68B500533764 /* UINavigationControllerPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970156D14FB68B500533764 /* UINavigationControllerPlugin.h */; };
+		C970159E14FB68B500533764 /* UINavigationControllerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970156E14FB68B500533764 /* UINavigationControllerPlugin.m */; };
+		C970159F14FB68B500533764 /* UIPickerViewPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970156F14FB68B500533764 /* UIPickerViewPlugin.h */; };
+		C97015A014FB68B500533764 /* UIPickerViewPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970157014FB68B500533764 /* UIPickerViewPlugin.m */; };
+		C97015A114FB68B500533764 /* UIScrollViewPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970157114FB68B500533764 /* UIScrollViewPlugin.h */; };
+		C97015A214FB68B500533764 /* UIScrollViewPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970157214FB68B500533764 /* UIScrollViewPlugin.m */; };
+		C97015A314FB68B500533764 /* UISpinnerPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970157314FB68B500533764 /* UISpinnerPlugin.h */; };
+		C97015A414FB68B500533764 /* UISpinnerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970157414FB68B500533764 /* UISpinnerPlugin.m */; };
+		C97015A514FB68B500533764 /* UITabControllerPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970157514FB68B500533764 /* UITabControllerPlugin.h */; };
+		C97015A614FB68B500533764 /* UITabControllerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970157614FB68B500533764 /* UITabControllerPlugin.m */; };
+		C97015A714FB68B500533764 /* UITableViewPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970157714FB68B500533764 /* UITableViewPlugin.h */; };
+		C97015A814FB68B500533764 /* UITableViewPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970157814FB68B500533764 /* UITableViewPlugin.m */; };
+		C97015A914FB68B500533764 /* UITableViewRowPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970157914FB68B500533764 /* UITableViewRowPlugin.h */; };
+		C97015AA14FB68B500533764 /* UITableViewRowPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970157A14FB68B500533764 /* UITableViewRowPlugin.m */; };
+		C97015AB14FB68B500533764 /* UITabPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970157B14FB68B500533764 /* UITabPlugin.h */; };
+		C97015AC14FB68B500533764 /* UITabPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970157C14FB68B500533764 /* UITabPlugin.m */; };
+		C97015AD14FB68B500533764 /* UITextFieldPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970157D14FB68B500533764 /* UITextFieldPlugin.h */; };
+		C97015AE14FB68B500533764 /* UITextFieldPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970157E14FB68B500533764 /* UITextFieldPlugin.m */; };
+		C97015AF14FB68B500533764 /* UIUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = C970157F14FB68B500533764 /* UIUtil.h */; };
+		C97015B014FB68B500533764 /* UIUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C970158014FB68B500533764 /* UIUtil.m */; };
+		C97015B114FB68B500533764 /* UIViewPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970158114FB68B500533764 /* UIViewPlugin.h */; };
+		C97015B214FB68B500533764 /* UIViewPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970158214FB68B500533764 /* UIViewPlugin.m */; };
+		C97015B314FB68B500533764 /* UIWindowPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970158314FB68B500533764 /* UIWindowPlugin.h */; };
+		C97015B414FB68B500533764 /* UIWindowPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970158414FB68B500533764 /* UIWindowPlugin.m */; };
+		C97015B614FB6BDB00533764 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97015B514FB6BDB00533764 /* UIKit.framework */; };
+		C970177614FB6CCB00533764 /* EGOImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C970165814FB6CCA00533764 /* EGOImageLoader.m */; };
+		C970177714FB6CCB00533764 /* EGOImageLoadConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = C970165914FB6CCA00533764 /* EGOImageLoadConnection.m */; };
+		C970177814FB6CCB00533764 /* EGOImageLoadConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = C970165A14FB6CCA00533764 /* EGOImageLoadConnection.h */; };
+		C970177914FB6CCB00533764 /* EGOImageLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = C970165B14FB6CCA00533764 /* EGOImageLoader.h */; };
+		C970177A14FB6CCB00533764 /* EGOImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C970165E14FB6CCA00533764 /* EGOImageView.m */; };
+		C970177B14FB6CCB00533764 /* EGOImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = C970165F14FB6CCA00533764 /* EGOImageView.h */; };
+		C970177C14FB6CCB00533764 /* EGOImageButton.h in Headers */ = {isa = PBXBuildFile; fileRef = C970166114FB6CCA00533764 /* EGOImageButton.h */; };
+		C970177D14FB6CCB00533764 /* EGOImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C970166214FB6CCA00533764 /* EGOImageButton.m */; };
+		C970178614FB6CCB00533764 /* EGORefreshTableHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = C970167C14FB6CCA00533764 /* EGORefreshTableHeaderView.h */; };
+		C970178714FB6CCB00533764 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C970167D14FB6CCA00533764 /* EGORefreshTableHeaderView.m */; };
+		C970179A14FB6CCB00533764 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = C97016EB14FB6CCA00533764 /* MBProgressHUD.h */; };
+		C970179B14FB6CCB00533764 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C97016EC14FB6CCA00533764 /* MBProgressHUD.m */; };
+		C97017B614FB6D7100533764 /* EGOCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C97017B414FB6D7100533764 /* EGOCache.h */; };
+		C97017B714FB6D7100533764 /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C97017B514FB6D7100533764 /* EGOCache.m */; };
 		C989B1A714FB64B2004E9DE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C989B1A614FB64B2004E9DE4 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C9442D3615096F5C0046E512 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIAuthenticationDialog.h; path = Components/ASIHTTPRequest/Classes/ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		C9442D3715096F5C0046E512 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIAuthenticationDialog.m; path = Components/ASIHTTPRequest/Classes/ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		C9442D3815096F5C0046E512 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASICacheDelegate.h; path = Components/ASIHTTPRequest/Classes/ASICacheDelegate.h; sourceTree = "<group>"; };
+		C9442D3915096F5C0046E512 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDataCompressor.h; path = Components/ASIHTTPRequest/Classes/ASIDataCompressor.h; sourceTree = "<group>"; };
+		C9442D3A15096F5C0046E512 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDataCompressor.m; path = Components/ASIHTTPRequest/Classes/ASIDataCompressor.m; sourceTree = "<group>"; };
+		C9442D3B15096F5C0046E512 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDataDecompressor.h; path = Components/ASIHTTPRequest/Classes/ASIDataDecompressor.h; sourceTree = "<group>"; };
+		C9442D3C15096F5C0046E512 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDataDecompressor.m; path = Components/ASIHTTPRequest/Classes/ASIDataDecompressor.m; sourceTree = "<group>"; };
+		C9442D3D15096F5C0046E512 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDownloadCache.h; path = Components/ASIHTTPRequest/Classes/ASIDownloadCache.h; sourceTree = "<group>"; };
+		C9442D3E15096F5C0046E512 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDownloadCache.m; path = Components/ASIHTTPRequest/Classes/ASIDownloadCache.m; sourceTree = "<group>"; };
+		C9442D3F15096F5C0046E512 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIFormDataRequest.h; path = Components/ASIHTTPRequest/Classes/ASIFormDataRequest.h; sourceTree = "<group>"; };
+		C9442D4015096F5C0046E512 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIFormDataRequest.m; path = Components/ASIHTTPRequest/Classes/ASIFormDataRequest.m; sourceTree = "<group>"; };
+		C9442D4115096F5C0046E512 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequest.h; path = Components/ASIHTTPRequest/Classes/ASIHTTPRequest.h; sourceTree = "<group>"; };
+		C9442D4215096F5C0046E512 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIHTTPRequest.m; path = Components/ASIHTTPRequest/Classes/ASIHTTPRequest.m; sourceTree = "<group>"; };
+		C9442D4315096F5C0046E512 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestConfig.h; path = Components/ASIHTTPRequest/Classes/ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		C9442D4415096F5C0046E512 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestDelegate.h; path = Components/ASIHTTPRequest/Classes/ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		C9442D4515096F5C0046E512 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIInputStream.h; path = Components/ASIHTTPRequest/Classes/ASIInputStream.h; sourceTree = "<group>"; };
+		C9442D4615096F5C0046E512 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIInputStream.m; path = Components/ASIHTTPRequest/Classes/ASIInputStream.m; sourceTree = "<group>"; };
+		C9442D4715096F5C0046E512 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASINetworkQueue.h; path = Components/ASIHTTPRequest/Classes/ASINetworkQueue.h; sourceTree = "<group>"; };
+		C9442D4815096F5C0046E512 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASINetworkQueue.m; path = Components/ASIHTTPRequest/Classes/ASINetworkQueue.m; sourceTree = "<group>"; };
+		C9442D4915096F5C0046E512 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIProgressDelegate.h; path = Components/ASIHTTPRequest/Classes/ASIProgressDelegate.h; sourceTree = "<group>"; };
+		C9442D63150AF6E40046E512 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Components/ASIHTTPRequest/External/Reachability/Reachability.h; sourceTree = "<group>"; };
+		C9442D64150AF6E40046E512 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Components/ASIHTTPRequest/External/Reachability/Reachability.m; sourceTree = "<group>"; };
+		C958F2201509637200D36EF5 /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = "/Volumes/ios/cordova-true-native/../../../Users/Shared/Cordova/Frameworks/Cordova.framework"; sourceTree = "<absolute>"; };
+		C970155914FB68B500533764 /* HTTPPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPPlugin.h; path = Classes/HTTPPlugin.h; sourceTree = "<group>"; };
+		C970155A14FB68B500533764 /* HTTPPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPPlugin.m; path = Classes/HTTPPlugin.m; sourceTree = "<group>"; };
+		C970155B14FB68B500533764 /* MBProgressHUDPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUDPlugin.h; path = Classes/MBProgressHUDPlugin.h; sourceTree = "<group>"; };
+		C970155C14FB68B500533764 /* MBProgressHUDPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUDPlugin.m; path = Classes/MBProgressHUDPlugin.m; sourceTree = "<group>"; };
+		C970155D14FB68B500533764 /* UIActionSheetPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIActionSheetPlugin.h; path = Classes/UIActionSheetPlugin.h; sourceTree = "<group>"; };
+		C970155E14FB68B500533764 /* UIActionSheetPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIActionSheetPlugin.m; path = Classes/UIActionSheetPlugin.m; sourceTree = "<group>"; };
+		C970155F14FB68B500533764 /* UIButtonPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIButtonPlugin.h; path = Classes/UIButtonPlugin.h; sourceTree = "<group>"; };
+		C970156014FB68B500533764 /* UIButtonPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIButtonPlugin.m; path = Classes/UIButtonPlugin.m; sourceTree = "<group>"; };
+		C970156114FB68B500533764 /* UIComponentPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIComponentPlugin.h; path = Classes/UIComponentPlugin.h; sourceTree = "<group>"; };
+		C970156214FB68B500533764 /* UIComponentPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIComponentPlugin.m; path = Classes/UIComponentPlugin.m; sourceTree = "<group>"; };
+		C970156314FB68B500533764 /* UIDatePickerViewPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIDatePickerViewPlugin.h; path = Classes/UIDatePickerViewPlugin.h; sourceTree = "<group>"; };
+		C970156414FB68B500533764 /* UIDatePickerViewPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIDatePickerViewPlugin.m; path = Classes/UIDatePickerViewPlugin.m; sourceTree = "<group>"; };
+		C970156514FB68B500533764 /* UIImageViewPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIImageViewPlugin.h; path = Classes/UIImageViewPlugin.h; sourceTree = "<group>"; };
+		C970156614FB68B500533764 /* UIImageViewPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIImageViewPlugin.m; path = Classes/UIImageViewPlugin.m; sourceTree = "<group>"; };
+		C970156714FB68B500533764 /* UILabelPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UILabelPlugin.h; path = Classes/UILabelPlugin.h; sourceTree = "<group>"; };
+		C970156814FB68B500533764 /* UILabelPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UILabelPlugin.m; path = Classes/UILabelPlugin.m; sourceTree = "<group>"; };
+		C970156914FB68B500533764 /* UIMailComposeWindowPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIMailComposeWindowPlugin.h; path = Classes/UIMailComposeWindowPlugin.h; sourceTree = "<group>"; };
+		C970156A14FB68B500533764 /* UIMailComposeWindowPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIMailComposeWindowPlugin.m; path = Classes/UIMailComposeWindowPlugin.m; sourceTree = "<group>"; };
+		C970156B14FB68B500533764 /* UIMapViewPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIMapViewPlugin.h; path = Classes/UIMapViewPlugin.h; sourceTree = "<group>"; };
+		C970156C14FB68B500533764 /* UIMapViewPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIMapViewPlugin.m; path = Classes/UIMapViewPlugin.m; sourceTree = "<group>"; };
+		C970156D14FB68B500533764 /* UINavigationControllerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UINavigationControllerPlugin.h; path = Classes/UINavigationControllerPlugin.h; sourceTree = "<group>"; };
+		C970156E14FB68B500533764 /* UINavigationControllerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UINavigationControllerPlugin.m; path = Classes/UINavigationControllerPlugin.m; sourceTree = "<group>"; };
+		C970156F14FB68B500533764 /* UIPickerViewPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIPickerViewPlugin.h; path = Classes/UIPickerViewPlugin.h; sourceTree = "<group>"; };
+		C970157014FB68B500533764 /* UIPickerViewPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIPickerViewPlugin.m; path = Classes/UIPickerViewPlugin.m; sourceTree = "<group>"; };
+		C970157114FB68B500533764 /* UIScrollViewPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIScrollViewPlugin.h; path = Classes/UIScrollViewPlugin.h; sourceTree = "<group>"; };
+		C970157214FB68B500533764 /* UIScrollViewPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIScrollViewPlugin.m; path = Classes/UIScrollViewPlugin.m; sourceTree = "<group>"; };
+		C970157314FB68B500533764 /* UISpinnerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UISpinnerPlugin.h; path = Classes/UISpinnerPlugin.h; sourceTree = "<group>"; };
+		C970157414FB68B500533764 /* UISpinnerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UISpinnerPlugin.m; path = Classes/UISpinnerPlugin.m; sourceTree = "<group>"; };
+		C970157514FB68B500533764 /* UITabControllerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UITabControllerPlugin.h; path = Classes/UITabControllerPlugin.h; sourceTree = "<group>"; };
+		C970157614FB68B500533764 /* UITabControllerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UITabControllerPlugin.m; path = Classes/UITabControllerPlugin.m; sourceTree = "<group>"; };
+		C970157714FB68B500533764 /* UITableViewPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UITableViewPlugin.h; path = Classes/UITableViewPlugin.h; sourceTree = "<group>"; };
+		C970157814FB68B500533764 /* UITableViewPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UITableViewPlugin.m; path = Classes/UITableViewPlugin.m; sourceTree = "<group>"; };
+		C970157914FB68B500533764 /* UITableViewRowPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UITableViewRowPlugin.h; path = Classes/UITableViewRowPlugin.h; sourceTree = "<group>"; };
+		C970157A14FB68B500533764 /* UITableViewRowPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UITableViewRowPlugin.m; path = Classes/UITableViewRowPlugin.m; sourceTree = "<group>"; };
+		C970157B14FB68B500533764 /* UITabPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UITabPlugin.h; path = Classes/UITabPlugin.h; sourceTree = "<group>"; };
+		C970157C14FB68B500533764 /* UITabPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UITabPlugin.m; path = Classes/UITabPlugin.m; sourceTree = "<group>"; };
+		C970157D14FB68B500533764 /* UITextFieldPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UITextFieldPlugin.h; path = Classes/UITextFieldPlugin.h; sourceTree = "<group>"; };
+		C970157E14FB68B500533764 /* UITextFieldPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UITextFieldPlugin.m; path = Classes/UITextFieldPlugin.m; sourceTree = "<group>"; };
+		C970157F14FB68B500533764 /* UIUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIUtil.h; path = Classes/UIUtil.h; sourceTree = "<group>"; };
+		C970158014FB68B500533764 /* UIUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIUtil.m; path = Classes/UIUtil.m; sourceTree = "<group>"; };
+		C970158114FB68B500533764 /* UIViewPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIViewPlugin.h; path = Classes/UIViewPlugin.h; sourceTree = "<group>"; };
+		C970158214FB68B500533764 /* UIViewPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIViewPlugin.m; path = Classes/UIViewPlugin.m; sourceTree = "<group>"; };
+		C970158314FB68B500533764 /* UIWindowPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIWindowPlugin.h; path = Classes/UIWindowPlugin.h; sourceTree = "<group>"; };
+		C970158414FB68B500533764 /* UIWindowPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIWindowPlugin.m; path = Classes/UIWindowPlugin.m; sourceTree = "<group>"; };
+		C97015B514FB6BDB00533764 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C970165814FB6CCA00533764 /* EGOImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageLoader.m; sourceTree = "<group>"; };
+		C970165914FB6CCA00533764 /* EGOImageLoadConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageLoadConnection.m; sourceTree = "<group>"; };
+		C970165A14FB6CCA00533764 /* EGOImageLoadConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageLoadConnection.h; sourceTree = "<group>"; };
+		C970165B14FB6CCA00533764 /* EGOImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageLoader.h; sourceTree = "<group>"; };
+		C970165E14FB6CCA00533764 /* EGOImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageView.m; sourceTree = "<group>"; };
+		C970165F14FB6CCA00533764 /* EGOImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageView.h; sourceTree = "<group>"; };
+		C970166114FB6CCA00533764 /* EGOImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageButton.h; sourceTree = "<group>"; };
+		C970166214FB6CCA00533764 /* EGOImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageButton.m; sourceTree = "<group>"; };
+		C970167C14FB6CCA00533764 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		C970167D14FB6CCA00533764 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		C970167F14FB6CCA00533764 /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
+		C970168014FB6CCA00533764 /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
+		C970168114FB6CCA00533764 /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
+		C970168214FB6CCA00533764 /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayArrow.png; sourceTree = "<group>"; };
+		C970168314FB6CCA00533764 /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrow@2x.png"; sourceTree = "<group>"; };
+		C970168414FB6CCA00533764 /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grayArrow@2x.png"; sourceTree = "<group>"; };
+		C970168514FB6CCA00533764 /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackArrow@2x.png"; sourceTree = "<group>"; };
+		C970168614FB6CCA00533764 /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
+		C97016EB14FB6CCA00533764 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		C97016EC14FB6CCA00533764 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		C97017B414FB6D7100533764 /* EGOCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOCache.h; sourceTree = "<group>"; };
+		C97017B514FB6D7100533764 /* EGOCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOCache.m; sourceTree = "<group>"; };
 		C989B1A314FB64B2004E9DE4 /* libTrueNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTrueNative.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C989B1A614FB64B2004E9DE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C989B1AA14FB64B2004E9DE4 /* TrueNative-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrueNative-Prefix.pch"; sourceTree = SOURCE_ROOT; };
@@ -21,16 +193,221 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C97015B614FB6BDB00533764 /* UIKit.framework in Frameworks */,
 				C989B1A714FB64B2004E9DE4 /* Foundation.framework in Frameworks */,
+				C958F2211509637200D36EF5 /* Cordova.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9442D5E15096F620046E512 /* ASIHTTPReqeuest */ = {
+			isa = PBXGroup;
+			children = (
+				C9442D63150AF6E40046E512 /* Reachability.h */,
+				C9442D64150AF6E40046E512 /* Reachability.m */,
+				C9442D3615096F5C0046E512 /* ASIAuthenticationDialog.h */,
+				C9442D3715096F5C0046E512 /* ASIAuthenticationDialog.m */,
+				C9442D3815096F5C0046E512 /* ASICacheDelegate.h */,
+				C9442D3915096F5C0046E512 /* ASIDataCompressor.h */,
+				C9442D3A15096F5C0046E512 /* ASIDataCompressor.m */,
+				C9442D3B15096F5C0046E512 /* ASIDataDecompressor.h */,
+				C9442D3C15096F5C0046E512 /* ASIDataDecompressor.m */,
+				C9442D3D15096F5C0046E512 /* ASIDownloadCache.h */,
+				C9442D3E15096F5C0046E512 /* ASIDownloadCache.m */,
+				C9442D3F15096F5C0046E512 /* ASIFormDataRequest.h */,
+				C9442D4015096F5C0046E512 /* ASIFormDataRequest.m */,
+				C9442D4115096F5C0046E512 /* ASIHTTPRequest.h */,
+				C9442D4215096F5C0046E512 /* ASIHTTPRequest.m */,
+				C9442D4315096F5C0046E512 /* ASIHTTPRequestConfig.h */,
+				C9442D4415096F5C0046E512 /* ASIHTTPRequestDelegate.h */,
+				C9442D4515096F5C0046E512 /* ASIInputStream.h */,
+				C9442D4615096F5C0046E512 /* ASIInputStream.m */,
+				C9442D4715096F5C0046E512 /* ASINetworkQueue.h */,
+				C9442D4815096F5C0046E512 /* ASINetworkQueue.m */,
+				C9442D4915096F5C0046E512 /* ASIProgressDelegate.h */,
+			);
+			name = ASIHTTPReqeuest;
+			sourceTree = "<group>";
+		};
+		C970155314FB688700533764 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C970155914FB68B500533764 /* HTTPPlugin.h */,
+				C970155A14FB68B500533764 /* HTTPPlugin.m */,
+				C970155B14FB68B500533764 /* MBProgressHUDPlugin.h */,
+				C970155C14FB68B500533764 /* MBProgressHUDPlugin.m */,
+				C970155D14FB68B500533764 /* UIActionSheetPlugin.h */,
+				C970155E14FB68B500533764 /* UIActionSheetPlugin.m */,
+				C970155F14FB68B500533764 /* UIButtonPlugin.h */,
+				C970156014FB68B500533764 /* UIButtonPlugin.m */,
+				C970156114FB68B500533764 /* UIComponentPlugin.h */,
+				C970156214FB68B500533764 /* UIComponentPlugin.m */,
+				C970156314FB68B500533764 /* UIDatePickerViewPlugin.h */,
+				C970156414FB68B500533764 /* UIDatePickerViewPlugin.m */,
+				C970156514FB68B500533764 /* UIImageViewPlugin.h */,
+				C970156614FB68B500533764 /* UIImageViewPlugin.m */,
+				C970156714FB68B500533764 /* UILabelPlugin.h */,
+				C970156814FB68B500533764 /* UILabelPlugin.m */,
+				C970156914FB68B500533764 /* UIMailComposeWindowPlugin.h */,
+				C970156A14FB68B500533764 /* UIMailComposeWindowPlugin.m */,
+				C970156B14FB68B500533764 /* UIMapViewPlugin.h */,
+				C970156C14FB68B500533764 /* UIMapViewPlugin.m */,
+				C970156D14FB68B500533764 /* UINavigationControllerPlugin.h */,
+				C970156E14FB68B500533764 /* UINavigationControllerPlugin.m */,
+				C970156F14FB68B500533764 /* UIPickerViewPlugin.h */,
+				C970157014FB68B500533764 /* UIPickerViewPlugin.m */,
+				C970157114FB68B500533764 /* UIScrollViewPlugin.h */,
+				C970157214FB68B500533764 /* UIScrollViewPlugin.m */,
+				C970157314FB68B500533764 /* UISpinnerPlugin.h */,
+				C970157414FB68B500533764 /* UISpinnerPlugin.m */,
+				C970157514FB68B500533764 /* UITabControllerPlugin.h */,
+				C970157614FB68B500533764 /* UITabControllerPlugin.m */,
+				C970157714FB68B500533764 /* UITableViewPlugin.h */,
+				C970157814FB68B500533764 /* UITableViewPlugin.m */,
+				C970157914FB68B500533764 /* UITableViewRowPlugin.h */,
+				C970157A14FB68B500533764 /* UITableViewRowPlugin.m */,
+				C970157B14FB68B500533764 /* UITabPlugin.h */,
+				C970157C14FB68B500533764 /* UITabPlugin.m */,
+				C970157D14FB68B500533764 /* UITextFieldPlugin.h */,
+				C970157E14FB68B500533764 /* UITextFieldPlugin.m */,
+				C970157F14FB68B500533764 /* UIUtil.h */,
+				C970158014FB68B500533764 /* UIUtil.m */,
+				C970158114FB68B500533764 /* UIViewPlugin.h */,
+				C970158214FB68B500533764 /* UIViewPlugin.m */,
+				C970158314FB68B500533764 /* UIWindowPlugin.h */,
+				C970158414FB68B500533764 /* UIWindowPlugin.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		C97015B714FB6CAB00533764 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C9442D5E15096F620046E512 /* ASIHTTPReqeuest */,
+				C970165614FB6CCA00533764 /* EGOImageLoading */,
+				C970167714FB6CCA00533764 /* EGOTableViewPullRefresh */,
+				C97016D314FB6CCA00533764 /* MBProgressHUD */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		C970165614FB6CCA00533764 /* EGOImageLoading */ = {
+			isa = PBXGroup;
+			children = (
+				C970165714FB6CCA00533764 /* EGOImageLoader */,
+				C970165D14FB6CCA00533764 /* EGOImageView */,
+				C970166014FB6CCA00533764 /* EGOImageButton */,
+				C970166414FB6CCA00533764 /* EGOCache */,
+			);
+			name = EGOImageLoading;
+			path = Components/EGOImageLoading;
+			sourceTree = "<group>";
+		};
+		C970165714FB6CCA00533764 /* EGOImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				C970165814FB6CCA00533764 /* EGOImageLoader.m */,
+				C970165914FB6CCA00533764 /* EGOImageLoadConnection.m */,
+				C970165A14FB6CCA00533764 /* EGOImageLoadConnection.h */,
+				C970165B14FB6CCA00533764 /* EGOImageLoader.h */,
+			);
+			path = EGOImageLoader;
+			sourceTree = "<group>";
+		};
+		C970165D14FB6CCA00533764 /* EGOImageView */ = {
+			isa = PBXGroup;
+			children = (
+				C970165E14FB6CCA00533764 /* EGOImageView.m */,
+				C970165F14FB6CCA00533764 /* EGOImageView.h */,
+			);
+			path = EGOImageView;
+			sourceTree = "<group>";
+		};
+		C970166014FB6CCA00533764 /* EGOImageButton */ = {
+			isa = PBXGroup;
+			children = (
+				C970166114FB6CCA00533764 /* EGOImageButton.h */,
+				C970166214FB6CCA00533764 /* EGOImageButton.m */,
+			);
+			path = EGOImageButton;
+			sourceTree = "<group>";
+		};
+		C970166414FB6CCA00533764 /* EGOCache */ = {
+			isa = PBXGroup;
+			children = (
+				C97017B414FB6D7100533764 /* EGOCache.h */,
+				C97017B514FB6D7100533764 /* EGOCache.m */,
+			);
+			path = EGOCache;
+			sourceTree = "<group>";
+		};
+		C970167714FB6CCA00533764 /* EGOTableViewPullRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				C970167914FB6CCA00533764 /* EGOTableViewPullRefresh */,
+			);
+			name = EGOTableViewPullRefresh;
+			path = Components/EGOTableViewPullRefresh;
+			sourceTree = "<group>";
+		};
+		C970167914FB6CCA00533764 /* EGOTableViewPullRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				C970167A14FB6CCA00533764 /* Classes */,
+				C970167E14FB6CCA00533764 /* Resources */,
+			);
+			path = EGOTableViewPullRefresh;
+			sourceTree = "<group>";
+		};
+		C970167A14FB6CCA00533764 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C970167B14FB6CCA00533764 /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C970167B14FB6CCA00533764 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C970167C14FB6CCA00533764 /* EGORefreshTableHeaderView.h */,
+				C970167D14FB6CCA00533764 /* EGORefreshTableHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C970167E14FB6CCA00533764 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C970167F14FB6CCA00533764 /* whiteArrow@2x.png */,
+				C970168014FB6CCA00533764 /* whiteArrow.png */,
+				C970168114FB6CCA00533764 /* blueArrow.png */,
+				C970168214FB6CCA00533764 /* grayArrow.png */,
+				C970168314FB6CCA00533764 /* blueArrow@2x.png */,
+				C970168414FB6CCA00533764 /* grayArrow@2x.png */,
+				C970168514FB6CCA00533764 /* blackArrow@2x.png */,
+				C970168614FB6CCA00533764 /* blackArrow.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C97016D314FB6CCA00533764 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				C97016EB14FB6CCA00533764 /* MBProgressHUD.h */,
+				C97016EC14FB6CCA00533764 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			path = Components/MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		C989B19314FB646D004E9DE4 = {
 			isa = PBXGroup;
 			children = (
+				C97015B714FB6CAB00533764 /* Components */,
+				C970155314FB688700533764 /* Classes */,
 				C989B1AA14FB64B2004E9DE4 /* TrueNative-Prefix.pch */,
 				C989B1A514FB64B2004E9DE4 /* Frameworks */,
 				C989B1A414FB64B2004E9DE4 /* Products */,
@@ -48,6 +425,8 @@
 		C989B1A514FB64B2004E9DE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C958F2201509637200D36EF5 /* Cordova.framework */,
+				C97015B514FB6BDB00533764 /* UIKit.framework */,
 				C989B1A614FB64B2004E9DE4 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -60,6 +439,48 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C970158914FB68B500533764 /* HTTPPlugin.h in Headers */,
+				C970158B14FB68B500533764 /* MBProgressHUDPlugin.h in Headers */,
+				C970158D14FB68B500533764 /* UIActionSheetPlugin.h in Headers */,
+				C970158F14FB68B500533764 /* UIButtonPlugin.h in Headers */,
+				C970159114FB68B500533764 /* UIComponentPlugin.h in Headers */,
+				C970159314FB68B500533764 /* UIDatePickerViewPlugin.h in Headers */,
+				C970159514FB68B500533764 /* UIImageViewPlugin.h in Headers */,
+				C970159714FB68B500533764 /* UILabelPlugin.h in Headers */,
+				C970159914FB68B500533764 /* UIMailComposeWindowPlugin.h in Headers */,
+				C970159B14FB68B500533764 /* UIMapViewPlugin.h in Headers */,
+				C970159D14FB68B500533764 /* UINavigationControllerPlugin.h in Headers */,
+				C970159F14FB68B500533764 /* UIPickerViewPlugin.h in Headers */,
+				C97015A114FB68B500533764 /* UIScrollViewPlugin.h in Headers */,
+				C97015A314FB68B500533764 /* UISpinnerPlugin.h in Headers */,
+				C97015A514FB68B500533764 /* UITabControllerPlugin.h in Headers */,
+				C97015A714FB68B500533764 /* UITableViewPlugin.h in Headers */,
+				C97015A914FB68B500533764 /* UITableViewRowPlugin.h in Headers */,
+				C97015AB14FB68B500533764 /* UITabPlugin.h in Headers */,
+				C97015AD14FB68B500533764 /* UITextFieldPlugin.h in Headers */,
+				C97015AF14FB68B500533764 /* UIUtil.h in Headers */,
+				C97015B114FB68B500533764 /* UIViewPlugin.h in Headers */,
+				C97015B314FB68B500533764 /* UIWindowPlugin.h in Headers */,
+				C970177814FB6CCB00533764 /* EGOImageLoadConnection.h in Headers */,
+				C970177914FB6CCB00533764 /* EGOImageLoader.h in Headers */,
+				C970177B14FB6CCB00533764 /* EGOImageView.h in Headers */,
+				C970177C14FB6CCB00533764 /* EGOImageButton.h in Headers */,
+				C970178614FB6CCB00533764 /* EGORefreshTableHeaderView.h in Headers */,
+				C970179A14FB6CCB00533764 /* MBProgressHUD.h in Headers */,
+				C97017B614FB6D7100533764 /* EGOCache.h in Headers */,
+				C9442D4A15096F5C0046E512 /* ASIAuthenticationDialog.h in Headers */,
+				C9442D4C15096F5C0046E512 /* ASICacheDelegate.h in Headers */,
+				C9442D4D15096F5C0046E512 /* ASIDataCompressor.h in Headers */,
+				C9442D4F15096F5C0046E512 /* ASIDataDecompressor.h in Headers */,
+				C9442D5115096F5C0046E512 /* ASIDownloadCache.h in Headers */,
+				C9442D5315096F5C0046E512 /* ASIFormDataRequest.h in Headers */,
+				C9442D5515096F5C0046E512 /* ASIHTTPRequest.h in Headers */,
+				C9442D5715096F5C0046E512 /* ASIHTTPRequestConfig.h in Headers */,
+				C9442D5815096F5C0046E512 /* ASIHTTPRequestDelegate.h in Headers */,
+				C9442D5915096F5C0046E512 /* ASIInputStream.h in Headers */,
+				C9442D5B15096F5C0046E512 /* ASINetworkQueue.h in Headers */,
+				C9442D5D15096F5C0046E512 /* ASIProgressDelegate.h in Headers */,
+				C9442D65150AF6E40046E512 /* Reachability.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +518,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				English,
 			);
 			mainGroup = C989B19314FB646D004E9DE4;
 			productRefGroup = C989B1A414FB64B2004E9DE4 /* Products */;
@@ -113,6 +535,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C970158A14FB68B500533764 /* HTTPPlugin.m in Sources */,
+				C970158C14FB68B500533764 /* MBProgressHUDPlugin.m in Sources */,
+				C970158E14FB68B500533764 /* UIActionSheetPlugin.m in Sources */,
+				C970159014FB68B500533764 /* UIButtonPlugin.m in Sources */,
+				C970159214FB68B500533764 /* UIComponentPlugin.m in Sources */,
+				C970159414FB68B500533764 /* UIDatePickerViewPlugin.m in Sources */,
+				C970159614FB68B500533764 /* UIImageViewPlugin.m in Sources */,
+				C970159814FB68B500533764 /* UILabelPlugin.m in Sources */,
+				C970159A14FB68B500533764 /* UIMailComposeWindowPlugin.m in Sources */,
+				C970159C14FB68B500533764 /* UIMapViewPlugin.m in Sources */,
+				C970159E14FB68B500533764 /* UINavigationControllerPlugin.m in Sources */,
+				C97015A014FB68B500533764 /* UIPickerViewPlugin.m in Sources */,
+				C97015A214FB68B500533764 /* UIScrollViewPlugin.m in Sources */,
+				C97015A414FB68B500533764 /* UISpinnerPlugin.m in Sources */,
+				C97015A614FB68B500533764 /* UITabControllerPlugin.m in Sources */,
+				C97015A814FB68B500533764 /* UITableViewPlugin.m in Sources */,
+				C97015AA14FB68B500533764 /* UITableViewRowPlugin.m in Sources */,
+				C97015AC14FB68B500533764 /* UITabPlugin.m in Sources */,
+				C97015AE14FB68B500533764 /* UITextFieldPlugin.m in Sources */,
+				C97015B014FB68B500533764 /* UIUtil.m in Sources */,
+				C97015B214FB68B500533764 /* UIViewPlugin.m in Sources */,
+				C97015B414FB68B500533764 /* UIWindowPlugin.m in Sources */,
+				C970177614FB6CCB00533764 /* EGOImageLoader.m in Sources */,
+				C970177714FB6CCB00533764 /* EGOImageLoadConnection.m in Sources */,
+				C970177A14FB6CCB00533764 /* EGOImageView.m in Sources */,
+				C970177D14FB6CCB00533764 /* EGOImageButton.m in Sources */,
+				C970178714FB6CCB00533764 /* EGORefreshTableHeaderView.m in Sources */,
+				C970179B14FB6CCB00533764 /* MBProgressHUD.m in Sources */,
+				C97017B714FB6D7100533764 /* EGOCache.m in Sources */,
+				C9442D4B15096F5C0046E512 /* ASIAuthenticationDialog.m in Sources */,
+				C9442D4E15096F5C0046E512 /* ASIDataCompressor.m in Sources */,
+				C9442D5015096F5C0046E512 /* ASIDataDecompressor.m in Sources */,
+				C9442D5215096F5C0046E512 /* ASIDownloadCache.m in Sources */,
+				C9442D5415096F5C0046E512 /* ASIFormDataRequest.m in Sources */,
+				C9442D5615096F5C0046E512 /* ASIHTTPRequest.m in Sources */,
+				C9442D5A15096F5C0046E512 /* ASIInputStream.m in Sources */,
+				C9442D5C15096F5C0046E512 /* ASINetworkQueue.m in Sources */,
+				C9442D66150AF6E40046E512 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,11 +598,15 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/TrueNative.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Shared/Cordova/Frameworks,
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TrueNative/TrueNative-Prefix.pch";
+				GCC_PREFIX_HEADER = "TrueNative-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -167,9 +631,13 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/TrueNative.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Shared/Cordova/Frameworks,
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TrueNative/TrueNative-Prefix.pch";
+				GCC_PREFIX_HEADER = "TrueNative-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -202,6 +670,7 @@
 				C989B1AF14FB64B2004E9DE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

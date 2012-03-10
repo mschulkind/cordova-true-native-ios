@@ -6,12 +6,12 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#ifdef PHONEGAP_FRAMEWORK
-    #import <PhoneGap/PGViewController.h>
+#ifdef CORDOVA_FRAMEWORK
+	#import <Cordova/CDV.h>
 #else
-    #import "PGViewController.h"
+	#import "CDV.h"
 #endif
 
-@interface MainViewController : PGViewController
+@interface MainViewController : CDVViewController
 
 @end
