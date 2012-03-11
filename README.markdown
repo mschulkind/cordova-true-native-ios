@@ -10,7 +10,7 @@ install scons coffee-script`.
 
 # How to Run the Example
 
-1. `git submodule update --init`
+1. `git submodule update --init --recursive`
 2. Open `Example/Example.xcodeproj`
 3. Select the `Example > iPhone Simulator` target
 4. Hit play/run.
