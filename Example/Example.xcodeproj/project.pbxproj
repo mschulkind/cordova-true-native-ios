@@ -68,6 +68,7 @@
 /* Begin PBXFileReference section */
 		C958F222150963EC00D36EF5 /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = ../../../../Users/Shared/Cordova/Frameworks/Cordova.framework; sourceTree = "<group>"; };
 		C958F22415096CDB00D36EF5 /* Cordova.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Cordova.plist; sourceTree = "<group>"; };
+		C96A389A150C580800D8653A /* CoffeeScripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CoffeeScripts; sourceTree = "<group>"; };
 		C970154814FB670A00533764 /* TrueNative.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TrueNative.xcodeproj; path = ../TrueNative.xcodeproj; sourceTree = SOURCE_ROOT; };
 		C989B10B14FB393F004E9DE4 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C989B10F14FB393F004E9DE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -155,7 +156,7 @@
 		C989B0FD14FB393F004E9DE4 = {
 			isa = PBXGroup;
 			children = (
-				C970154814FB670A00533764 /* TrueNative.xcodeproj */,
+				C96A389A150C580800D8653A /* CoffeeScripts */,
 				C989B17614FB437C004E9DE4 /* www */,
 				C989B12A14FB393F004E9DE4 /* Supporting Files */,
 				C989B15614FB3940004E9DE4 /* Plugins */,
@@ -163,6 +164,7 @@
 				C989B13414FB3940004E9DE4 /* Resources */,
 				C989B10E14FB393F004E9DE4 /* Frameworks */,
 				C989B10C14FB393F004E9DE4 /* Products */,
+				C970154814FB670A00533764 /* TrueNative.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};

@@ -133,6 +133,7 @@
 		C9442D63150AF6E40046E512 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Components/ASIHTTPRequest/External/Reachability/Reachability.h; sourceTree = "<group>"; };
 		C9442D64150AF6E40046E512 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Components/ASIHTTPRequest/External/Reachability/Reachability.m; sourceTree = "<group>"; };
 		C958F2201509637200D36EF5 /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = "/Volumes/ios/cordova-true-native/../../../Users/Shared/Cordova/Frameworks/Cordova.framework"; sourceTree = "<absolute>"; };
+		C96A3898150C57E200D8653A /* CoffeeScripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CoffeeScripts; sourceTree = "<group>"; };
 		C970155914FB68B500533764 /* HTTPPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPPlugin.h; path = Classes/HTTPPlugin.h; sourceTree = "<group>"; };
 		C970155A14FB68B500533764 /* HTTPPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPPlugin.m; path = Classes/HTTPPlugin.m; sourceTree = "<group>"; };
 		C970155B14FB68B500533764 /* MBProgressHUDPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUDPlugin.h; path = Classes/MBProgressHUDPlugin.h; sourceTree = "<group>"; };
@@ -432,6 +433,7 @@
 		C989B19314FB646D004E9DE4 = {
 			isa = PBXGroup;
 			children = (
+				C96A3898150C57E200D8653A /* CoffeeScripts */,
 				C97015B714FB6CAB00533764 /* Components */,
 				C970155314FB688700533764 /* Classes */,
 				C989B1AA14FB64B2004E9DE4 /* TrueNative-Prefix.pch */,
