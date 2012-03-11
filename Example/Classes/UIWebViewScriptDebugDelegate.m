@@ -59,7 +59,7 @@ static NSString* const kSourceIDMapBaseLineNumberKey = @"baselinenumber";
   int* lineNumber = malloc(sizeof(int));
   *lineNumber = 1;
   [source enumerateLinesUsingBlock:^(NSString* line, BOOL* stop) {
-    [formattedSource appendFormat:@"%3d: %@", *lineNumber, line];
+    [formattedSource appendFormat:@"%3d: %@\n", *lineNumber, line];
     (*lineNumber)++;
   }];
   free(lineNumber);
@@ -169,7 +169,7 @@ static NSString* const kSourceIDMapBaseLineNumberKey = @"baselinenumber";
   [message appendString:@"Offending line:\n"];
   NSArray* sourceLines = [source componentsSeparatedByString:@"\n"];
   NSString* sourceLine = 
-      [sourceLines objectAtIndex:(lineNumber - baseLineNumber + 2)];
+      [sourceLines objectAtIndex:(lineNumber - baseLineNumber)];
   if ([sourceLine length] > 200) {
     sourceLine = [sourceLine substringToIndex:200];
     sourceLine = [NSString stringWithFormat:@"%@...", sourceLine];
