@@ -10,7 +10,7 @@ TN.UI.MailComposeWindow = class MailComposeWindow extends TN.UI.Window
         alert(
           "Unable to send mail. Please add a mail account to your device.")
 
-    Cordova.exec(localSuccessHandler, null, PLUGIN_ID, 'canSendMail', [])
+    Cordova.exec(localSuccessHandler, null, @pluginID, 'canSendMail', [])
 
   constructor: (options) ->
     super

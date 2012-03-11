@@ -8,17 +8,32 @@ window.onDeviceReady = ->
 document.addEventListener('deviceready', onDeviceReady, false)
 
 onTNReady = ->
-  new TN.UI.Window(
+  navController = new TN.UI.NavigationController
+  navController.push(new TN.UI.Window(
+    title: "TrueNative"
     constructView: (view) ->
-      view.setProperty('backgroundColor', 'black')
+      templateName = 'exampleTemplate'
+      entries = []
+      addExample = (name, window) ->
+        entries.push(
+          templateName: templateName
+          userData:
+            exampleName: name
+            window: window
+        )
 
-      label = new TN.UI.Label(
-        text: "Hello, World!"
-        color: 'white'
-        top: 5
-        left: 10
-      )
-      label.sizeToFit()
-      view.add(label)
-  ).open()
+      addExample('Foo', new TN.UI.Window(title: 'test'))
 
+      tableView = new TN.UI.TableView(entries: entries)
+
+      constructRow = (rowEntry, row) ->
+        row.setProperty('hasDetail', true)
+
+      reuseRow = (rowEntry, row) ->
+        row.setProperty('text', rowEntry.userData.exampleName)
+
+      tableView.addRowTemplate(templateName, constructRow, reuseRow)
+
+      TN.glueViews(view, tableView)
+  ))
+  navController.open()

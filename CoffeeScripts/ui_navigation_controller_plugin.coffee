@@ -3,7 +3,6 @@ TN.UI.NavigationController = class NavigationController extends TN.UI.Window
 
   constructor: (options) ->
     super
-    @pluginID = PLUGIN_ID
 
     @titleView = options?.titleView
     @title = options?.title || ""

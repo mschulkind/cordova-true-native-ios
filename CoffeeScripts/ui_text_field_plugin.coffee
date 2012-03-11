@@ -1,12 +1,12 @@
-PLUGIN_NAME: 'textfield'
 TN.UI.TextField = class TextField extends TN.UI.View
+  PLUGIN_NAME: 'textfield'
+
   constructor: (options) ->
     super options
-    @pluginID = PLUGIN_ID
 
     @align = options?.align ? 'left'
     @hint = options?.hint ? ''
     @text = options?.text
 
 TextField.dismissKeyboard = ->
-  Cordova.exec(null, null, PLUGIN_ID, 'dismissKeyboard', [])
+  Cordova.exec(null, null, @pluginID, 'dismissKeyboard', [])

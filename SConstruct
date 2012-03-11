@@ -36,7 +36,11 @@ coffeescripts = [
 
     # Other Plugins
     'http_plugin',
-    'progress_hud_plugin']
+    'progress_hud_plugin',
+
+    # Controls
+    'grid_cell_control',
+]
 
 javascripts = ['Components/underscore.js/underscore.js']
 javascripts.append(map((lambda x: "build/%s.js" % x), coffeescripts))
