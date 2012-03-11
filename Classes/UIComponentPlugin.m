@@ -165,14 +165,15 @@ static UIComponentPlugin* uiComponentPluginInstance = NULL;
 
 + (id)writeJavascript:(NSString*)javascript
 {
-  // Construct and run the javascript.
+  // Construct and run the javascript. Wraps the result in an array before
+  // encoding the JSON since JSONKit doesn't deal well with non-objects.
   NSString* wrappedJavascript = 
-      [NSString stringWithFormat:@"JSON.stringify(%@)", javascript];
+      [NSString stringWithFormat:@"JSON.stringify([%@])", javascript];
   NSString* resultJSON = 
       [uiComponentPluginInstance writeJavascript:wrappedJavascript];
 
-  // Parse and return the result.
-  return [resultJSON objectFromJSONString];
+  // Parse, extract, and return the result.
+  return [[resultJSON objectFromJSONString] objectAtIndex:0];
 }
 
 + (id)writeJavascript:(NSString*)javascript

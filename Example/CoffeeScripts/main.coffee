@@ -28,9 +28,15 @@ onTNReady = ->
 
       constructRow = (rowEntry, row) ->
         row.setProperty('hasDetail', true)
+        row.addEventListener('click', ->
+          navController.push(row.userData.window)
+        )
 
       reuseRow = (rowEntry, row) ->
         row.setProperty('text', rowEntry.userData.exampleName)
+        
+        # Save the window for the click handler.
+        row.userData.window = rowEntry.userData.window
 
       tableView.addRowTemplate(templateName, constructRow, reuseRow)
 
