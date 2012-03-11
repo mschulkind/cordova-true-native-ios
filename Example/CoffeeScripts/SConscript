@@ -1,7 +1,8 @@
-env = Environment()
+import os
+env = Environment ( PATH = os.environ['PATH'] )
 
 coffee_bld = Builder(
-    action = 'coffee -c -p $SOURCE > $TARGET',
+    action = 'PATH=$PATH coffee -c -p $SOURCE > $TARGET',
     single_source = True,
     suffix = '.js',
     src_suffix = '.coffee')
