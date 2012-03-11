@@ -1,1 +1,3 @@
-SConscript('CoffeeScripts/SConscript', variant_dir='www', duplicate=0)
+import os
+env = Environment ( PATH = os.environ['PATH'] )
+env.SConscript('CoffeeScripts/SConscript', variant_dir='www', duplicate=0)

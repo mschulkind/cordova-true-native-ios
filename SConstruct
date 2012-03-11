@@ -1,4 +1,6 @@
-SConscript('CoffeeScripts/SConscript', variant_dir='build', duplicate=0)
+import os
+env = Environment ( PATH = os.environ['PATH'] )
+env.SConscript('CoffeeScripts/SConscript', variant_dir='build', duplicate=0)
 
 coffeescripts = [
     'environment',
@@ -40,8 +42,8 @@ coffeescripts = [
 
 javascripts = ['Components/underscore.js/underscore.js']
 javascripts.append(map((lambda x: "build/%s.js" % x), coffeescripts))
-Command('build/all.js', javascripts, "cat $SOURCES > $TARGET")
+env.Command('build/all.js', javascripts, "cat $SOURCES > $TARGET")
 
-Command(
+env.Command(
   'Classes/EncodedJavascript.h', 'build/all.js', 
   'echo "static NSString* encodedJavascript = @\\""`base64 $SOURCE`"\\";" > $TARGET')
