@@ -61,6 +61,9 @@ static NSString* const kSourceIDMapBaseLineNumberKey = @"baselinenumber";
   [source enumerateLinesUsingBlock:^(NSString* line, BOOL* stop) {
     [formattedSource appendFormat:@"%3d: %@\n", *lineNumber, line];
     (*lineNumber)++;
+    if (*lineNumber > 15) {
+      *stop = YES;
+    }
   }];
   free(lineNumber);
   [formattedSource appendString:@"\n\n"];
@@ -150,10 +153,10 @@ static NSString* const kSourceIDMapBaseLineNumberKey = @"baselinenumber";
   } @catch (NSException* e) {
   }
 
-  [message appendFormat:@"sourceID: %d", sourceID];
+  [message appendFormat:@"sourceID: %d, ", sourceID];
 
   if (filename) {
-    [message appendFormat:@", filename: %@", filename];
+    [message appendFormat:@"filename: %@, ", filename];
   }
 
   @try {
