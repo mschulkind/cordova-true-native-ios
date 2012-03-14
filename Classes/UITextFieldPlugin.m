@@ -74,7 +74,8 @@
       forControlEvents:UIControlEventEditingChanged];
   
   [self setProperties:
-    [NSArray arrayWithObjects:@"align", @"hint", @"text", nil]
+    [NSArray arrayWithObjects:@"align", @"hint", @"text", 
+        @"leftView", @"rightView", nil]
     forComponent:textField
     fromOptions:options];
 }
@@ -103,6 +104,22 @@
     textField.text = ([value isKindOfClass:[NSNull class]]) ? @"" : value;
   } else if ([name isEqual:@"hint"]) {
     textField.placeholder = value;
+  } else if ([name isEqual:@"leftView"]) {
+    if (![value isKindOfClass:[NSNull class]]) {
+      textField.leftView = [[self class] componentWithOptions:value];
+      textField.leftViewMode = UITextFieldViewModeAlways;
+    } else {
+      textField.leftView = nil;
+      textField.leftViewMode = UITextFieldViewModeNever;
+    }
+  } else if ([name isEqual:@"rightView"]) {
+    if (![value isKindOfClass:[NSNull class]]) {
+      textField.rightView = [[self class] componentWithOptions:value];
+      textField.rightViewMode = UITextFieldViewModeAlways;
+    } else {
+      textField.rightView = nil;
+      textField.rightViewMode = UITextFieldViewModeNever;
+    }
   } else {
     [super setProperty:name 
              withValue:value 
