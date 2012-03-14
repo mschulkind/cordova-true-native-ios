@@ -89,6 +89,12 @@ under the License.
 
 - (BOOL) execute:(CDVInvokedUrlCommand*)command
 {
+  //NSString* logLine = 
+      //[NSString stringWithFormat:@"%@.%@: %@", 
+          //command.className, command.methodName, command.options];
+  //NSLog(
+      //@"executing: %@", [logLine substringToIndex:MIN(1500, [logLine length])]);
+
   return [self.viewController execute:command];
 }
 

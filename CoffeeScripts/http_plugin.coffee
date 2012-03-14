@@ -1,4 +1,4 @@
-pluginID = 'com.github.cordova-true-native.http'
+pluginID = 'cordovatruenative.http'
 
 nextRequestID = 0
 allocateRequestID = ->

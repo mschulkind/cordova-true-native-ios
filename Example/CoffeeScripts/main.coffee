@@ -10,22 +10,21 @@ document.addEventListener('deviceready', onDeviceReady, false)
 onTNReady = ->
   navController = new TN.UI.NavigationController
   navController.push(new TN.UI.Window(
-    title: "TrueNative"
+    title: "True Native"
     constructView: (view) ->
-      templateName = 'exampleTemplate'
       entries = []
 
       # Adds a row object to the entries array. Each object in the entries
       # array corresponds to one row of the table view.
       addExample = (name, window) ->
         entries.push(
-          templateName: templateName
           userData:
             exampleName: name
             window: window
         )
 
       addExample('Action Sheet', App.createActionSheetDemoWindow())
+      addExample('Twitter', App.createTwitterDemoWindow())
 
       tableView = new TN.UI.TableView(entries: entries)
 
@@ -43,12 +42,13 @@ onTNReady = ->
 
       # Each row object specifies a template name. All rows here use the same
       # template name. This tells the table view about the template.
-      tableView.addRowTemplate(templateName, constructRow, reuseRow)
+      tableView.addRowTemplate(
+        constructCallback: constructRow
+        reuseCallback: reuseRow
+      )
 
       # Add the table view to the window's view and stretch it to fill the
       # window.
       TN.glueViews(view, tableView)
   ))
   navController.open()
-
-  navController.push(new App.createActionSheetDemoWindow())

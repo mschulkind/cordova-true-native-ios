@@ -52,9 +52,13 @@ TN.UI.TableView = class TableView extends TN.UI.View
     @headerView?.registerSelfAndDescendants()
     @footerView?.registerSelfAndDescendants()
 
-  addRowTemplate: (templateName, constructCallback, reuseCallback) ->
-    unless templateName && (constructCallback || reuseCallback)
-      throw "templateName && (constructCallback || reuseCallback) required"
+  addRowTemplate: (options) ->
+    templateName = options?.templateName ? 'default'
+    constructCallback = options?.constructCallback
+    reuseCallback = options?.reuseCallback
+
+    unless constructCallback || reuseCallback
+      throw "constructCallback || reuseCallback required"
 
     @rowTemplateMap[templateName] =
       constructCallback: constructCallback
@@ -82,8 +86,9 @@ TN.UI.TableView = class TableView extends TN.UI.View
     row = TN.UI.componentMap[rowID]
     throw "row not found" unless row
 
-    rowTemplate = @rowTemplateMap[rowEntry.templateName]
-    throw "missing template '#{rowEntry.templateName}'" unless rowTemplate
+    templateName = rowEntry.templateName ? 'default'
+    rowTemplate = @rowTemplateMap[templateName]
+    throw "missing template '#{templateName}'" unless rowTemplate
 
     callback = rowTemplate["#{callbackName}Callback"]
     callback?(rowEntry, row)

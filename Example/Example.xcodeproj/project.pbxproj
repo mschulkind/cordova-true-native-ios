@@ -33,6 +33,8 @@
 		C989B17414FB42A2004E9DE4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C989B14514FB3940004E9DE4 /* Default.png */; };
 		C989B17514FB42A2004E9DE4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C989B14714FB3940004E9DE4 /* Default@2x.png */; };
 		C989B17714FB437C004E9DE4 /* www in Resources */ = {isa = PBXBuildFile; fileRef = C989B17614FB437C004E9DE4 /* www */; };
+		C9B1268D151077D400CCB124 /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B1268B151077D400CCB124 /* grayArrow.png */; };
+		C9B1268E151077D400CCB124 /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B1268C151077D400CCB124 /* grayArrow@2x.png */; };
 		C9F88C59150BE30100F84E6A /* libTrueNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C958F21D1509633000D36EF5 /* libTrueNative.a */; };
 		C9F88C5F150BF05800F84E6A /* UIWebViewScriptDebugDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F88C5E150BF05800F84E6A /* UIWebViewScriptDebugDelegate.m */; };
 		C9F88C61150BF4E500F84E6A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F88C60150BF4E500F84E6A /* MapKit.framework */; };
@@ -99,6 +101,8 @@
 		C989B15214FB3940004E9DE4 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		C989B15414FB3940004E9DE4 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
 		C989B17614FB437C004E9DE4 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		C9B1268B151077D400CCB124 /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grayArrow.png; path = ../Components/EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/grayArrow.png; sourceTree = "<group>"; };
+		C9B1268C151077D400CCB124 /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grayArrow@2x.png"; path = "../Components/EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/grayArrow@2x.png"; sourceTree = "<group>"; };
 		C9F88C5D150BF05800F84E6A /* UIWebViewScriptDebugDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWebViewScriptDebugDelegate.h; sourceTree = "<group>"; };
 		C9F88C5E150BF05800F84E6A /* UIWebViewScriptDebugDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIWebViewScriptDebugDelegate.m; sourceTree = "<group>"; };
 		C9F88C60150BF4E500F84E6A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -217,6 +221,8 @@
 		C989B13414FB3940004E9DE4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C9B1268B151077D400CCB124 /* grayArrow.png */,
+				C9B1268C151077D400CCB124 /* grayArrow@2x.png */,
 				C989B14914FB3940004E9DE4 /* Capture.bundle */,
 				C989B13D14FB3940004E9DE4 /* icons */,
 				C989B14414FB3940004E9DE4 /* splash */,
@@ -361,6 +367,8 @@
 				C989B17514FB42A2004E9DE4 /* Default@2x.png in Resources */,
 				C989B17714FB437C004E9DE4 /* www in Resources */,
 				C958F22515096CDB00D36EF5 /* Cordova.plist in Resources */,
+				C9B1268D151077D400CCB124 /* grayArrow.png in Resources */,
+				C9B1268E151077D400CCB124 /* grayArrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

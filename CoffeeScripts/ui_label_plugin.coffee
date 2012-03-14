@@ -3,7 +3,7 @@ TN.UI.Label = class Label extends TN.UI.View
 
   defaultOptions =
     fontFamily: 'Helvetica Neue'
-    color: '#969696'
+    color: 'black'
 
   constructor: (options) ->
     options ||= {}

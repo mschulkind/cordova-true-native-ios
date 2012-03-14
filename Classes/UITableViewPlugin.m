@@ -101,6 +101,9 @@
   NSDictionary* rowEntry = [self entryForIndexPath:indexPath];
 
   NSString* templateName = [rowEntry objectForKey:@"templateName"];
+  if (!templateName) {
+    templateName = @"default";
+  }
   TNUITableViewRow* row =
       (TNUITableViewRow*)[tableView 
           dequeueReusableCellWithIdentifier:templateName];
@@ -145,6 +148,9 @@
           sectionIndex, rowIndex,
           [UIComponentPlugin lookupIDForComponent:row]]
       forComponent:self];
+
+  // Flush everything to make sure the row is fully drawn before returning.
+  [UIComponentPlugin flushCommandQueue];
 
   return row;
 }

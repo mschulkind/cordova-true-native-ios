@@ -1,5 +1,6 @@
 #import "UIComponentPlugin.h"
 
+#import <Cordova/CDVViewController.h>
 #import "QSStrings.h"
 
 void dealloc(id self, SEL _cmd);
@@ -194,6 +195,12 @@ static UIComponentPlugin* uiComponentPluginInstance = NULL;
 {
   return [self writeJavascript:javascript 
      forComponentWithID:[self lookupIDForComponent:component]];
+}
+
++ (void)flushCommandQueue
+{
+  [(CDVViewController*)uiComponentPluginInstance.viewController 
+      flushCommandQueue];
 }
 
 + (void)fireEvent:(NSString*)name 
