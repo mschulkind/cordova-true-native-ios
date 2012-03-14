@@ -153,7 +153,7 @@ static NSString* const kSourceIDMapBaseLineNumberKey = @"baselinenumber";
   } @catch (NSException* e) {
   }
 
-  [message appendFormat:@"sourceID: %d, ", sourceID];
+  [message appendFormat:@"sourceID: %d, value: %@", sourceID, exception];
 
   if (filename) {
     [message appendFormat:@"filename: %@, ", filename];
@@ -164,6 +164,8 @@ static NSString* const kSourceIDMapBaseLineNumberKey = @"baselinenumber";
         [exception valueForKey:@"message"]];
   } @catch (NSException* e) {
   }
+
+  [message appendString:@"\n\n"];
 
   if (!filename) {
     [message appendString:[[self class] formatSource:source]];
