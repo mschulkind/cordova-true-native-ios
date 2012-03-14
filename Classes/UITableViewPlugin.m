@@ -149,9 +149,6 @@
           [UIComponentPlugin lookupIDForComponent:row]]
       forComponent:self];
 
-  // Flush everything to make sure the row is fully drawn before returning.
-  [UIComponentPlugin flushCommandQueue];
-
   return row;
 }
 

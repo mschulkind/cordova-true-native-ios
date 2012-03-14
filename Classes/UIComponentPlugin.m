@@ -173,6 +173,10 @@ static UIComponentPlugin* uiComponentPluginInstance = NULL;
   NSString* resultJSON = 
       [uiComponentPluginInstance writeJavascript:wrappedJavascript];
 
+  // Flush any commands that just got queue up.
+  [(CDVViewController*)uiComponentPluginInstance.viewController 
+      flushCommandQueue];
+
   // Parse, extract, and return the result.
   return [[resultJSON objectFromJSONString] objectAtIndex:0];
 }
@@ -195,12 +199,6 @@ static UIComponentPlugin* uiComponentPluginInstance = NULL;
 {
   return [self writeJavascript:javascript 
      forComponentWithID:[self lookupIDForComponent:component]];
-}
-
-+ (void)flushCommandQueue
-{
-  [(CDVViewController*)uiComponentPluginInstance.viewController 
-      flushCommandQueue];
 }
 
 + (void)fireEvent:(NSString*)name 

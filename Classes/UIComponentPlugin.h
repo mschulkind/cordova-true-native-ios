@@ -17,8 +17,6 @@
 + (id)writeJavascript:(NSString*)javascript
          forComponent:(id)component;
 
-+ (void)flushCommandQueue;
-
 + (void)fireEvent:(NSString*)name 
       withData:(NSDictionary*)data
       forComponentWithID:(NSString*)tnUIID;
