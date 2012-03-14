@@ -21,7 +21,7 @@ App.createTwitterDemoWindow = ->
 
       tableView = new TN.UI.TableView(
         headerView: headerCell.view
-        rowHeight: 58
+        rowHeight: 86
 
         # Provide a fetcher so the table is pull-to-refreshable.
         refreshCallback: (onDone) ->
@@ -46,6 +46,7 @@ App.createTwitterDemoWindow = ->
                   entries.push(
                     userData:
                       image: result.profile_image_url
+                      user: result.from_user
                       text: result.text
                   )
 
@@ -64,31 +65,59 @@ App.createTwitterDemoWindow = ->
       tableView.addRowTemplate(
         constructCallback: (rowEntry, row) ->
           gridCell = TN.cellForView(row,
-            padding: 5
+            layoutMode: 'vertical'
           )
 
+          nameCell = new TN.GridCell(
+            growMode: 'horizontal'
+            fixedHeight: 28
+            view: new TN.UI.View(
+              backgroundColor: 'black'
+            )
+          )
+          gridCell.add(nameCell)
+          row.userData.nameLabel = nameLabel = new TN.UI.Label(
+            fontSize: 16
+            fontWeight: 'bold'
+            color: 'white'
+            top: 10
+            left: 5
+            height: 18
+          )
+          nameCell.view.add(nameLabel)
+          nameCell.view.addEventListener('resize', ->
+            nameLabel.setProperty('width', nameCell.view.width)
+          )
+
+          imageAndTextCell = new TN.GridCell(
+            growMode: 'horizontal'
+            padding: 5
+          )
+          gridCell.add(imageAndTextCell)
           row.userData.imageView = imageView = new TN.UI.ImageView(
             width: 48
             height: 48
             backgroundColor: '#bbb'
           )
-          gridCell.add(imageView)
+          imageAndTextCell.add(imageView)
 
-          gridCell.add(new TN.UI.View(width: 5))
+          imageAndTextCell.add(new TN.UI.View(width: 5))
 
-          row.userData.label = label = new TN.UI.Label(
+          row.userData.textLabel = textLabel = new TN.UI.Label(
             fontSize: 12
             maxNumberOfLines: 0
           )
-          gridCell.add(new TN.GridCell(
+          imageAndTextCell.add(new TN.GridCell(
             growMode: 'both'
-            view: label
+            view: textLabel
           ))
 
         reuseCallback: (rowEntry, row) ->
           row.userData.imageView.setProperty(
             'imageURL', rowEntry.userData.image)
-          row.userData.label.setProperty('text', rowEntry.userData.text)
+          row.userData.nameLabel.setProperty(
+            'text', "@#{rowEntry.userData.user}")
+          row.userData.textLabel.setProperty('text', rowEntry.userData.text)
       )
 
       # Wait until the headerCell's view is resized to the tableView's new
