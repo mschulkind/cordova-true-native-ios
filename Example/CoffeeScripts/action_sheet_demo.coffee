@@ -11,6 +11,8 @@ App.createActionSheetDemoWindow = ->
         padding: 10
       )
 
+      # GridCells relayout their content after each add() by default.
+      # batchUpdates() temporarily disables automatic relayout for efficiency.
       gridCell.batchUpdates(->
         # Add the button that will show the action sheet.
         button = new TN.UI.Button(
