@@ -50,6 +50,10 @@
 		<string>CDVSplashScreen</string>
 		<key>org.apache.cordova.battery</key>
 		<string>CDVBattery</string>
+		<key>cordovatruenative.facebook</key>
+		<string>FacebookPlugin</string>
+		<key>cordovatruenative.file</key>
+		<string>FilePlugin</string>
 		<key>cordovatruenative.http</key>
 		<string>HTTPPlugin</string>
 		<key>cordovatruenative.mbprogresshud</key>

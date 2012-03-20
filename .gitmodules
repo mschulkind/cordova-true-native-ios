@@ -16,3 +16,6 @@
 [submodule "Components/QSUtilities"]
 	path = Components/QSUtilities
 	url = https://github.com/mikeho/QSUtilities.git
+[submodule "Components/facebook-ios-sdk"]
+	path = Components/facebook-ios-sdk
+	url = https://github.com/facebook/facebook-ios-sdk.git

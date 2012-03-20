@@ -35,6 +35,8 @@ coffeescripts = [
     'ui_tab_plugin',
 
     # Other Plugins
+    'facebook_plugin',
+    'file_plugin',
     'http_plugin',
     'progress_hud_plugin',
 
