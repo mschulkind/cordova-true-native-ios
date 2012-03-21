@@ -4,6 +4,8 @@ build/**
 Example/www/*.js
 Classes/EncodedJavascript.h
 
+spec/javascripts/*.js
+
 # XCode
 **/*.xcodeproj/xcuserdata/
 *.xcworkspace/
