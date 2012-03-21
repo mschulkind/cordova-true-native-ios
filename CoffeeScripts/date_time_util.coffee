@@ -48,5 +48,14 @@ TN.timeToString = (time) ->
 
   "#{formattedHour}#{formattedMinute} #{amPM}"
 
+TN.encodeDate = (date) ->
+  "#{date.getFullYear()}-" +
+    "#{TN.intWithLeadingZeros(date.getMonth() + 1, 2)}-" +
+    "#{TN.intWithLeadingZeros(date.getDate(), 2)}"
+
+TN.decodeDate = (dateString) ->
+  new Date(
+    dateString.slice(0,4), dateString.slice(5,7) - 1, dateString.slice(8))
+
 TN.msPerWeek = 7 * 24 * 60 * 60 * 1000
 TN.msPerYear = TN.msPerWeek * 52
