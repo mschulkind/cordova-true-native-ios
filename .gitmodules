@@ -19,3 +19,9 @@
 [submodule "Components/facebook-ios-sdk"]
 	path = Components/facebook-ios-sdk
 	url = https://github.com/facebook/facebook-ios-sdk.git
+[submodule "scripts/geonames_data"]
+	path = scripts/geonames_data
+	url = https://mschulkind@github.com/mschulkind/geonames.git
+[submodule "Components/ndtrie"]
+	path = Components/ndtrie
+	url = https://github.com/mschulkind/ndtrie
