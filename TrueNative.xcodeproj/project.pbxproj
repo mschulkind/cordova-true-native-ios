@@ -90,6 +90,10 @@
 		C97017B614FB6D7100533764 /* EGOCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C97017B414FB6D7100533764 /* EGOCache.h */; };
 		C97017B714FB6D7100533764 /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C97017B514FB6D7100533764 /* EGOCache.m */; };
 		C989B1A714FB64B2004E9DE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C989B1A614FB64B2004E9DE4 /* Foundation.framework */; };
+		C98EA0C8151A6A260005241A /* EncodedCitiesUS.h in Headers */ = {isa = PBXBuildFile; fileRef = C98EA0C7151A6A260005241A /* EncodedCitiesUS.h */; };
+		C98EA0CC151A6AA50005241A /* LocationAutocompletePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C98EA0CA151A6AA50005241A /* LocationAutocompletePlugin.h */; };
+		C98EA0CD151A6AA50005241A /* LocationAutocompletePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C98EA0CB151A6AA50005241A /* LocationAutocompletePlugin.m */; };
+		C98EA0E2151A6DC90005241A /* NDTrie.m in Sources */ = {isa = PBXBuildFile; fileRef = C98EA0D1151A6B7D0005241A /* NDTrie.m */; };
 		C9CBB568151938D000DC7592 /* FacebookPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CBB564151938D000DC7592 /* FacebookPlugin.h */; };
 		C9CBB569151938D000DC7592 /* FacebookPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CBB565151938D000DC7592 /* FacebookPlugin.m */; };
 		C9CBB56A151938D000DC7592 /* FilePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CBB566151938D000DC7592 /* FilePlugin.h */; };
@@ -232,6 +236,11 @@
 		C989B1A314FB64B2004E9DE4 /* libTrueNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTrueNative.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C989B1A614FB64B2004E9DE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C989B1AA14FB64B2004E9DE4 /* TrueNative-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrueNative-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		C98EA0C7151A6A260005241A /* EncodedCitiesUS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EncodedCitiesUS.h; path = Classes/EncodedCitiesUS.h; sourceTree = "<group>"; };
+		C98EA0CA151A6AA50005241A /* LocationAutocompletePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationAutocompletePlugin.h; path = Classes/LocationAutocompletePlugin.h; sourceTree = "<group>"; };
+		C98EA0CB151A6AA50005241A /* LocationAutocompletePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationAutocompletePlugin.m; path = Classes/LocationAutocompletePlugin.m; sourceTree = "<group>"; };
+		C98EA0D0151A6B7D0005241A /* NDTrie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NDTrie.h; path = Classes/NDTrie.h; sourceTree = "<group>"; };
+		C98EA0D1151A6B7D0005241A /* NDTrie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NDTrie.m; path = Classes/NDTrie.m; sourceTree = "<group>"; };
 		C9CBB564151938D000DC7592 /* FacebookPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FacebookPlugin.h; path = Classes/FacebookPlugin.h; sourceTree = "<group>"; };
 		C9CBB565151938D000DC7592 /* FacebookPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FacebookPlugin.m; path = Classes/FacebookPlugin.m; sourceTree = "<group>"; };
 		C9CBB566151938D000DC7592 /* FilePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FilePlugin.h; path = Classes/FilePlugin.h; sourceTree = "<group>"; };
@@ -316,11 +325,14 @@
 		C970155314FB688700533764 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C98EA0CA151A6AA50005241A /* LocationAutocompletePlugin.h */,
+				C98EA0CB151A6AA50005241A /* LocationAutocompletePlugin.m */,
 				C9CBB564151938D000DC7592 /* FacebookPlugin.h */,
 				C9CBB565151938D000DC7592 /* FacebookPlugin.m */,
 				C9CBB566151938D000DC7592 /* FilePlugin.h */,
 				C9CBB567151938D000DC7592 /* FilePlugin.m */,
 				C9F88C71150C0BAC00F84E6A /* EncodedJavascript.h */,
+				C98EA0C7151A6A260005241A /* EncodedCitiesUS.h */,
 				C970155914FB68B500533764 /* HTTPPlugin.h */,
 				C970155A14FB68B500533764 /* HTTPPlugin.m */,
 				C970155B14FB68B500533764 /* MBProgressHUDPlugin.h */,
@@ -372,6 +384,7 @@
 		C97015B714FB6CAB00533764 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				C98EA0CE151A6B7D0005241A /* ndtrie */,
 				C9CBB5891519396200DC7592 /* Facebook iOS SDK */,
 				C9F88C74150C0E7F00F84E6A /* QSUtilities */,
 				C9442D5E15096F620046E512 /* ASIHTTPReqeuest */,
@@ -522,6 +535,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C98EA0CE151A6B7D0005241A /* ndtrie */ = {
+			isa = PBXGroup;
+			children = (
+				C98EA0D0151A6B7D0005241A /* NDTrie.h */,
+				C98EA0D1151A6B7D0005241A /* NDTrie.m */,
+			);
+			name = ndtrie;
+			path = Components/ndtrie;
+			sourceTree = "<group>";
+		};
 		C9CBB5891519396200DC7592 /* Facebook iOS SDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -645,6 +668,8 @@
 				C9CBB5B6151939B800DC7592 /* NSString+SBJSON.h in Headers */,
 				C9CBB5B7151939B800DC7592 /* SBJsonWriter.h in Headers */,
 				C9CBB5B9151939B800DC7592 /* SBJsonBase.h in Headers */,
+				C98EA0C8151A6A260005241A /* EncodedCitiesUS.h in Headers */,
+				C98EA0CC151A6AA50005241A /* LocationAutocompletePlugin.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -771,6 +796,8 @@
 				C9CBB5B8151939B800DC7592 /* SBJsonParser.m in Sources */,
 				C9CBB5BA151939B800DC7592 /* SBJsonBase.m in Sources */,
 				C9CBB5BB151939B800DC7592 /* NSString+SBJSON.m in Sources */,
+				C98EA0CD151A6AA50005241A /* LocationAutocompletePlugin.m in Sources */,
+				C98EA0E2151A6DC90005241A /* NDTrie.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

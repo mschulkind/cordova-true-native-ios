@@ -38,6 +38,7 @@ coffeescripts = [
     'facebook_plugin',
     'file_plugin',
     'http_plugin',
+    'location_autocomplete_plugin',
     'progress_hud_plugin',
 
     # Controls
@@ -48,6 +49,8 @@ javascripts = ['Components/underscore.js/underscore.js']
 javascripts.append(map((lambda x: "build/%s.js" % x), coffeescripts))
 Command('build/all.js', javascripts, "cat $SOURCES > $TARGET")
 
-Command(
-  'Classes/EncodedJavascript.h', 'build/all.js', 
-  'echo "static NSString* encodedJavascript = @\\""`base64 $SOURCE`"\\";" > $TARGET')
+base64_bld = Builder(
+    action = 'echo "static NSString* encoded"`basename $TARGET .h | sed s/Encoded//`" = @\\""`base64 $SOURCE`"\\";" > $TARGET')
+env = Environment(BUILDERS = {'Base64' : base64_bld})
+env.Base64('Classes/EncodedJavascript.h', 'build/all.js')
+env.Base64('Classes/EncodedCitiesUS.h', 'scripts/cities_US.json')

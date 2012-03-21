@@ -27,9 +27,11 @@ GEM
       ffi (~> 1.0)
       multi_json (~> 1.0)
       rubyzip
+    yajl-ruby (1.1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   jasmine
+  yajl-ruby

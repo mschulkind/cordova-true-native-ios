@@ -56,6 +56,8 @@
 		<string>FilePlugin</string>
 		<key>cordovatruenative.http</key>
 		<string>HTTPPlugin</string>
+		<key>cordovatruenative.locationautocomplete</key>
+		<string>LocationAutocompletePlugin</string>
 		<key>cordovatruenative.mbprogresshud</key>
 		<string>MBProgressHUDPlugin</string>
 		<key>cordovatruenative.actionsheet</key>
