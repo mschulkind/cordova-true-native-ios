@@ -5,6 +5,8 @@ TN.UI.ScrollView = class ScrollView extends TN.UI.View
     super
 
     @contentView = options?.contentView || new TN.UI.View
+    @contentHeight = @contentView.height
+    @contentWidth = @contentView.width
     @add(@contentView)
 
     @contentView.addEventListener('resize', (e) =>

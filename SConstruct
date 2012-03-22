@@ -43,6 +43,10 @@ coffeescripts = [
 
     # Controls
     'grid_cell_control',
+
+    # Other
+    'title_bar',
+    'spinnerize',
 ]
 
 javascripts = ['Components/underscore.js/underscore.js']

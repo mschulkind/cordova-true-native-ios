@@ -2,25 +2,9 @@ App.createTwitterDemoWindow = ->
   new TN.UI.Window(
     title: 'Twitter'
     constructView: (view) ->
-      textField = new TN.UI.TextField(
-        hint: 'Search twitter here...'
-        borderWidth: 1
-        borderColor: 'black'
-        borderRadius: 15
-        backgroundColor: 'white'
-        leftView: new TN.UI.View(width: 10)
-      )
-      headerCell = new TN.GridCell(
-        padding: 10
-        inheritViewSizeMode: 'width'
-        fixedHeight: 50
-        view: new TN.UI.View(
-          backgroundColor: 'gray'
-        )
-      )
+      query = ''
 
       tableView = new TN.UI.TableView(
-        headerView: headerCell.view
         rowHeight: 86
 
         # Provide a fetcher so the table is pull-to-refreshable.
@@ -29,38 +13,34 @@ App.createTwitterDemoWindow = ->
       )
 
       updateResults = (onDone) ->
-        textField.getProperty('text', ->
-          if textField.text
-            TN.HTTP.fetch(
-              url: 'http://search.twitter.com/search.json'
-              params:
-                q: textField.text
-                rpp: 100
-                result_type: 'recent'
+        if query
+          TN.HTTP.fetch(
+            url: 'http://search.twitter.com/search.json'
+            params:
+              q: query
+              rpp: 100
+              result_type: 'recent'
 
-              successHandler: (response) ->
-                results = JSON.parse(response.data).results
-                entries = []
+            successHandler: (response) ->
+              results = JSON.parse(response.data).results
+              entries = []
 
-                for result in results
-                  entries.push(
-                    userData:
-                      image: result.profile_image_url
-                      user: result.from_user
-                      text: result.text
-                  )
+              for result in results
+                entries.push(
+                  userData:
+                    image: result.profile_image_url
+                    user: result.from_user
+                    text: result.text
+                )
 
-                tableView.setProperty('entries', entries)
+              tableView.setProperty('entries', entries)
 
-                onDone?()
+              onDone?()
 
-              errorHandler: ->
-                alert 'Error running search.'
-                onDone?(false)
-            )
-          else
-            onDone?(false)
-        )
+            errorHandler: ->
+              alert 'Error running search.'
+              onDone?(false)
+          )
 
       tableView.addRowTemplate(
         constructCallback: (rowEntry, row) ->
@@ -120,18 +100,21 @@ App.createTwitterDemoWindow = ->
           row.userData.textLabel.setProperty('text', rowEntry.userData.text)
       )
 
-      # Wait until the headerCell's view is resized to the tableView's new
-      # width due to the glueing below. If we don't wait, the headerCell will
-      # not be wide enough to accomodate the text field.
-      headerCell.view.addEventOnceListener('resize', ->
-        headerCell.add(new TN.GridCell(
-          growMode: 'both'
-          view: textField
-        ))
+      # Wait until the tableView is resized by the glueing below. If we don't
+      # wait, the headerView will not be wide enough to accomodate the search
+      # box.
+      tableView.addEventOnceListener('resize', ->
+        tableView.setProperty('headerView',
+          App.createSearchBoxHeaderView(
+            hint: 'Search twitter here...'
+
+            # Run the search when the done button on the keyboard is clicked.
+            onDone: (e) ->
+              query = e.text
+              updateResults()
+          )
+        )
       )
 
       TN.glueViews(view, tableView)
-
-      # Run the search when the done button on the keyboard is clicked.
-      textField.addEventListener('done', -> updateResults())
   )

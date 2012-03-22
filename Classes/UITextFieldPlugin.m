@@ -23,15 +23,22 @@
 
 @synthesize textFieldBeingEdited = textFieldBeingEdited_;
 
+static NSDictionary* createEventDict(TNUITextField* textField)
+{
+  return [NSDictionary dictionaryWithObject:textField.text forKey:@"text"];
+}
+
 - (void)textFieldDone:(TNUITextField*)sender
 {
-  [[self class] fireEvent:@"done" withData:nil forComponent:sender];
+  [[self class] fireEvent:@"done" 
+      withData:createEventDict(sender)
+      forComponent:sender];
 }
 
 - (void)textFieldChanged:(TNUITextField*)sender
 {
   [[self class] fireEvent:@"change" 
-      withData:[NSDictionary dictionaryWithObject:sender.text forKey:@"text"]
+      withData:createEventDict(sender)
       forComponent:sender];
 }
 

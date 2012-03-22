@@ -16,15 +16,16 @@ onTNReady = ->
 
       # Adds a row object to the entries array. Each object in the entries
       # array corresponds to one row of the table view.
-      addExample = (name, window) ->
+      addExample = (name, windowCallback) ->
         entries.push(
           userData:
             exampleName: name
-            window: window
+            window: windowCallback(navController)
         )
 
-      addExample('Action Sheet', App.createActionSheetDemoWindow())
-      addExample('Twitter', App.createTwitterDemoWindow())
+      addExample('Action Sheet', App.createActionSheetDemoWindow)
+      addExample('Instagram', App.createInstagramDemoWindow)
+      addExample('Twitter', App.createTwitterDemoWindow)
 
       tableView = new TN.UI.TableView(entries: entries)
 

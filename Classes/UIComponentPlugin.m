@@ -3,8 +3,7 @@
 #import <Cordova/CDVViewController.h>
 #import "QSStrings.h"
 
-void dealloc(id self, SEL _cmd);
-void dealloc(id self, SEL _cmd) {
+static void dealloc(id self, SEL _cmd) {
   [UIComponentPlugin writeJavascript:@"unregister()" forComponent:self];
   [UIComponentPlugin unregisterComponent:self];
 

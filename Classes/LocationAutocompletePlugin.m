@@ -49,8 +49,13 @@ static NSString* transformForCompletion(NSString* str) {
     NSArray* cities = [citiesJSON objectFromJSONString];
 
     self.trie = [NDMutableTrie trie];
-    for (NSString* city in cities) {
-      [trie_ setObject:city forKey:transformForCompletion(city)];
+    for (NSArray* city in cities) {
+      NSString* name = [city objectAtIndex:0];
+      NSArray* latlong = [city objectAtIndex:1];
+      [trie_ 
+          setObject:[NSDictionary dictionaryWithObjectsAndKeys:
+              name, @"name", latlong, @"latlong", nil]
+          forKey:transformForCompletion(name)];
     }
   }
 
