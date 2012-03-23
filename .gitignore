@@ -2,7 +2,7 @@ build/**
 .sconsign.dblite
 
 Example/www/*.js
-Classes/EncodedJavascript.h
+Classes/Encoded*.h
 
 spec/javascripts/*.js
 
