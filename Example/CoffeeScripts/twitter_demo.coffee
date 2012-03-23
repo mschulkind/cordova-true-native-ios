@@ -65,7 +65,7 @@ App.createTwitterDemoWindow = ->
             height: 18
           )
           nameCell.view.add(nameLabel)
-          nameCell.view.addEventListener('resize', ->
+          nameCell.addEventListener('layout', ->
             nameLabel.setProperty('width', nameCell.view.width)
           )
 
