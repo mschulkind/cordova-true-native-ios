@@ -12,20 +12,21 @@ Couchbase Labs.
 
 ## SpiderMonkey Improvements
 
-* *Memory Usage* The original motiviation for SpiderMonkey support was due to a
+* **Memory Usage** The original motiviation for SpiderMonkey support was due to a
   memory leak I believe was occuring inside the UIWebView, but was fixed
   through migrating to SpiderMonkey. My hypothesis is that UIWebViews don't run
   their GC immediately upon receiving a memory warning. Because we can now
   manually invoke the GC for SM, we have control and can ensure this happens.
 
-* *Bridge Design* The javascript<->ObjC bridge has been greatly simplified due
+* **Bridge Design** The javascript<->ObjC bridge has been greatly simplified due
   to being able to provide the javascript environment with methods that
   directly return values from the ObjC side. The performance has not been tuned
   or compared yet, but I suspect it is already better than a UIWebView. There
   are many avenues left for future improvement as well.
 
-* *Stack Traces* When exceptions happen, we get more accurate and detailed
+* **Stack Traces** When exceptions happen, we get more accurate and detailed
   stack traces:
+
 ```
 2012-03-23 19:25:31.707 True Native[39107:17003] twitter_demo.js:96:TypeError: imageAndTextCell.someMissingMethod is not a function
 2012-03-23 19:25:31.708 True Native[39107:17003] Stack trace:
@@ -47,6 +48,7 @@ of the private interfaces). See the
 for more details.
 
 Here is an example stack trace. This is the same exception as shown above:
+
 ```
 2012-03-23 19:27:47.205 True Native[39323:17003] Exception - name: TypeError, sourceID: 148501056, value: <WebScriptObject: 0x8bbdc00>, filename: twitter_demo.js, 
 Message: 'undefined' is not a function
