@@ -12,7 +12,7 @@ void reportException(struct JSContext* cx);
 }
 
 - (id)initWithSourceFiles:(NSArray*)sourceFiles;
-- (void)loadJavascriptFile:(NSString*)filename;
+- (void)loadSourceFiles:(NSArray*)sourceFiles;
 - (NSString*)writeJavascript:(NSString*)javascript;
 - (void)runGC;
 

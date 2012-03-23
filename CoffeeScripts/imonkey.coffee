@@ -14,9 +14,11 @@ document.createEvent = (type) ->
 class Listenable
   constructor: ->
     @listeners = {}
+
   addEventListener: (type, listener) ->
+    awefawfewf.awefwafeewf() unless listener instanceof Function
     @listeners[type] ||= []
-    @listeners[type] += listener
+    @listeners[type].push(listener)
 
   removeEventListener: (type, listener) ->
     callbackIndex = @eventListeners[eventName]?.indexOf?(eventCallback)
@@ -24,7 +26,14 @@ class Listenable
 
   dispatchEvent: (type) ->
     if @listeners[type]
-      callback(type) for callback in @listeners[type]
+      for callback in @listeners[type]
+        callback(type)
+
+# HACKITY HACK HACK
+document.createElement = ->
+  setAttribute: ->
+document.documentElement =
+  appendChild: ->
 
 documentEventHandler = new Listenable
 

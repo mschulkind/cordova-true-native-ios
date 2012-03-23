@@ -34,7 +34,9 @@ under the License.
 	#import "CDV.h"
 #endif
 
-#import "SMWebView.h"
+#ifdef TN_IMONKEY
+  #import "SMWebView.h"
+#endif
 
 @implementation AppDelegate
 
@@ -64,14 +66,22 @@ under the License.
   self.window = [[[UIWindow alloc] initWithFrame:screenBounds] autorelease];
   self.window.autoresizesSubviews = YES;
 
-  CGRect viewBounds = [[UIScreen mainScreen] applicationFrame];
-
   self.viewController = [[[MainViewController alloc] init] autorelease];
+
   self.viewController.useSplashScreen = YES;
+  self.viewController.commandDelegate = self;
+
+#ifndef TN_IMONKEY
   self.viewController.wwwFolderName = @"www";
   self.viewController.startPage = @"index.html";
-  self.viewController.view.frame = viewBounds;
-  self.viewController.commandDelegate = self;
+#else
+  self.viewController.webView = 
+      (CDVCordovaView*)[[[SMWebView alloc] init] autorelease];
+#endif
+
+  self.viewController.view.frame = [[UIScreen mainScreen] applicationFrame];
+  [self.window addSubview:self.viewController.view];
+  [self.window makeKeyAndVisible];
 
 #ifdef TN_IMONKEY
   NSArray* sourceFiles = 
@@ -89,18 +99,9 @@ under the License.
 
           @"main.js",
           nil];
-  self.viewController.webView = 
-      [[[SMWebView alloc] initWithSourceFiles:sourceFiles] autorelease];
-  [self.window addSubview:self.viewController.webView];
-  self.viewController.startPage = @"not.found";
+  [(SMWebView*)self.viewController.webView loadSourceFiles:sourceFiles];
+  [self.viewController webViewDidFinishLoad:self.viewController.webView];
 #endif
-
-  NSLog(@"%@", self.viewController.webView);
-
-  [self.window addSubview:self.viewController.view];
-  [self.window makeKeyAndVisible];
-
-  NSLog(@"%@", self.viewController.webView);
 
   return YES;
 }

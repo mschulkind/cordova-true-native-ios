@@ -74,7 +74,7 @@ Cordova.addResource = function(name) {
 /**
  * Boolean flag indicating if the Cordova API is available and initialized.
  */ // TODO: Remove this, it is unused here ... -jm
-Cordova.available = DeviceInfo.uuid != undefined;
+Cordova.available = true;
 
 /**
  * Add an initialization function to a queue that ensures it will run and initialize

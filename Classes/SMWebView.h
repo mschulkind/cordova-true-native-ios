@@ -1,6 +1,6 @@
-#import <Cordova/CDVCordovaView.h>
-
 #import "SMRuntime.h"
+
+#import <Cordova/CDVCordovaView.h>
 
 @interface SMWebView : CDVCordovaView {
  @private
@@ -9,7 +9,7 @@
 
 @property (nonatomic, retain) SMRuntime* smRuntime;
 
-- (id)initWithSourceFiles:(NSArray*)sourceFiles;
+- (void)loadSourceFiles:(NSArray*)sourceFiles;
 - (NSString*)stringByEvaluatingJavaScriptFromString:(NSString*)string;
 
 @end

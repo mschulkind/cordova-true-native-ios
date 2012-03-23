@@ -280,14 +280,11 @@ static JSClass jsGlobalClass = {
 
   [self loadBuiltinJavascript];
 
-  for (NSString* sourceFile in sourceFiles) {
-    [self loadJavascriptFile:sourceFile];
+  if (sourceFiles) {
+    for (NSString* sourceFile in sourceFiles) {
+      [self loadJavascriptFile:sourceFile];
+    }
   }
-
-  // Replace the command queue with nativeExec.
-  [self writeJavascript:
-      @"Cordova.commandQueue = "
-       "{push: function(c){window.nativeExec(c)}, length: 2}"];
 
   // Set the document readyState to 'loaded'.
   JS_DefineProperty(
@@ -332,6 +329,17 @@ static JSClass jsGlobalClass = {
   if (success == JS_FALSE) {
     reportException(jsContext_);
   }
+}
+
+- (void)loadSourceFiles:(NSArray*)sourceFiles
+{
+  JS_BeginRequest(jsContext_);
+
+  for (NSString* sourceFile in sourceFiles) {
+    [self loadJavascriptFile:sourceFile];
+  }
+
+  JS_EndRequest(jsContext_);
 }
 
 - (NSString*)writeJavascript:(NSString*)javascript

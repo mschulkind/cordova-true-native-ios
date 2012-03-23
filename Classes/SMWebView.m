@@ -4,35 +4,43 @@
 
 @synthesize smRuntime = smRuntime_;
 
-static void loadRequest(id self, SEL _cmd) {
-}
-
-+ (void)initialize
-{
-  [super initialize];
-
-  if ([self class] == [SMWebView class]) { 
-    NSLog(@"REPLACING");
-    Method method = class_getInstanceMethod(
-        [CDVCordovaView class], @selector(loadRequest:));
-    method_setImplementation(method, (IMP)loadRequest);
-  }
-}
-
-- (id)initWithSourceFiles:(NSArray*)sourceFiles
+- (id)init
 {
   if ((self = [super init])) {
     self.smRuntime = 
-        [[[SMRuntime alloc] initWithSourceFiles:sourceFiles] autorelease];
+        [[[SMRuntime alloc] initWithSourceFiles:nil] autorelease];
   }
   return self;
 }
 
+- (void)loadSourceFiles:(NSArray*)sourceFiles
+{
+  [smRuntime_ loadSourceFiles:sourceFiles];
+
+  // Replace the command queue with nativeExec.
+  [smRuntime_ writeJavascript:
+      @"Cordova.commandQueue = "
+       "{push: function(c){window.nativeExec(c)}, length: 2}"];
+}
+
 - (NSString*)stringByEvaluatingJavaScriptFromString:(NSString*)string
 {
-  assert(![string isEqual:@"Cordova.commandQueueFlushing = true"]);
-  NSLog(@"%@", string);
-  return [self.smRuntime writeJavascript:string];
+  assert(smRuntime_);
+  return [smRuntime_ writeJavascript:string];
+}
+
+- (void)loadRequest:(NSURLRequest*)request
+{
+}
+
+- (void)loadHTMLString:(NSString*)string baseURL:(NSURL*)baseURL
+{
+}
+
+- (void)dealloc
+{
+  self.smRuntime = nil;
+  [super dealloc];
 }
 
 @end
