@@ -2,18 +2,20 @@
 
 ## Javascript Engine Choice
 
-The javascript engine behind firefox, SpiderMonkey (referred to throughout as
-SM), can be used for the javascript engine instead of *UIWebView*. Using
-SpiderMonkey as the engine allows us to access internal interfaces of the
-javascript engine, leading to many of the improvements mentioned below.
-SpiderMonkey support is provided by
-[iMonkey](https://github.com/couchbaselabs/iMonkey) which is maintained by
-Couchbase Labs.
+By choosing either the `Example` target or the `Example iMonkey` target, you
+can switch between using a UIWebView for javascript or SpiderMonkey (referred
+to throughout as SM), the javascript engine behind FireFox. SpiderMonkey
+support is provided by [iMonkey](https://github.com/couchbaselabs/iMonkey)
+which is maintained by [Couchbase Labs](https://github.com/couchbaselabs).
 
 ## SpiderMonkey Improvements
 
-* **Memory Usage** The original motiviation for SpiderMonkey support was due to a
-  memory leak I believe was occuring inside the UIWebView, but was fixed
+Using SpiderMonkey as the engine allows us to access internal interfaces of the
+javascript engine. This increased control is directly responsible for the
+following improvements:
+
+* **Memory Usage** The original motiviation for SpiderMonkey support was due to
+  a memory leak I believe was occuring inside the UIWebView, but was fixed
   through migrating to SpiderMonkey. My hypothesis is that UIWebViews don't run
   their GC immediately upon receiving a memory warning. Because we can now
   manually invoke the GC for SM, we have control and can ensure this happens.
@@ -36,6 +38,12 @@ Couchbase Labs.
 @writeJavascript:1
 Assertion failed: (false), function reportException, file /tmp/cordova-true-native/Classes/SMRuntime.mm, line 181.
 ```
+
+You may notice two frames with a filename of `writeJavascript`. Frames like
+this can come from any `writeJavascript` call, but these particular ones are
+from the baked in javascript which is injected using `writeJavascript`. You can
+recognize these lines, in part, due to their high line number. You can find the
+javascript source in `build/all.js` after building the example..
 
 ## UIWebView Debug Delegate
 
