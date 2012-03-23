@@ -70,6 +70,7 @@
 		C9B1268D151077D400CCB124 /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B1268B151077D400CCB124 /* grayArrow.png */; };
 		C9B1268E151077D400CCB124 /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B1268C151077D400CCB124 /* grayArrow@2x.png */; };
 		C9F836AF151D0E1C00DB61B5 /* UIWebViewScriptDebugDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F88C5E150BF05800F84E6A /* UIWebViewScriptDebugDelegate.m */; };
+		C9F836B1151D125B00DB61B5 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9F836B0151D125B00DB61B5 /* Entitlements.plist */; };
 		C9F88C59150BE30100F84E6A /* libTrueNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C958F21D1509633000D36EF5 /* libTrueNative.a */; };
 		C9F88C5F150BF05800F84E6A /* UIWebViewScriptDebugDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F88C5E150BF05800F84E6A /* UIWebViewScriptDebugDelegate.m */; };
 		C9F88C61150BF4E500F84E6A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F88C60150BF4E500F84E6A /* MapKit.framework */; };
@@ -129,7 +130,7 @@
 		C958F22415096CDB00D36EF5 /* Cordova.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Cordova.plist; sourceTree = "<group>"; };
 		C96A389A150C580800D8653A /* CoffeeScripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CoffeeScripts; sourceTree = "<group>"; };
 		C970154814FB670A00533764 /* TrueNative.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TrueNative.xcodeproj; path = ../TrueNative.xcodeproj; sourceTree = SOURCE_ROOT; };
-		C989B10B14FB393F004E9DE4 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C989B10B14FB393F004E9DE4 /* .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = .app; path = "True Native.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C989B10F14FB393F004E9DE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C989B11114FB393F004E9DE4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C989B11314FB393F004E9DE4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -158,9 +159,10 @@
 		C989B15214FB3940004E9DE4 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		C989B15414FB3940004E9DE4 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
 		C989B17614FB437C004E9DE4 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
-		C98EA1D5151BFADE0005241A /* Example iMonkey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example iMonkey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C98EA1D5151BFADE0005241A /* Example iMonkey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Example iMonkey.app"; path = "True Native.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B1268B151077D400CCB124 /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grayArrow.png; path = ../Components/EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/grayArrow.png; sourceTree = "<group>"; };
 		C9B1268C151077D400CCB124 /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grayArrow@2x.png"; path = "../Components/EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/grayArrow@2x.png"; sourceTree = "<group>"; };
+		C9F836B0151D125B00DB61B5 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		C9F88C5D150BF05800F84E6A /* UIWebViewScriptDebugDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWebViewScriptDebugDelegate.h; sourceTree = "<group>"; };
 		C9F88C5E150BF05800F84E6A /* UIWebViewScriptDebugDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIWebViewScriptDebugDelegate.m; sourceTree = "<group>"; };
 		C9F88C60150BF4E500F84E6A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -253,6 +255,7 @@
 		C989B0FD14FB393F004E9DE4 = {
 			isa = PBXGroup;
 			children = (
+				C9F836B0151D125B00DB61B5 /* Entitlements.plist */,
 				C947F2C6151C1A9200BCFE30 /* libstdc++.dylib */,
 				C96A389A150C580800D8653A /* CoffeeScripts */,
 				C989B17614FB437C004E9DE4 /* www */,
@@ -269,7 +272,7 @@
 		C989B10C14FB393F004E9DE4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C989B10B14FB393F004E9DE4 /* Example.app */,
+				C989B10B14FB393F004E9DE4 /* .app */,
 				C98EA1D5151BFADE0005241A /* Example iMonkey.app */,
 			);
 			name = Products;
@@ -402,7 +405,7 @@
 			);
 			name = Example;
 			productName = Example;
-			productReference = C989B10B14FB393F004E9DE4 /* Example.app */;
+			productReference = C989B10B14FB393F004E9DE4 /* .app */;
 			productType = "com.apple.product-type.application";
 		};
 		C98EA1A6151BFADE0005241A /* Example iMonkey */ = {
@@ -493,6 +496,7 @@
 				C958F22515096CDB00D36EF5 /* Cordova.plist in Resources */,
 				C9B1268D151077D400CCB124 /* grayArrow.png in Resources */,
 				C9B1268E151077D400CCB124 /* grayArrow@2x.png in Resources */,
+				C9F836B1151D125B00DB61B5 /* Entitlements.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,7 +587,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -599,6 +602,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PRODUCT_NAME = "True Native";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -607,7 +611,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv7,
+					armv6,
+				);
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -616,6 +623,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PRODUCT_NAME = "True Native";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -645,7 +653,6 @@
 					"-weak_library",
 					/usr/lib/libSystem.B.dylib,
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -675,7 +682,6 @@
 					"-weak_library",
 					/usr/lib/libSystem.B.dylib,
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -686,6 +692,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = /Users/Shared/Cordova/Frameworks;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -710,7 +717,6 @@
 					"-weak_library",
 					/usr/lib/libSystem.B.dylib,
 				);
-				PRODUCT_NAME = "Example iMonkey";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -720,6 +726,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = /Users/Shared/Cordova/Frameworks;
@@ -744,7 +751,6 @@
 					"-weak_library",
 					/usr/lib/libSystem.B.dylib,
 				);
-				PRODUCT_NAME = "Example iMonkey";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
