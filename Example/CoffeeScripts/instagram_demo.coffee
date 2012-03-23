@@ -26,61 +26,65 @@ App.createInstagramDemoWindow = (parentNav) ->
       displayResults = (location) ->
         view.remove(instructionsCell.view)
 
-        TN.HTTP.fetch(
-          url: 'https://api.instagram.com/v1/media/search'
-          params:
-            limit: 50
-            lat: location.latlong[0]
-            lng: location.latlong[1]
-            distance: 5000
-            count: 100
-            client_id: 'e569e7276a8f4143bea78668837e39c5'
+        TN.spinnerizeView(view, (removeSpinner) ->
+          TN.HTTP.fetch(
+            url: 'https://api.instagram.com/v1/media/search'
+            params:
+              limit: 50
+              lat: location.latlong[0]
+              lng: location.latlong[1]
+              distance: 5000
+              count: 100
+              client_id: 'e569e7276a8f4143bea78668837e39c5'
 
-          successHandler: (response) ->
-            photos = JSON.parse(response.data).data
+            successHandler: (response) ->
+              removeSpinner()
+              photos = JSON.parse(response.data).data
 
-            scrollView = new TN.UI.ScrollView
-            TN.glueViews(view, scrollView)
+              scrollView = new TN.UI.ScrollView
+              TN.glueViews(view, scrollView)
 
-            marginSize = 7
-            spacingSize = 6
-            photoSize = 150
-            numRows = Math.ceil(photos.length / 2)
-            scrollView.contentView.setProperties(
-              width: 320
-              height:
-                (2*marginSize +
-                 (numRows)*(photoSize + spacingSize) -
-                 spacingSize)
-            )
+              marginSize = 7
+              spacingSize = 6
+              photoSize = 150
+              numRows = Math.ceil(photos.length / 2)
+              scrollView.contentView.setProperties(
+                width: 320
+                height:
+                  (2*marginSize +
+                   (numRows)*(photoSize + spacingSize) -
+                   spacingSize)
+              )
 
-            nextTop = marginSize
-            for firstPhoto, index in photos by 2
-              secondPhoto = photos[index + 1]
+              nextTop = marginSize
+              for firstPhoto, index in photos by 2
+                secondPhoto = photos[index + 1]
 
-              addPhoto = (photo, left) ->
-                imageView = new TN.UI.ImageView(
-                  imageURL: photo.images.thumbnail.url
-                  backgroundColor: '#999'
-                  top: nextTop
-                  left: left
-                  width: photoSize
-                  height: photoSize
-                )
-                scrollView.contentView.add(imageView)
+                addPhoto = (photo, left) ->
+                  imageView = new TN.UI.ImageView(
+                    imageURL: photo.images.thumbnail.url
+                    backgroundColor: '#999'
+                    top: nextTop
+                    left: left
+                    width: photoSize
+                    height: photoSize
+                  )
+                  scrollView.contentView.add(imageView)
 
-                imageView.addEventListener('click', ->
-                  parentNav.push(createWindowForPhoto(photo))
-                )
+                  imageView.addEventListener('click', ->
+                    parentNav.push(createWindowForPhoto(photo))
+                  )
 
-              addPhoto(firstPhoto, marginSize)
-              if secondPhoto
-                addPhoto(secondPhoto, marginSize + photoSize + spacingSize)
+                addPhoto(firstPhoto, marginSize)
+                if secondPhoto
+                  addPhoto(secondPhoto, marginSize + photoSize + spacingSize)
 
-              nextTop += photoSize + spacingSize
+                nextTop += photoSize + spacingSize
 
-          errorHandler: ->
-            alert 'Error running search.'
+            errorHandler: ->
+              removeSpinner()
+              alert 'Error running search.'
+          )
         )
 
       instructionsCell.batchUpdates(->
