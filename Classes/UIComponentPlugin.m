@@ -54,6 +54,7 @@ static UIComponentPlugin* uiComponentPluginInstance = NULL;
               withDict:(NSMutableDictionary*)options
 {
   NSData* sourceData = [QSStrings decodeBase64WithString:encodedJavascript];
+
   NSString* source = 
       [[[NSString alloc] 
           initWithData:sourceData encoding:NSUTF8StringEncoding] autorelease];
@@ -172,9 +173,12 @@ static UIComponentPlugin* uiComponentPluginInstance = NULL;
   NSString* resultJSON = 
       [uiComponentPluginInstance writeJavascript:wrappedJavascript];
 
+// iMonkey mode doesn't queue commands.
+#ifndef TN_IMONKEY
   // Flush any commands that just got queue up.
   [(CDVViewController*)uiComponentPluginInstance.viewController 
       flushCommandQueue];
+#endif
 
   // Parse, extract, and return the result.
   return [[resultJSON objectFromJSONString] objectAtIndex:0];

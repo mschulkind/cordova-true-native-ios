@@ -49,12 +49,15 @@ coffeescripts = [
     'spinnerize',
 ]
 
-javascripts = ['Components/underscore.js/underscore.js']
-javascripts.append(map((lambda x: "build/%s.js" % x), coffeescripts))
-Command('build/all.js', javascripts, "cat $SOURCES > $TARGET")
-
 base64_bld = Builder(
     action = 'echo "static NSString* encoded"`basename $TARGET .h | sed s/Encoded//`" = @\\""`base64 $SOURCE`"\\";" > $TARGET')
 env = Environment(BUILDERS = {'Base64' : base64_bld})
+
+javascripts = ['Components/underscore.js/underscore.js']
+javascripts += map((lambda x: "build/%s.js" % x), coffeescripts)
+Command('build/all.js', javascripts, "cat $SOURCES > $TARGET")
 env.Base64('Classes/EncodedJavascript.h', 'build/all.js')
+
+env.Base64('Classes/EncodedJavascriptImonkey.h', 'build/imonkey.js')
+
 env.Base64('Classes/EncodedCitiesUS.h', 'scripts/cities_US.json')

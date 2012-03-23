@@ -34,6 +34,8 @@ under the License.
 	#import "CDV.h"
 #endif
 
+#import "SMWebView.h"
+
 @implementation AppDelegate
 
 @synthesize window, viewController;
@@ -62,7 +64,6 @@ under the License.
   self.window = [[[UIWindow alloc] initWithFrame:screenBounds] autorelease];
   self.window.autoresizesSubviews = YES;
 
-
   CGRect viewBounds = [[UIScreen mainScreen] applicationFrame];
 
   self.viewController = [[[MainViewController alloc] init] autorelease];
@@ -70,12 +71,36 @@ under the License.
   self.viewController.wwwFolderName = @"www";
   self.viewController.startPage = @"index.html";
   self.viewController.view.frame = viewBounds;
-  // over-ride delegates
-  self.viewController.webView.delegate = self;
   self.viewController.commandDelegate = self;
+
+#ifdef TN_IMONKEY
+  NSArray* sourceFiles = 
+      [NSArray arrayWithObjects:
+          @"cordova-1.5.0.js",
+
+          @"environment.js",
+
+          @"location_selector_window.js",
+          @"search_box.js",
+
+          @"action_sheet_demo.js",
+          @"instagram_demo.js",
+          @"twitter_demo.js",
+
+          @"main.js",
+          nil];
+  self.viewController.webView = 
+      [[[SMWebView alloc] initWithSourceFiles:sourceFiles] autorelease];
+  [self.window addSubview:self.viewController.webView];
+  self.viewController.startPage = @"not.found";
+#endif
+
+  NSLog(@"%@", self.viewController.webView);
 
   [self.window addSubview:self.viewController.view];
   [self.window makeKeyAndVisible];
+
+  NSLog(@"%@", self.viewController.webView);
 
   return YES;
 }
@@ -125,6 +150,7 @@ under the License.
 
 - (BOOL) webView:(UIWebView*)theWebView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType
 {
+  assert(false);
   return [self.viewController webView:theWebView shouldStartLoadWithRequest:request navigationType:navigationType];
 }
 

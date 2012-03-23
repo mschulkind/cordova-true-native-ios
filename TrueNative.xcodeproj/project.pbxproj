@@ -29,6 +29,11 @@
 		C9442D5D15096F5C0046E512 /* ASIProgressDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D4915096F5C0046E512 /* ASIProgressDelegate.h */; };
 		C9442D65150AF6E40046E512 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D63150AF6E40046E512 /* Reachability.h */; };
 		C9442D66150AF6E40046E512 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C9442D64150AF6E40046E512 /* Reachability.m */; };
+		C947F2B6151C034700BCFE30 /* SMRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = C947F2B2151C034700BCFE30 /* SMRuntime.h */; };
+		C947F2B7151C034700BCFE30 /* SMRuntime.mm in Sources */ = {isa = PBXBuildFile; fileRef = C947F2B3151C034700BCFE30 /* SMRuntime.mm */; };
+		C947F2B8151C034700BCFE30 /* SMTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = C947F2B4151C034700BCFE30 /* SMTimer.h */; };
+		C947F2B9151C034700BCFE30 /* SMTimer.mm in Sources */ = {isa = PBXBuildFile; fileRef = C947F2B5151C034700BCFE30 /* SMTimer.mm */; };
+		C947F2C9151C1E5D00BCFE30 /* EncodedJavascriptImonkey.h in Headers */ = {isa = PBXBuildFile; fileRef = C947F2C8151C1E5D00BCFE30 /* EncodedJavascriptImonkey.h */; };
 		C958F2211509637200D36EF5 /* Cordova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C958F2201509637200D36EF5 /* Cordova.framework */; };
 		C970158914FB68B500533764 /* HTTPPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970155914FB68B500533764 /* HTTPPlugin.h */; };
 		C970158A14FB68B500533764 /* HTTPPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970155A14FB68B500533764 /* HTTPPlugin.m */; };
@@ -94,6 +99,129 @@
 		C98EA0CC151A6AA50005241A /* LocationAutocompletePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C98EA0CA151A6AA50005241A /* LocationAutocompletePlugin.h */; };
 		C98EA0CD151A6AA50005241A /* LocationAutocompletePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C98EA0CB151A6AA50005241A /* LocationAutocompletePlugin.m */; };
 		C98EA0E2151A6DC90005241A /* NDTrie.m in Sources */ = {isa = PBXBuildFile; fileRef = C98EA0D1151A6B7D0005241A /* NDTrie.m */; };
+		C98EA123151BFA720005241A /* HTTPPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970155A14FB68B500533764 /* HTTPPlugin.m */; };
+		C98EA124151BFA720005241A /* MBProgressHUDPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970155C14FB68B500533764 /* MBProgressHUDPlugin.m */; };
+		C98EA125151BFA720005241A /* UIActionSheetPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970155E14FB68B500533764 /* UIActionSheetPlugin.m */; };
+		C98EA126151BFA720005241A /* UIButtonPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970156014FB68B500533764 /* UIButtonPlugin.m */; };
+		C98EA127151BFA720005241A /* UIComponentPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970156214FB68B500533764 /* UIComponentPlugin.m */; };
+		C98EA128151BFA720005241A /* UIDatePickerViewPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970156414FB68B500533764 /* UIDatePickerViewPlugin.m */; };
+		C98EA129151BFA720005241A /* UIImageViewPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970156614FB68B500533764 /* UIImageViewPlugin.m */; };
+		C98EA12A151BFA720005241A /* UILabelPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970156814FB68B500533764 /* UILabelPlugin.m */; };
+		C98EA12B151BFA720005241A /* UIMailComposeWindowPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970156A14FB68B500533764 /* UIMailComposeWindowPlugin.m */; };
+		C98EA12C151BFA720005241A /* UIMapViewPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970156C14FB68B500533764 /* UIMapViewPlugin.m */; };
+		C98EA12D151BFA720005241A /* UINavigationControllerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970156E14FB68B500533764 /* UINavigationControllerPlugin.m */; };
+		C98EA12E151BFA720005241A /* UIPickerViewPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970157014FB68B500533764 /* UIPickerViewPlugin.m */; };
+		C98EA12F151BFA720005241A /* UIScrollViewPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970157214FB68B500533764 /* UIScrollViewPlugin.m */; };
+		C98EA130151BFA720005241A /* UISpinnerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970157414FB68B500533764 /* UISpinnerPlugin.m */; };
+		C98EA131151BFA720005241A /* UITabControllerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970157614FB68B500533764 /* UITabControllerPlugin.m */; };
+		C98EA132151BFA720005241A /* UITableViewPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970157814FB68B500533764 /* UITableViewPlugin.m */; };
+		C98EA133151BFA720005241A /* UITableViewRowPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970157A14FB68B500533764 /* UITableViewRowPlugin.m */; };
+		C98EA134151BFA720005241A /* UITabPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970157C14FB68B500533764 /* UITabPlugin.m */; };
+		C98EA135151BFA720005241A /* UITextFieldPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970157E14FB68B500533764 /* UITextFieldPlugin.m */; };
+		C98EA136151BFA720005241A /* UIUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C970158014FB68B500533764 /* UIUtil.m */; };
+		C98EA137151BFA720005241A /* UIViewPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970158214FB68B500533764 /* UIViewPlugin.m */; };
+		C98EA138151BFA720005241A /* UIWindowPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C970158414FB68B500533764 /* UIWindowPlugin.m */; };
+		C98EA139151BFA720005241A /* EGOImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C970165814FB6CCA00533764 /* EGOImageLoader.m */; };
+		C98EA13A151BFA720005241A /* EGOImageLoadConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = C970165914FB6CCA00533764 /* EGOImageLoadConnection.m */; };
+		C98EA13B151BFA720005241A /* EGOImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C970165E14FB6CCA00533764 /* EGOImageView.m */; };
+		C98EA13C151BFA720005241A /* EGOImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C970166214FB6CCA00533764 /* EGOImageButton.m */; };
+		C98EA13D151BFA720005241A /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C970167D14FB6CCA00533764 /* EGORefreshTableHeaderView.m */; };
+		C98EA13E151BFA720005241A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C97016EC14FB6CCA00533764 /* MBProgressHUD.m */; };
+		C98EA13F151BFA720005241A /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C97017B514FB6D7100533764 /* EGOCache.m */; };
+		C98EA140151BFA720005241A /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = C9442D3715096F5C0046E512 /* ASIAuthenticationDialog.m */; };
+		C98EA141151BFA720005241A /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = C9442D3A15096F5C0046E512 /* ASIDataCompressor.m */; };
+		C98EA142151BFA720005241A /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = C9442D3C15096F5C0046E512 /* ASIDataDecompressor.m */; };
+		C98EA143151BFA720005241A /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C9442D3E15096F5C0046E512 /* ASIDownloadCache.m */; };
+		C98EA144151BFA720005241A /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9442D4015096F5C0046E512 /* ASIFormDataRequest.m */; };
+		C98EA145151BFA720005241A /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9442D4215096F5C0046E512 /* ASIHTTPRequest.m */; };
+		C98EA146151BFA720005241A /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = C9442D4615096F5C0046E512 /* ASIInputStream.m */; };
+		C98EA147151BFA720005241A /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C9442D4815096F5C0046E512 /* ASINetworkQueue.m */; };
+		C98EA148151BFA720005241A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C9442D64150AF6E40046E512 /* Reachability.m */; };
+		C98EA149151BFA720005241A /* QSStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F88C75150C0E9900F84E6A /* QSStrings.m */; };
+		C98EA14A151BFA720005241A /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F88C7D150C0F7B00F84E6A /* GTMNSString+HTML.m */; };
+		C98EA14B151BFA720005241A /* FacebookPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CBB565151938D000DC7592 /* FacebookPlugin.m */; };
+		C98EA14C151BFA720005241A /* FilePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CBB567151938D000DC7592 /* FilePlugin.m */; };
+		C98EA14D151BFA720005241A /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CBB58B151939B800DC7592 /* Facebook.m */; };
+		C98EA14E151BFA720005241A /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CBB58F151939B800DC7592 /* FBDialog.m */; };
+		C98EA14F151BFA720005241A /* FBFrictionlessRequestSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CBB591151939B800DC7592 /* FBFrictionlessRequestSettings.m */; };
+		C98EA150151BFA720005241A /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CBB593151939B800DC7592 /* FBLoginDialog.m */; };
+		C98EA151151BFA720005241A /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CBB595151939B800DC7592 /* FBRequest.m */; };
+		C98EA152151BFA720005241A /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CBB599151939B800DC7592 /* SBJsonWriter.m */; };
+		C98EA153151BFA720005241A /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CBB59C151939B800DC7592 /* SBJSON.m */; };
+		C98EA154151BFA720005241A /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CBB59D151939B800DC7592 /* NSObject+SBJSON.m */; };
+		C98EA155151BFA720005241A /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CBB5A0151939B800DC7592 /* SBJsonParser.m */; };
+		C98EA156151BFA720005241A /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CBB5A2151939B800DC7592 /* SBJsonBase.m */; };
+		C98EA157151BFA720005241A /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CBB5A3151939B800DC7592 /* NSString+SBJSON.m */; };
+		C98EA158151BFA720005241A /* LocationAutocompletePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C98EA0CB151A6AA50005241A /* LocationAutocompletePlugin.m */; };
+		C98EA159151BFA720005241A /* NDTrie.m in Sources */ = {isa = PBXBuildFile; fileRef = C98EA0D1151A6B7D0005241A /* NDTrie.m */; };
+		C98EA15B151BFA720005241A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97015B514FB6BDB00533764 /* UIKit.framework */; };
+		C98EA15C151BFA720005241A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C989B1A614FB64B2004E9DE4 /* Foundation.framework */; };
+		C98EA15D151BFA720005241A /* Cordova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C958F2201509637200D36EF5 /* Cordova.framework */; };
+		C98EA15F151BFA720005241A /* HTTPPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970155914FB68B500533764 /* HTTPPlugin.h */; };
+		C98EA160151BFA720005241A /* MBProgressHUDPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970155B14FB68B500533764 /* MBProgressHUDPlugin.h */; };
+		C98EA161151BFA720005241A /* UIActionSheetPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970155D14FB68B500533764 /* UIActionSheetPlugin.h */; };
+		C98EA162151BFA720005241A /* UIButtonPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970155F14FB68B500533764 /* UIButtonPlugin.h */; };
+		C98EA163151BFA720005241A /* UIComponentPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970156114FB68B500533764 /* UIComponentPlugin.h */; };
+		C98EA164151BFA720005241A /* UIDatePickerViewPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970156314FB68B500533764 /* UIDatePickerViewPlugin.h */; };
+		C98EA165151BFA720005241A /* UIImageViewPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970156514FB68B500533764 /* UIImageViewPlugin.h */; };
+		C98EA166151BFA720005241A /* UILabelPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970156714FB68B500533764 /* UILabelPlugin.h */; };
+		C98EA167151BFA720005241A /* UIMailComposeWindowPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970156914FB68B500533764 /* UIMailComposeWindowPlugin.h */; };
+		C98EA168151BFA720005241A /* UIMapViewPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970156B14FB68B500533764 /* UIMapViewPlugin.h */; };
+		C98EA169151BFA720005241A /* UINavigationControllerPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970156D14FB68B500533764 /* UINavigationControllerPlugin.h */; };
+		C98EA16A151BFA720005241A /* UIPickerViewPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970156F14FB68B500533764 /* UIPickerViewPlugin.h */; };
+		C98EA16B151BFA720005241A /* UIScrollViewPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970157114FB68B500533764 /* UIScrollViewPlugin.h */; };
+		C98EA16C151BFA720005241A /* UISpinnerPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970157314FB68B500533764 /* UISpinnerPlugin.h */; };
+		C98EA16D151BFA720005241A /* UITabControllerPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970157514FB68B500533764 /* UITabControllerPlugin.h */; };
+		C98EA16E151BFA720005241A /* UITableViewPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970157714FB68B500533764 /* UITableViewPlugin.h */; };
+		C98EA16F151BFA720005241A /* UITableViewRowPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970157914FB68B500533764 /* UITableViewRowPlugin.h */; };
+		C98EA170151BFA720005241A /* UITabPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970157B14FB68B500533764 /* UITabPlugin.h */; };
+		C98EA171151BFA720005241A /* UITextFieldPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970157D14FB68B500533764 /* UITextFieldPlugin.h */; };
+		C98EA172151BFA720005241A /* UIUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = C970157F14FB68B500533764 /* UIUtil.h */; };
+		C98EA173151BFA720005241A /* UIViewPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970158114FB68B500533764 /* UIViewPlugin.h */; };
+		C98EA174151BFA720005241A /* UIWindowPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C970158314FB68B500533764 /* UIWindowPlugin.h */; };
+		C98EA175151BFA720005241A /* EGOImageLoadConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = C970165A14FB6CCA00533764 /* EGOImageLoadConnection.h */; };
+		C98EA176151BFA720005241A /* EGOImageLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = C970165B14FB6CCA00533764 /* EGOImageLoader.h */; };
+		C98EA177151BFA720005241A /* EGOImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = C970165F14FB6CCA00533764 /* EGOImageView.h */; };
+		C98EA178151BFA720005241A /* EGOImageButton.h in Headers */ = {isa = PBXBuildFile; fileRef = C970166114FB6CCA00533764 /* EGOImageButton.h */; };
+		C98EA179151BFA720005241A /* EGORefreshTableHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = C970167C14FB6CCA00533764 /* EGORefreshTableHeaderView.h */; };
+		C98EA17A151BFA720005241A /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = C97016EB14FB6CCA00533764 /* MBProgressHUD.h */; };
+		C98EA17B151BFA720005241A /* EGOCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C97017B414FB6D7100533764 /* EGOCache.h */; };
+		C98EA17C151BFA720005241A /* ASIAuthenticationDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D3615096F5C0046E512 /* ASIAuthenticationDialog.h */; };
+		C98EA17D151BFA720005241A /* ASICacheDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D3815096F5C0046E512 /* ASICacheDelegate.h */; };
+		C98EA17E151BFA720005241A /* ASIDataCompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D3915096F5C0046E512 /* ASIDataCompressor.h */; };
+		C98EA17F151BFA720005241A /* ASIDataDecompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D3B15096F5C0046E512 /* ASIDataDecompressor.h */; };
+		C98EA180151BFA720005241A /* ASIDownloadCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D3D15096F5C0046E512 /* ASIDownloadCache.h */; };
+		C98EA181151BFA720005241A /* ASIFormDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D3F15096F5C0046E512 /* ASIFormDataRequest.h */; };
+		C98EA182151BFA720005241A /* ASIHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D4115096F5C0046E512 /* ASIHTTPRequest.h */; };
+		C98EA183151BFA720005241A /* ASIHTTPRequestConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D4315096F5C0046E512 /* ASIHTTPRequestConfig.h */; };
+		C98EA184151BFA720005241A /* ASIHTTPRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D4415096F5C0046E512 /* ASIHTTPRequestDelegate.h */; };
+		C98EA185151BFA720005241A /* ASIInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D4515096F5C0046E512 /* ASIInputStream.h */; };
+		C98EA186151BFA720005241A /* ASINetworkQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D4715096F5C0046E512 /* ASINetworkQueue.h */; };
+		C98EA187151BFA720005241A /* ASIProgressDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D4915096F5C0046E512 /* ASIProgressDelegate.h */; };
+		C98EA188151BFA720005241A /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = C9442D63150AF6E40046E512 /* Reachability.h */; };
+		C98EA189151BFA720005241A /* EncodedJavascript.h in Headers */ = {isa = PBXBuildFile; fileRef = C9F88C71150C0BAC00F84E6A /* EncodedJavascript.h */; };
+		C98EA18A151BFA720005241A /* QSStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = C9F88C77150C0EA200F84E6A /* QSStrings.h */; };
+		C98EA18B151BFA720005241A /* QSUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C9F88C79150C0F6B00F84E6A /* QSUtilities.h */; };
+		C98EA18C151BFA720005241A /* GTMNSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = C9F88C7B150C0F7300F84E6A /* GTMNSString+HTML.h */; };
+		C98EA18D151BFA720005241A /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = C9F88C7F150C0F8100F84E6A /* GTMDefines.h */; };
+		C98EA18E151BFA720005241A /* FacebookPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CBB564151938D000DC7592 /* FacebookPlugin.h */; };
+		C98EA18F151BFA720005241A /* FilePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CBB566151938D000DC7592 /* FilePlugin.h */; };
+		C98EA190151BFA720005241A /* Facebook.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CBB58A151939B800DC7592 /* Facebook.h */; };
+		C98EA191151BFA720005241A /* FBConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CBB58C151939B800DC7592 /* FBConnect.h */; };
+		C98EA192151BFA720005241A /* FBDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CBB58E151939B800DC7592 /* FBDialog.h */; };
+		C98EA193151BFA720005241A /* FBFrictionlessRequestSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CBB590151939B800DC7592 /* FBFrictionlessRequestSettings.h */; };
+		C98EA194151BFA720005241A /* FBLoginDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CBB592151939B800DC7592 /* FBLoginDialog.h */; };
+		C98EA195151BFA720005241A /* FBRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CBB594151939B800DC7592 /* FBRequest.h */; };
+		C98EA196151BFA720005241A /* SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CBB597151939B800DC7592 /* SBJSON.h */; };
+		C98EA197151BFA720005241A /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CBB598151939B800DC7592 /* JSON.h */; };
+		C98EA198151BFA720005241A /* NSObject+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CBB59A151939B800DC7592 /* NSObject+SBJSON.h */; };
+		C98EA199151BFA720005241A /* SBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CBB59B151939B800DC7592 /* SBJsonParser.h */; };
+		C98EA19A151BFA720005241A /* NSString+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CBB59E151939B800DC7592 /* NSString+SBJSON.h */; };
+		C98EA19B151BFA720005241A /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CBB59F151939B800DC7592 /* SBJsonWriter.h */; };
+		C98EA19C151BFA720005241A /* SBJsonBase.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CBB5A1151939B800DC7592 /* SBJsonBase.h */; };
+		C98EA19D151BFA720005241A /* EncodedCitiesUS.h in Headers */ = {isa = PBXBuildFile; fileRef = C98EA0C7151A6A260005241A /* EncodedCitiesUS.h */; };
+		C98EA19E151BFA720005241A /* LocationAutocompletePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C98EA0CA151A6AA50005241A /* LocationAutocompletePlugin.h */; };
+		C98EA1A5151BFA910005241A /* libiMonkey.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C98EA11D151BF98E0005241A /* libiMonkey.a */; };
 		C9CBB568151938D000DC7592 /* FacebookPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CBB564151938D000DC7592 /* FacebookPlugin.h */; };
 		C9CBB569151938D000DC7592 /* FacebookPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CBB565151938D000DC7592 /* FacebookPlugin.m */; };
 		C9CBB56A151938D000DC7592 /* FilePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CBB566151938D000DC7592 /* FilePlugin.h */; };
@@ -122,6 +250,8 @@
 		C9CBB5B9151939B800DC7592 /* SBJsonBase.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CBB5A1151939B800DC7592 /* SBJsonBase.h */; };
 		C9CBB5BA151939B800DC7592 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CBB5A2151939B800DC7592 /* SBJsonBase.m */; };
 		C9CBB5BB151939B800DC7592 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CBB5A3151939B800DC7592 /* NSString+SBJSON.m */; };
+		C9F8366D151C2F5700DB61B5 /* SMWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F83669151C2F4F00DB61B5 /* SMWebView.m */; };
+		C9F8366E151C2F5900DB61B5 /* SMWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = C9F83668151C2F4F00DB61B5 /* SMWebView.h */; };
 		C9F88C72150C0BAC00F84E6A /* EncodedJavascript.h in Headers */ = {isa = PBXBuildFile; fileRef = C9F88C71150C0BAC00F84E6A /* EncodedJavascript.h */; };
 		C9F88C76150C0E9900F84E6A /* QSStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F88C75150C0E9900F84E6A /* QSStrings.m */; };
 		C9F88C78150C0EA200F84E6A /* QSStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = C9F88C77150C0EA200F84E6A /* QSStrings.h */; };
@@ -132,6 +262,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C98EA11C151BF98E0005241A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C98EA115151BF98E0005241A /* iMonkey.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27167EB413C4E4D3001CC5B6;
+			remoteInfo = iMonkey;
+		};
+		C98EA121151BFA720005241A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C989B19514FB646D004E9DE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9F88C81150C13AE00F84E6A;
+			remoteInfo = CoffeeScripts;
+		};
+		C98EA1A3151BFA890005241A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C98EA115151BF98E0005241A /* iMonkey.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 27167DD613C4E4D3001CC5B6;
+			remoteInfo = iMonkey;
+		};
 		C9F88C85150C13BA00F84E6A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C989B19514FB646D004E9DE4 /* Project object */;
@@ -164,6 +315,12 @@
 		C9442D4915096F5C0046E512 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIProgressDelegate.h; path = Components/ASIHTTPRequest/Classes/ASIProgressDelegate.h; sourceTree = "<group>"; };
 		C9442D63150AF6E40046E512 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Components/ASIHTTPRequest/External/Reachability/Reachability.h; sourceTree = "<group>"; };
 		C9442D64150AF6E40046E512 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Components/ASIHTTPRequest/External/Reachability/Reachability.m; sourceTree = "<group>"; };
+		C947F2B2151C034700BCFE30 /* SMRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMRuntime.h; path = Classes/SMRuntime.h; sourceTree = "<group>"; };
+		C947F2B3151C034700BCFE30 /* SMRuntime.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SMRuntime.mm; path = Classes/SMRuntime.mm; sourceTree = "<group>"; };
+		C947F2B4151C034700BCFE30 /* SMTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMTimer.h; path = Classes/SMTimer.h; sourceTree = "<group>"; };
+		C947F2B5151C034700BCFE30 /* SMTimer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SMTimer.mm; path = Classes/SMTimer.mm; sourceTree = "<group>"; };
+		C947F2C4151C1A1900BCFE30 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/usr/lib/libstdc++.dylib"; sourceTree = DEVELOPER_DIR; };
+		C947F2C8151C1E5D00BCFE30 /* EncodedJavascriptImonkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EncodedJavascriptImonkey.h; path = Classes/EncodedJavascriptImonkey.h; sourceTree = "<group>"; };
 		C958F2201509637200D36EF5 /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = "/Volumes/ios/cordova-true-native/../../../Users/Shared/Cordova/Frameworks/Cordova.framework"; sourceTree = "<absolute>"; };
 		C96A3898150C57E200D8653A /* CoffeeScripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CoffeeScripts; sourceTree = "<group>"; };
 		C970155914FB68B500533764 /* HTTPPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPPlugin.h; path = Classes/HTTPPlugin.h; sourceTree = "<group>"; };
@@ -241,6 +398,8 @@
 		C98EA0CB151A6AA50005241A /* LocationAutocompletePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationAutocompletePlugin.m; path = Classes/LocationAutocompletePlugin.m; sourceTree = "<group>"; };
 		C98EA0D0151A6B7D0005241A /* NDTrie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NDTrie.h; path = Classes/NDTrie.h; sourceTree = "<group>"; };
 		C98EA0D1151A6B7D0005241A /* NDTrie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NDTrie.m; path = Classes/NDTrie.m; sourceTree = "<group>"; };
+		C98EA115151BF98E0005241A /* iMonkey.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iMonkey.xcodeproj; path = Components/iMonkey/iMonkey.xcodeproj; sourceTree = "<group>"; };
+		C98EA1A2151BFA720005241A /* libTrueNative iMonkey.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libTrueNative iMonkey.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9CBB564151938D000DC7592 /* FacebookPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FacebookPlugin.h; path = Classes/FacebookPlugin.h; sourceTree = "<group>"; };
 		C9CBB565151938D000DC7592 /* FacebookPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FacebookPlugin.m; path = Classes/FacebookPlugin.m; sourceTree = "<group>"; };
 		C9CBB566151938D000DC7592 /* FilePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FilePlugin.h; path = Classes/FilePlugin.h; sourceTree = "<group>"; };
@@ -270,6 +429,8 @@
 		C9CBB5A1151939B800DC7592 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
 		C9CBB5A2151939B800DC7592 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
 		C9CBB5A3151939B800DC7592 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		C9F83668151C2F4F00DB61B5 /* SMWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMWebView.h; path = Classes/SMWebView.h; sourceTree = "<group>"; };
+		C9F83669151C2F4F00DB61B5 /* SMWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMWebView.m; path = Classes/SMWebView.m; sourceTree = "<group>"; };
 		C9F88C71150C0BAC00F84E6A /* EncodedJavascript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EncodedJavascript.h; path = Classes/EncodedJavascript.h; sourceTree = "<group>"; };
 		C9F88C75150C0E9900F84E6A /* QSStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QSStrings.m; path = Components/QSUtilities/QSStrings.m; sourceTree = "<group>"; };
 		C9F88C77150C0EA200F84E6A /* QSStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QSStrings.h; path = Components/QSUtilities/QSStrings.h; sourceTree = "<group>"; };
@@ -287,6 +448,17 @@
 				C97015B614FB6BDB00533764 /* UIKit.framework in Frameworks */,
 				C989B1A714FB64B2004E9DE4 /* Foundation.framework in Frameworks */,
 				C958F2211509637200D36EF5 /* Cordova.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C98EA15A151BFA720005241A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C98EA1A5151BFA910005241A /* libiMonkey.a in Frameworks */,
+				C98EA15B151BFA720005241A /* UIKit.framework in Frameworks */,
+				C98EA15C151BFA720005241A /* Foundation.framework in Frameworks */,
+				C98EA15D151BFA720005241A /* Cordova.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +497,12 @@
 		C970155314FB688700533764 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C9F83668151C2F4F00DB61B5 /* SMWebView.h */,
+				C9F83669151C2F4F00DB61B5 /* SMWebView.m */,
+				C947F2B2151C034700BCFE30 /* SMRuntime.h */,
+				C947F2B3151C034700BCFE30 /* SMRuntime.mm */,
+				C947F2B4151C034700BCFE30 /* SMTimer.h */,
+				C947F2B5151C034700BCFE30 /* SMTimer.mm */,
 				C98EA0CA151A6AA50005241A /* LocationAutocompletePlugin.h */,
 				C98EA0CB151A6AA50005241A /* LocationAutocompletePlugin.m */,
 				C9CBB564151938D000DC7592 /* FacebookPlugin.h */,
@@ -333,6 +511,7 @@
 				C9CBB567151938D000DC7592 /* FilePlugin.m */,
 				C9F88C71150C0BAC00F84E6A /* EncodedJavascript.h */,
 				C98EA0C7151A6A260005241A /* EncodedCitiesUS.h */,
+				C947F2C8151C1E5D00BCFE30 /* EncodedJavascriptImonkey.h */,
 				C970155914FB68B500533764 /* HTTPPlugin.h */,
 				C970155A14FB68B500533764 /* HTTPPlugin.m */,
 				C970155B14FB68B500533764 /* MBProgressHUDPlugin.h */,
@@ -508,6 +687,8 @@
 		C989B19314FB646D004E9DE4 = {
 			isa = PBXGroup;
 			children = (
+				C947F2C4151C1A1900BCFE30 /* libstdc++.dylib */,
+				C98EA115151BF98E0005241A /* iMonkey.xcodeproj */,
 				C96A3898150C57E200D8653A /* CoffeeScripts */,
 				C97015B714FB6CAB00533764 /* Components */,
 				C970155314FB688700533764 /* Classes */,
@@ -521,6 +702,7 @@
 			isa = PBXGroup;
 			children = (
 				C989B1A314FB64B2004E9DE4 /* libTrueNative.a */,
+				C98EA1A2151BFA720005241A /* libTrueNative iMonkey.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -543,6 +725,14 @@
 			);
 			name = ndtrie;
 			path = Components/ndtrie;
+			sourceTree = "<group>";
+		};
+		C98EA116151BF98E0005241A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C98EA11D151BF98E0005241A /* libiMonkey.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		C9CBB5891519396200DC7592 /* Facebook iOS SDK */ = {
@@ -673,6 +863,81 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C98EA15E151BFA720005241A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C98EA15F151BFA720005241A /* HTTPPlugin.h in Headers */,
+				C98EA160151BFA720005241A /* MBProgressHUDPlugin.h in Headers */,
+				C98EA161151BFA720005241A /* UIActionSheetPlugin.h in Headers */,
+				C98EA162151BFA720005241A /* UIButtonPlugin.h in Headers */,
+				C98EA163151BFA720005241A /* UIComponentPlugin.h in Headers */,
+				C98EA164151BFA720005241A /* UIDatePickerViewPlugin.h in Headers */,
+				C98EA165151BFA720005241A /* UIImageViewPlugin.h in Headers */,
+				C98EA166151BFA720005241A /* UILabelPlugin.h in Headers */,
+				C98EA167151BFA720005241A /* UIMailComposeWindowPlugin.h in Headers */,
+				C98EA168151BFA720005241A /* UIMapViewPlugin.h in Headers */,
+				C98EA169151BFA720005241A /* UINavigationControllerPlugin.h in Headers */,
+				C98EA16A151BFA720005241A /* UIPickerViewPlugin.h in Headers */,
+				C98EA16B151BFA720005241A /* UIScrollViewPlugin.h in Headers */,
+				C98EA16C151BFA720005241A /* UISpinnerPlugin.h in Headers */,
+				C98EA16D151BFA720005241A /* UITabControllerPlugin.h in Headers */,
+				C98EA16E151BFA720005241A /* UITableViewPlugin.h in Headers */,
+				C98EA16F151BFA720005241A /* UITableViewRowPlugin.h in Headers */,
+				C98EA170151BFA720005241A /* UITabPlugin.h in Headers */,
+				C98EA171151BFA720005241A /* UITextFieldPlugin.h in Headers */,
+				C98EA172151BFA720005241A /* UIUtil.h in Headers */,
+				C98EA173151BFA720005241A /* UIViewPlugin.h in Headers */,
+				C98EA174151BFA720005241A /* UIWindowPlugin.h in Headers */,
+				C98EA175151BFA720005241A /* EGOImageLoadConnection.h in Headers */,
+				C98EA176151BFA720005241A /* EGOImageLoader.h in Headers */,
+				C98EA177151BFA720005241A /* EGOImageView.h in Headers */,
+				C98EA178151BFA720005241A /* EGOImageButton.h in Headers */,
+				C98EA179151BFA720005241A /* EGORefreshTableHeaderView.h in Headers */,
+				C98EA17A151BFA720005241A /* MBProgressHUD.h in Headers */,
+				C98EA17B151BFA720005241A /* EGOCache.h in Headers */,
+				C98EA17C151BFA720005241A /* ASIAuthenticationDialog.h in Headers */,
+				C98EA17D151BFA720005241A /* ASICacheDelegate.h in Headers */,
+				C98EA17E151BFA720005241A /* ASIDataCompressor.h in Headers */,
+				C98EA17F151BFA720005241A /* ASIDataDecompressor.h in Headers */,
+				C98EA180151BFA720005241A /* ASIDownloadCache.h in Headers */,
+				C98EA181151BFA720005241A /* ASIFormDataRequest.h in Headers */,
+				C98EA182151BFA720005241A /* ASIHTTPRequest.h in Headers */,
+				C98EA183151BFA720005241A /* ASIHTTPRequestConfig.h in Headers */,
+				C98EA184151BFA720005241A /* ASIHTTPRequestDelegate.h in Headers */,
+				C98EA185151BFA720005241A /* ASIInputStream.h in Headers */,
+				C98EA186151BFA720005241A /* ASINetworkQueue.h in Headers */,
+				C98EA187151BFA720005241A /* ASIProgressDelegate.h in Headers */,
+				C98EA188151BFA720005241A /* Reachability.h in Headers */,
+				C98EA189151BFA720005241A /* EncodedJavascript.h in Headers */,
+				C98EA18A151BFA720005241A /* QSStrings.h in Headers */,
+				C98EA18B151BFA720005241A /* QSUtilities.h in Headers */,
+				C98EA18C151BFA720005241A /* GTMNSString+HTML.h in Headers */,
+				C98EA18D151BFA720005241A /* GTMDefines.h in Headers */,
+				C98EA18E151BFA720005241A /* FacebookPlugin.h in Headers */,
+				C98EA18F151BFA720005241A /* FilePlugin.h in Headers */,
+				C98EA190151BFA720005241A /* Facebook.h in Headers */,
+				C98EA191151BFA720005241A /* FBConnect.h in Headers */,
+				C98EA192151BFA720005241A /* FBDialog.h in Headers */,
+				C98EA193151BFA720005241A /* FBFrictionlessRequestSettings.h in Headers */,
+				C98EA194151BFA720005241A /* FBLoginDialog.h in Headers */,
+				C98EA195151BFA720005241A /* FBRequest.h in Headers */,
+				C98EA196151BFA720005241A /* SBJSON.h in Headers */,
+				C98EA197151BFA720005241A /* JSON.h in Headers */,
+				C98EA198151BFA720005241A /* NSObject+SBJSON.h in Headers */,
+				C98EA199151BFA720005241A /* SBJsonParser.h in Headers */,
+				C98EA19A151BFA720005241A /* NSString+SBJSON.h in Headers */,
+				C98EA19B151BFA720005241A /* SBJsonWriter.h in Headers */,
+				C98EA19C151BFA720005241A /* SBJsonBase.h in Headers */,
+				C98EA19D151BFA720005241A /* EncodedCitiesUS.h in Headers */,
+				C98EA19E151BFA720005241A /* LocationAutocompletePlugin.h in Headers */,
+				C947F2B6151C034700BCFE30 /* SMRuntime.h in Headers */,
+				C947F2B8151C034700BCFE30 /* SMTimer.h in Headers */,
+				C947F2C9151C1E5D00BCFE30 /* EncodedJavascriptImonkey.h in Headers */,
+				C9F8366E151C2F5900DB61B5 /* SMWebView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXLegacyTarget section */
@@ -711,6 +976,25 @@
 			productReference = C989B1A314FB64B2004E9DE4 /* libTrueNative.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		C98EA11F151BFA720005241A /* TrueNative iMonkey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C98EA19F151BFA720005241A /* Build configuration list for PBXNativeTarget "TrueNative iMonkey" */;
+			buildPhases = (
+				C98EA122151BFA720005241A /* Sources */,
+				C98EA15A151BFA720005241A /* Frameworks */,
+				C98EA15E151BFA720005241A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C98EA1A4151BFA890005241A /* PBXTargetDependency */,
+				C98EA120151BFA720005241A /* PBXTargetDependency */,
+			);
+			name = "TrueNative iMonkey";
+			productName = TrueNative;
+			productReference = C98EA1A2151BFA720005241A /* libTrueNative iMonkey.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -730,13 +1014,30 @@
 			mainGroup = C989B19314FB646D004E9DE4;
 			productRefGroup = C989B1A414FB64B2004E9DE4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C98EA116151BF98E0005241A /* Products */;
+					ProjectRef = C98EA115151BF98E0005241A /* iMonkey.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C989B1A214FB64B2004E9DE4 /* TrueNative */,
 				C9F88C81150C13AE00F84E6A /* CoffeeScripts */,
+				C98EA11F151BFA720005241A /* TrueNative iMonkey */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C98EA11D151BF98E0005241A /* libiMonkey.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libiMonkey.a;
+			remoteRef = C98EA11C151BF98E0005241A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C989B19F14FB64B2004E9DE4 /* Sources */ = {
@@ -801,9 +1102,84 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C98EA122151BFA720005241A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C98EA123151BFA720005241A /* HTTPPlugin.m in Sources */,
+				C98EA124151BFA720005241A /* MBProgressHUDPlugin.m in Sources */,
+				C98EA125151BFA720005241A /* UIActionSheetPlugin.m in Sources */,
+				C98EA126151BFA720005241A /* UIButtonPlugin.m in Sources */,
+				C98EA127151BFA720005241A /* UIComponentPlugin.m in Sources */,
+				C98EA128151BFA720005241A /* UIDatePickerViewPlugin.m in Sources */,
+				C98EA129151BFA720005241A /* UIImageViewPlugin.m in Sources */,
+				C98EA12A151BFA720005241A /* UILabelPlugin.m in Sources */,
+				C98EA12B151BFA720005241A /* UIMailComposeWindowPlugin.m in Sources */,
+				C98EA12C151BFA720005241A /* UIMapViewPlugin.m in Sources */,
+				C98EA12D151BFA720005241A /* UINavigationControllerPlugin.m in Sources */,
+				C98EA12E151BFA720005241A /* UIPickerViewPlugin.m in Sources */,
+				C98EA12F151BFA720005241A /* UIScrollViewPlugin.m in Sources */,
+				C98EA130151BFA720005241A /* UISpinnerPlugin.m in Sources */,
+				C98EA131151BFA720005241A /* UITabControllerPlugin.m in Sources */,
+				C98EA132151BFA720005241A /* UITableViewPlugin.m in Sources */,
+				C98EA133151BFA720005241A /* UITableViewRowPlugin.m in Sources */,
+				C98EA134151BFA720005241A /* UITabPlugin.m in Sources */,
+				C98EA135151BFA720005241A /* UITextFieldPlugin.m in Sources */,
+				C98EA136151BFA720005241A /* UIUtil.m in Sources */,
+				C98EA137151BFA720005241A /* UIViewPlugin.m in Sources */,
+				C98EA138151BFA720005241A /* UIWindowPlugin.m in Sources */,
+				C98EA139151BFA720005241A /* EGOImageLoader.m in Sources */,
+				C98EA13A151BFA720005241A /* EGOImageLoadConnection.m in Sources */,
+				C98EA13B151BFA720005241A /* EGOImageView.m in Sources */,
+				C98EA13C151BFA720005241A /* EGOImageButton.m in Sources */,
+				C98EA13D151BFA720005241A /* EGORefreshTableHeaderView.m in Sources */,
+				C98EA13E151BFA720005241A /* MBProgressHUD.m in Sources */,
+				C98EA13F151BFA720005241A /* EGOCache.m in Sources */,
+				C98EA140151BFA720005241A /* ASIAuthenticationDialog.m in Sources */,
+				C98EA141151BFA720005241A /* ASIDataCompressor.m in Sources */,
+				C98EA142151BFA720005241A /* ASIDataDecompressor.m in Sources */,
+				C98EA143151BFA720005241A /* ASIDownloadCache.m in Sources */,
+				C98EA144151BFA720005241A /* ASIFormDataRequest.m in Sources */,
+				C98EA145151BFA720005241A /* ASIHTTPRequest.m in Sources */,
+				C98EA146151BFA720005241A /* ASIInputStream.m in Sources */,
+				C98EA147151BFA720005241A /* ASINetworkQueue.m in Sources */,
+				C98EA148151BFA720005241A /* Reachability.m in Sources */,
+				C98EA149151BFA720005241A /* QSStrings.m in Sources */,
+				C98EA14A151BFA720005241A /* GTMNSString+HTML.m in Sources */,
+				C98EA14B151BFA720005241A /* FacebookPlugin.m in Sources */,
+				C98EA14C151BFA720005241A /* FilePlugin.m in Sources */,
+				C98EA14D151BFA720005241A /* Facebook.m in Sources */,
+				C98EA14E151BFA720005241A /* FBDialog.m in Sources */,
+				C98EA14F151BFA720005241A /* FBFrictionlessRequestSettings.m in Sources */,
+				C98EA150151BFA720005241A /* FBLoginDialog.m in Sources */,
+				C98EA151151BFA720005241A /* FBRequest.m in Sources */,
+				C98EA152151BFA720005241A /* SBJsonWriter.m in Sources */,
+				C98EA153151BFA720005241A /* SBJSON.m in Sources */,
+				C98EA154151BFA720005241A /* NSObject+SBJSON.m in Sources */,
+				C98EA155151BFA720005241A /* SBJsonParser.m in Sources */,
+				C98EA156151BFA720005241A /* SBJsonBase.m in Sources */,
+				C98EA157151BFA720005241A /* NSString+SBJSON.m in Sources */,
+				C98EA158151BFA720005241A /* LocationAutocompletePlugin.m in Sources */,
+				C98EA159151BFA720005241A /* NDTrie.m in Sources */,
+				C947F2B7151C034700BCFE30 /* SMRuntime.mm in Sources */,
+				C947F2B9151C034700BCFE30 /* SMTimer.mm in Sources */,
+				C9F8366D151C2F5700DB61B5 /* SMWebView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C98EA120151BFA720005241A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9F88C81150C13AE00F84E6A /* CoffeeScripts */;
+			targetProxy = C98EA121151BFA720005241A /* PBXContainerItemProxy */;
+		};
+		C98EA1A4151BFA890005241A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iMonkey;
+			targetProxy = C98EA1A3151BFA890005241A /* PBXContainerItemProxy */;
+		};
 		C9F88C86150C13BA00F84E6A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C9F88C81150C13AE00F84E6A /* CoffeeScripts */;
@@ -886,6 +1262,77 @@
 			};
 			name = Release;
 		};
+		C98EA1A0151BFA720005241A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/TrueNative.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Shared/Cordova/Frameworks,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrueNative-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"TN_IMONKEY=1",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "Components/iMonkey/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "TrueNative iMonkey";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C98EA1A1151BFA720005241A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/TrueNative.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Shared/Cordova/Frameworks,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrueNative-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"TN_IMONKEY=1",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "Components/iMonkey/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "TrueNative iMonkey";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		C9F88C83150C13AE00F84E6A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -956,6 +1403,15 @@
 			buildConfigurations = (
 				C989B1AE14FB64B2004E9DE4 /* Debug */,
 				C989B1AF14FB64B2004E9DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C98EA19F151BFA720005241A /* Build configuration list for PBXNativeTarget "TrueNative iMonkey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C98EA1A0151BFA720005241A /* Debug */,
+				C98EA1A1151BFA720005241A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
