@@ -130,7 +130,7 @@
 		C958F22415096CDB00D36EF5 /* Cordova.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Cordova.plist; sourceTree = "<group>"; };
 		C96A389A150C580800D8653A /* CoffeeScripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CoffeeScripts; sourceTree = "<group>"; };
 		C970154814FB670A00533764 /* TrueNative.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TrueNative.xcodeproj; path = ../TrueNative.xcodeproj; sourceTree = SOURCE_ROOT; };
-		C989B10B14FB393F004E9DE4 /* .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = .app; path = "True Native.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C989B10B14FB393F004E9DE4 /* True Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "True Native.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C989B10F14FB393F004E9DE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C989B11114FB393F004E9DE4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C989B11314FB393F004E9DE4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -159,7 +159,7 @@
 		C989B15214FB3940004E9DE4 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		C989B15414FB3940004E9DE4 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
 		C989B17614FB437C004E9DE4 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
-		C98EA1D5151BFADE0005241A /* Example iMonkey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Example iMonkey.app"; path = "True Native.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C98EA1D5151BFADE0005241A /* True Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "True Native.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B1268B151077D400CCB124 /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grayArrow.png; path = ../Components/EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/grayArrow.png; sourceTree = "<group>"; };
 		C9B1268C151077D400CCB124 /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grayArrow@2x.png"; path = "../Components/EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/grayArrow@2x.png"; sourceTree = "<group>"; };
 		C9F836B0151D125B00DB61B5 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
@@ -272,8 +272,8 @@
 		C989B10C14FB393F004E9DE4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C989B10B14FB393F004E9DE4 /* .app */,
-				C98EA1D5151BFADE0005241A /* Example iMonkey.app */,
+				C989B10B14FB393F004E9DE4 /* True Native.app */,
+				C98EA1D5151BFADE0005241A /* True Native.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -405,7 +405,7 @@
 			);
 			name = Example;
 			productName = Example;
-			productReference = C989B10B14FB393F004E9DE4 /* .app */;
+			productReference = C989B10B14FB393F004E9DE4 /* True Native.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C98EA1A6151BFADE0005241A /* Example iMonkey */ = {
@@ -426,7 +426,7 @@
 			);
 			name = "Example iMonkey";
 			productName = Example;
-			productReference = C98EA1D5151BFADE0005241A /* Example iMonkey.app */;
+			productReference = C98EA1D5151BFADE0005241A /* True Native.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
