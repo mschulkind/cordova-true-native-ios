@@ -55,7 +55,6 @@
 		C98EA1C0151BFADE0005241A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C989B12314FB393F004E9DE4 /* SystemConfiguration.framework */; };
 		C98EA1C1151BFADE0005241A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C989B12514FB393F004E9DE4 /* MobileCoreServices.framework */; };
 		C98EA1C2151BFADE0005241A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C989B12714FB393F004E9DE4 /* CoreMedia.framework */; };
-		C98EA1C3151BFADE0005241A /* Cordova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C958F222150963EC00D36EF5 /* Cordova.framework */; };
 		C98EA1C5151BFADE0005241A /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C989B15414FB3940004E9DE4 /* MainViewController.xib */; };
 		C98EA1C6151BFADE0005241A /* Capture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C989B14914FB3940004E9DE4 /* Capture.bundle */; };
 		C98EA1C7151BFADE0005241A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C989B13E14FB3940004E9DE4 /* icon.png */; };
@@ -228,7 +227,6 @@
 				C98EA1C0151BFADE0005241A /* SystemConfiguration.framework in Frameworks */,
 				C98EA1C1151BFADE0005241A /* MobileCoreServices.framework in Frameworks */,
 				C98EA1C2151BFADE0005241A /* CoreMedia.framework in Frameworks */,
-				C98EA1C3151BFADE0005241A /* Cordova.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,18 +687,18 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = /Users/Shared/Cordova/Frameworks;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"CORDOVA_FRAMEWORK=YES",
-					"TN_IMONKEY=1",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "TN_IMONKEY=1";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				HEADER_SEARCH_PATHS = "../Classes/**";
+				HEADER_SEARCH_PATHS = (
+					"../Classes/**",
+					"../Components/cordova-ios/CordovaLib/Classes/**",
+				);
 				INFOPLIST_FILE = "Example-Info.plist";
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-weak_framework",
@@ -724,17 +722,17 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = /Users/Shared/Cordova/Frameworks;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"CORDOVA_FRAMEWORK=YES",
-					"TN_IMONKEY=1",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "TN_IMONKEY=1";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				HEADER_SEARCH_PATHS = "../Classes/**";
+				HEADER_SEARCH_PATHS = (
+					"../Classes/**",
+					"../Components/cordova-ios/CordovaLib/Classes/**",
+				);
 				INFOPLIST_FILE = "Example-Info.plist";
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-weak_framework",

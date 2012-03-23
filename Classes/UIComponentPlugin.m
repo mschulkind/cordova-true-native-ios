@@ -1,6 +1,5 @@
 #import "UIComponentPlugin.h"
 
-#import <Cordova/CDVViewController.h>
 #import "QSStrings.h"
 
 static void dealloc(id self, SEL _cmd) {

@@ -10,6 +10,15 @@
     #import <MapKit/MapKit.h>
     #import <QuartzCore/CALayer.h>
     
-    #import <Cordova/CDVPlugin.h>
-    #import <Cordova/JSONKit.h>
+    #ifdef CORDOVA_FRAMEWORK
+      #import <Cordova/CDVCordovaView.h>
+      #import <Cordova/CDVPlugin.h>
+      #import <Cordova/CDVViewController.h>
+      #import <Cordova/JSONKit.h>
+    #else
+      #import "CDVCordovaView.h"
+      #import "CDVPlugin.h"
+      #import "CDVViewController.h"
+      #import "JSONKit.h"
+    #endif
 #endif

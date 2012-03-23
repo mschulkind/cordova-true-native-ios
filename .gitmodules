@@ -28,3 +28,6 @@
 [submodule "Components/iMonkey"]
 	path = Components/iMonkey
 	url = https://github.com/mschulkind/iMonkey.git
+[submodule "Components/cordova-ios"]
+	path = Components/cordova-ios
+	url = https://github.com/apache/incubator-cordova-ios.git

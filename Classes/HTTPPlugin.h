@@ -1,5 +1,3 @@
-#import <Cordova/CDVPlugin.h>
-
 #import "ASIHTTPRequest.h"
 
 @interface HTTPPlugin : CDVPlugin <ASIHTTPRequestDelegate> {
