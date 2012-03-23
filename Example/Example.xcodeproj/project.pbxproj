@@ -37,7 +37,6 @@
 		C98EA1AC151BFADE0005241A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C989B12F14FB3940004E9DE4 /* main.m */; };
 		C98EA1AD151BFADE0005241A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C989B14F14FB3940004E9DE4 /* AppDelegate.m */; };
 		C98EA1AE151BFADE0005241A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C989B15214FB3940004E9DE4 /* MainViewController.m */; };
-		C98EA1AF151BFADE0005241A /* UIWebViewScriptDebugDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F88C5E150BF05800F84E6A /* UIWebViewScriptDebugDelegate.m */; };
 		C98EA1B1151BFADE0005241A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F88C68150BF5B600F84E6A /* libz.dylib */; };
 		C98EA1B2151BFADE0005241A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F88C66150BF5A000F84E6A /* CFNetwork.framework */; };
 		C98EA1B3151BFADE0005241A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F88C64150BF57300F84E6A /* MessageUI.framework */; };
@@ -70,6 +69,7 @@
 		C98EA1FC151BFC940005241A /* libTrueNative iMonkey.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C98EA1DA151BFADF0005241A /* libTrueNative iMonkey.a */; };
 		C9B1268D151077D400CCB124 /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B1268B151077D400CCB124 /* grayArrow.png */; };
 		C9B1268E151077D400CCB124 /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B1268C151077D400CCB124 /* grayArrow@2x.png */; };
+		C9F836AF151D0E1C00DB61B5 /* UIWebViewScriptDebugDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F88C5E150BF05800F84E6A /* UIWebViewScriptDebugDelegate.m */; };
 		C9F88C59150BE30100F84E6A /* libTrueNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C958F21D1509633000D36EF5 /* libTrueNative.a */; };
 		C9F88C5F150BF05800F84E6A /* UIWebViewScriptDebugDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F88C5E150BF05800F84E6A /* UIWebViewScriptDebugDelegate.m */; };
 		C9F88C61150BF4E500F84E6A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F88C60150BF4E500F84E6A /* MapKit.framework */; };
@@ -159,7 +159,6 @@
 		C989B15414FB3940004E9DE4 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
 		C989B17614FB437C004E9DE4 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		C98EA1D5151BFADE0005241A /* Example iMonkey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example iMonkey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C98EA1D7151BFADF0005241A /* Example copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Example copy-Info.plist"; path = "/Volumes/ios/cordova-true-native/Example/Example copy-Info.plist"; sourceTree = "<absolute>"; };
 		C9B1268B151077D400CCB124 /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grayArrow.png; path = ../Components/EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/grayArrow.png; sourceTree = "<group>"; };
 		C9B1268C151077D400CCB124 /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grayArrow@2x.png"; path = "../Components/EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/grayArrow@2x.png"; sourceTree = "<group>"; };
 		C9F88C5D150BF05800F84E6A /* UIWebViewScriptDebugDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWebViewScriptDebugDelegate.h; sourceTree = "<group>"; };
@@ -264,7 +263,6 @@
 				C989B10E14FB393F004E9DE4 /* Frameworks */,
 				C989B10C14FB393F004E9DE4 /* Products */,
 				C970154814FB670A00533764 /* TrueNative.xcodeproj */,
-				C98EA1D7151BFADF0005241A /* Example copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -544,7 +542,7 @@
 				C98EA1AC151BFADE0005241A /* main.m in Sources */,
 				C98EA1AD151BFADE0005241A /* AppDelegate.m in Sources */,
 				C98EA1AE151BFADE0005241A /* MainViewController.m in Sources */,
-				C98EA1AF151BFADE0005241A /* UIWebViewScriptDebugDelegate.m in Sources */,
+				C9F836AF151D0E1C00DB61B5 /* UIWebViewScriptDebugDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
