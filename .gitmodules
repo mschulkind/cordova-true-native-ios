@@ -25,3 +25,6 @@
 [submodule "Components/ndtrie"]
 	path = Components/ndtrie
 	url = https://github.com/mschulkind/ndtrie
+[submodule "Components/iMonkey"]
+	path = Components/iMonkey
+	url = https://github.com/mschulkind/iMonkey.git
