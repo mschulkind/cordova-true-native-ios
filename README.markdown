@@ -9,7 +9,7 @@
 ![screenshot](cordova-true-native-ios/raw/master/screenshots/screenshot3.png)
 ![screenshot](cordova-true-native-ios/raw/master/screenshots/screenshot5.png)
 
-## Real Native Controls
+## True Native Controls
 
 True Native gives you access directly to the iOS native controls. If you
 choose, you can display parts of a UIWebView along with native controls, but
