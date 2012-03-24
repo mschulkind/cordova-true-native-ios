@@ -2,11 +2,11 @@
 
 ## Screen Shots
 
-![screenshot](raw/master/screenshots/screenshot1.png)
-![screenshot](raw/master/screenshots/screenshot2.png)
-![screenshot](raw/master/screenshots/screenshot3.png)
-![screenshot](raw/master/screenshots/screenshot4.png)
-![screenshot](raw/master/screenshots/screenshot5.png)
+![screenshot](cordova-true-native-ios/raw/master/screenshots/screenshot1.png)
+![screenshot](cordova-true-native-ios/raw/master/screenshots/screenshot2.png)
+![screenshot](cordova-true-native-ios/raw/master/screenshots/screenshot3.png)
+![screenshot](cordova-true-native-ios/raw/master/screenshots/screenshot4.png)
+![screenshot](cordova-true-native-ios/raw/master/screenshots/screenshot5.png)
 
 ## Real Native Controls
 
@@ -68,7 +68,7 @@ occur inside of a UIWebView. The exception detail is not as great as with
 SpiderMonkey, but it's better than nothing. The code is automatically excluded
 from non-DEBUG builds since it is not allowed on the app store (due to the use
 of the private interfaces). See the
-[UIWebViewScriptDebugDelegate](blob/master/Example/Classes/UIWebViewScriptDebugDelegate.m)
+[UIWebViewScriptDebugDelegate](cordova-true-native-ios/blob/master/Example/Classes/UIWebViewScriptDebugDelegate.m)
 for more details.
 
 Here is an example stack trace. This is the same exception as shown above:
@@ -121,17 +121,18 @@ decoded and injected.
   the (Facebook SDK for iOS)[https://github.com/facebook/facebook-ios-sdk].
 
 * **US City autocomplete** This (ruby
-  script)[blob/master/scripts/generate\_cities\_map.rb] generates a JSON map of
-  all US city names to their lat/long. The source data is a set of zipcodes
-  with lat/long, so each city's lat/long is the mean of all its component
-  zipcodes. This JSON is base64 encoded and linked in as well. The location
-  autocomplete plugin loads the data into a
+  script)[cordova-true-native-ios/blob/master/scripts/generate\_cities\_map.rb]
+  generates a JSON map of all US city names to their lat/long. The source data
+  is a set of zipcodes with lat/long, so each city's lat/long is the mean of
+  all its component zipcodes. This JSON is base64 encoded and linked in as
+  well. The location autocomplete plugin loads the data into a
   (Trie)[https://github.com/mschulkind/ndtrie] and serves up completions. The
   Instagram demo in the Example app makes use of this.
 
 * **GridCell layout** To help the layout of the controls and views, a GridCell
   layout engine is provide. See the example app and (source
-  code)[blob/master/CoffeeScripts/grid\_cell\_control.coffee] for more details.
+  code)[cordova-true-native-ios/blob/master/CoffeeScripts/grid\_cell\_control.coffee]
+  for more details.
 
 * **Android support** Full android support is planned as the next major
   feature, but it work has not yet begun. The iOS version has been designed
