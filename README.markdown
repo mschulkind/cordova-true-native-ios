@@ -90,8 +90,8 @@ documented.
 
 ## CoffeeScript
 
-All of the javascript is written in (CoffeeScript)[http://coffeescript.org/].
-(SCons)[http://www.scons.org/] is used as an external build tool to
+All of the javascript is written in [CoffeeScript](http://coffeescript.org/).
+[SCons](http://www.scons.org/) is used as an external build tool to
 automatically compile the CoffeeScript to javascript as part of the XCode build
 process.
 
@@ -119,10 +119,10 @@ decoded and injected.
 ## Other notable features
 
 * **Facebook support** This support is not complete, but allows for login using
-  the (Facebook SDK for iOS)[https://github.com/facebook/facebook-ios-sdk].
+  the [Facebook SDK for iOS](https://github.com/facebook/facebook-ios-sdk).
 
-* **US City autocomplete** This (ruby
-  script)[cordova-true-native-ios/blob/master/scripts/generate\_cities\_map.rb]
+* **US City autocomplete** This [ruby
+  script](cordova-true-native-ios/blob/master/scripts/generate\_cities\_map.rb)
   generates a JSON map of all US city names to their lat/long. The source data
   is a set of zipcodes with lat/long, so each city's lat/long is the mean of
   all its component zipcodes. This JSON is base64 encoded and linked in as
@@ -131,8 +131,8 @@ decoded and injected.
   Instagram demo in the Example app makes use of this.
 
 * **GridCell layout** To help the layout of the controls and views, a GridCell
-  layout engine is provide. See the example app and (source
-  code)[cordova-true-native-ios/blob/master/CoffeeScripts/grid\_cell\_control.coffee]
+  layout engine is provide. See the example app and [source
+  code](cordova-true-native-ios/blob/master/CoffeeScripts/grid\_cell\_control.coffee)
   for more details.
 
 * **Android support** Full android support is planned as the next major
