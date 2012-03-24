@@ -127,7 +127,7 @@ decoded and injected.
   is a set of zipcodes with lat/long, so each city's lat/long is the mean of
   all its component zipcodes. This JSON is base64 encoded and linked in as
   well. The location autocomplete plugin loads the data into a
-  (Trie)[https://github.com/mschulkind/ndtrie] and serves up completions. The
+  [Trie](https://github.com/mschulkind/ndtrie) and serves up completions. The
   Instagram demo in the Example app makes use of this.
 
 * **GridCell layout** To help the layout of the controls and views, a GridCell
