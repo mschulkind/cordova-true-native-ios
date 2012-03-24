@@ -1,6 +1,6 @@
 # Cool Stuff Inside
 
-## Screen Shots
+## Screenshots
 
 ![screenshot](cordova-true-native-ios/raw/master/screenshots/screenshot6.png)
 ![screenshot](cordova-true-native-ios/raw/master/screenshots/screenshot1.png)
