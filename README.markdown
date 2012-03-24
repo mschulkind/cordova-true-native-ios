@@ -7,6 +7,7 @@
 ![screenshot](cordova-true-native-ios/raw/master/screenshots/screenshot3.png)
 ![screenshot](cordova-true-native-ios/raw/master/screenshots/screenshot4.png)
 ![screenshot](cordova-true-native-ios/raw/master/screenshots/screenshot5.png)
+![screenshot](cordova-true-native-ios/raw/master/screenshots/screenshot6.png)
 
 ## Real Native Controls
 
