@@ -43,7 +43,7 @@ following improvements:
   or compared yet, but I suspect it is already better than a UIWebView. There
   are many avenues left for future improvement as well.
 
-* **Stack Traces** When exceptions happen, we get more accurate and detailed
+* **Stack Traces** When exceptions happen, you get more accurate and detailed
   stack traces:
 
 ```
