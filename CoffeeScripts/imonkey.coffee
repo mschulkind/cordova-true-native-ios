@@ -16,7 +16,6 @@ class Listenable
     @listeners = {}
 
   addEventListener: (type, listener) ->
-    awefawfewf.awefwafeewf() unless listener instanceof Function
     @listeners[type] ||= []
     @listeners[type].push(listener)
 
