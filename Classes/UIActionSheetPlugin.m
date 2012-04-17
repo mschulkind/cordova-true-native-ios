@@ -88,7 +88,6 @@
 - (void)show:(NSMutableArray*)arguments
     withDict:(NSMutableDictionary*)options
 {
-
   NSDictionary* actionSheetOptions = [options objectForKey:@"actionSheet"];
   TNUIActionSheet* actionSheet = 
       [[self class] componentWithOptions:actionSheetOptions];
