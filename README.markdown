@@ -136,7 +136,8 @@ decoded and injected.
   for more details.
 
 * **Android support** Full android support is planned as the next major
-  feature, and work has begun [here](cordova-true-native-android), but it has
+  feature, and work has begun
+  [here](https://github.com/mschulkind/cordova-true-native-android), but it has
   not quite reached feature party with the iOS version. The goal is to have
   full compatability between the two platforms with the same javascript code.
 
