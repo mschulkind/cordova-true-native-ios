@@ -2,12 +2,12 @@
 
 ## Screenshots
 
-![screenshot](cordova-true-native-ios/raw/master/screenshots/screenshot6.png)
-![screenshot](cordova-true-native-ios/raw/master/screenshots/screenshot1.png)
-![screenshot](cordova-true-native-ios/raw/master/screenshots/screenshot4.png)
-![screenshot](cordova-true-native-ios/raw/master/screenshots/screenshot2.png)
-![screenshot](cordova-true-native-ios/raw/master/screenshots/screenshot3.png)
-![screenshot](cordova-true-native-ios/raw/master/screenshots/screenshot5.png)
+![screenshot](https://raw.github.com/mschulkind/cordova-true-native-ios/master/screenshots/screenshot6.png)
+![screenshot](https://raw.github.com/mschulkind/cordova-true-native-ios/master/screenshots/screenshot1.png)
+![screenshot](https://raw.github.com/mschulkind/cordova-true-native-ios/master/screenshots/screenshot4.png)
+![screenshot](https://raw.github.com/mschulkind/cordova-true-native-ios/master/screenshots/screenshot2.png)
+![screenshot](https://raw.github.com/mschulkind/cordova-true-native-ios/master/screenshots/screenshot3.png)
+![screenshot](https://raw.github.com/mschulkind/cordova-true-native-ios/master/screenshots/screenshot5.png)
 
 ## True Native Controls
 
